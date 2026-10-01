@@ -11,4 +11,8 @@
 - 调度
 - 成本与失败传播
 
+## 关联索引
+
+- [多智能体强化学习（MARL）](../../06-reinforcement-learning/multi-agent-rl/README.md)
+
 <!-- new-note-index -->

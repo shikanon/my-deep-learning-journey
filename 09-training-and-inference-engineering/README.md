@@ -23,5 +23,7 @@
 | [推理服务与调度](serving-and-scheduling/README.md) | Continuous Batching、Chunked Prefill、Prefill/Decode 分离、TTFT、TPOT、吞吐与尾延迟 |
 | [前缀缓存与请求复用](prefix-caching/README.md) | Prefix Cache、Radix Tree、共享 KV、命中与失效、跨请求复用、缓存隔离 |
 | [数据管道与训练恢复](data-pipeline-and-checkpointing/README.md) | 数据版本、Packing、采样与随机种子、分布式 Checkpoint、断点恢复、运行状态一致性 |
+| [模型剪枝与稀疏化](pruning-and-sparsity/README.md) | 结构化与非结构化稀疏、剪枝标准、稀疏训练、稀疏矩阵算子、与量化的组合、质量与真实加速 |
+| [性能分析与计算瓶颈](performance-profiling/README.md) | FLOPs 与实际延迟、Roofline、计算受限与带宽受限、Profiler、GPU 利用率、通信瓶颈、端到端成本 |
 
 <!-- new-note-index -->

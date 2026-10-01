@@ -10,4 +10,8 @@
 - GPTQ/AWQ
 - 误差与硬件速度
 
+## 关联索引
+
+- [模型剪枝与稀疏化](../pruning-and-sparsity/README.md)
+
 <!-- new-note-index -->

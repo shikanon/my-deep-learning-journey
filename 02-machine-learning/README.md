@@ -13,5 +13,7 @@
 | [线性模型与核方法](linear-and-kernel-models/README.md) | 线性回归、逻辑回归、SVM、核技巧、与神经网络的联系 |
 | [评估指标与阈值选择](metrics/README.md) | Accuracy、Precision 与 Recall、F1、ROC 与 PR、校准、类别不均衡 |
 | [表示学习与迁移学习](representation-learning/README.md) | 特征工程、学习表示、预训练与迁移、领域适配、冻结与微调 |
+| [自监督学习与对比学习](self-supervised-learning/README.md) | 从数据构造监督、对比与非对比方法、InfoNCE、SimCLR、MoCo、BYOL 与 DINO、表征坍塌、数据增强 |
+| [不确定性与置信度校准](uncertainty-and-calibration/README.md) | 数据与模型不确定性、可靠性图、ECE 与 Brier Score、温度缩放、选择性预测、分布外检测 |
 
 <!-- new-note-index -->

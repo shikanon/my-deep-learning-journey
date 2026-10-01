@@ -1,8 +1,8 @@
 # 我的深度学习之路
 
-深度学习、大模型、RL 与 Agent 学习笔记索引。按兴趣选择任意二级知识点；目录编号仅用于分类。当前建立 **121 个二级知识点目录**，各目录的 README 列出可继续展开的子主题。
+深度学习、大模型、RL 与 Agent 学习笔记索引。按兴趣选择任意二级知识点；目录编号仅用于分类。当前建立 **140 个二级知识点目录**，各目录的 README 列出可继续展开的子主题。
 
-[数学基础](#01-math-foundations) · [机器学习](#02-machine-learning) · [深度学习基础](#03-deep-learning) · [大语言模型与序列架构](#04-large-language-models) · [后训练与对齐](#05-post-training-and-alignment) · [强化学习](#06-reinforcement-learning) · [Agent 与知识系统](#07-agents) · [多模态与生成模型](#08-multimodal-and-generative-models) · [训练与推理工程](#09-training-and-inference-engineering) · [评估与研究方法](#10-evaluation-and-research)
+[数学基础](#01-math-foundations) · [机器学习](#02-machine-learning) · [深度学习基础](#03-deep-learning) · [大语言模型：架构、预训练与推理](#04-large-language-models) · [后训练与对齐](#05-post-training-and-alignment) · [强化学习](#06-reinforcement-learning) · [Agent 与知识系统](#07-agents) · [多模态与生成模型](#08-multimodal-and-generative-models) · [训练与推理工程](#09-training-and-inference-engineering) · [评估与研究方法](#10-evaluation-and-research)
 
 <a id="01-math-foundations"></a>
 
@@ -28,6 +28,8 @@
 - [线性模型与核方法](02-machine-learning/linear-and-kernel-models/README.md)
 - [评估指标与阈值选择](02-machine-learning/metrics/README.md)
 - [表示学习与迁移学习](02-machine-learning/representation-learning/README.md)
+- [自监督学习与对比学习](02-machine-learning/self-supervised-learning/README.md)
+- [不确定性与置信度校准](02-machine-learning/uncertainty-and-calibration/README.md)
 
 <a id="03-deep-learning"></a>
 
@@ -46,31 +48,44 @@
 - [RNN、LSTM 与 GRU](03-deep-learning/recurrent-networks/README.md)
 - [深度网络正则化](03-deep-learning/regularization-techniques/README.md)
 - [训练循环与调试](03-deep-learning/training-loop/README.md)
+- [学习动力学与泛化现象](03-deep-learning/learning-dynamics/README.md)
+- [μP 与超参数迁移](03-deep-learning/mup-and-hyperparameter-transfer/README.md)
+- [Vision Transformer（ViT）](03-deep-learning/vision-transformer/README.md)
+- [图神经网络（GNN）](03-deep-learning/graph-neural-networks/README.md)
 
 <a id="04-large-language-models"></a>
 
-## 大语言模型与序列架构
+## 大语言模型：架构、预训练与推理
 
-- [自注意力与 QKV](04-large-language-models/self-attention/README.md)
-- [注意力机制](04-large-language-models/attention-mechanisms/README.md)
-- [Transformer 架构](04-large-language-models/transformer/README.md)
+### 文本表示与模型架构
+
 - [Tokenizer 与文本切分](04-large-language-models/tokenizer/README.md)
 - [Embedding 与表示空间](04-large-language-models/embeddings/README.md)
 - [位置编码](04-large-language-models/positional-encoding/README.md)
-- [预训练目标](04-large-language-models/pretraining-objectives/README.md)
-- [预训练数据与数据配比](04-large-language-models/pretraining-data/README.md)
-- [缩放定律（Scaling Laws）](04-large-language-models/scaling-laws/README.md)
-- [解码与采样](04-large-language-models/decoding-and-sampling/README.md)
+- [自注意力与 QKV](04-large-language-models/self-attention/README.md)
+- [注意力机制](04-large-language-models/attention-mechanisms/README.md)
+- [Transformer 架构](04-large-language-models/transformer/README.md)
 - [MQA、GQA 与 MLA](04-large-language-models/gqa-and-mla/README.md)
 - [混合专家模型（MoE）](04-large-language-models/mixture-of-experts/README.md)
 - [稀疏注意力与线性注意力](04-large-language-models/efficient-attention/README.md)
 - [状态空间模型与混合架构](04-large-language-models/state-space-models/README.md)
+- [扩散语言模型](04-large-language-models/diffusion-language-models/README.md)
+
+### 预训练与规模规律
+
+- [预训练目标](04-large-language-models/pretraining-objectives/README.md)
+- [预训练数据与数据配比](04-large-language-models/pretraining-data/README.md)
+- [缩放定律（Scaling Laws）](04-large-language-models/scaling-laws/README.md)
+
+### 生成、上下文与推理
+
+- [解码与采样](04-large-language-models/decoding-and-sampling/README.md)
 - [长上下文外推](04-large-language-models/long-context-extrapolation/README.md)
 - [上下文学习与 Prompting](04-large-language-models/in-context-learning/README.md)
 - [推理与 Chain-of-Thought](04-large-language-models/reasoning/README.md)
 - [推理时计算与 Test-time Scaling](04-large-language-models/test-time-compute/README.md)
 - [多 Token 预测（MTP）](04-large-language-models/multi-token-prediction/README.md)
-- [扩散语言模型](04-large-language-models/diffusion-language-models/README.md)
+- [幻觉、事实性与依据对齐](04-large-language-models/hallucination-and-grounding/README.md)
 
 <a id="05-post-training-and-alignment"></a>
 
@@ -87,6 +102,9 @@
 - [持续学习与遗忘](05-post-training-and-alignment/continual-learning/README.md)
 - [安全对齐与奖励投机](05-post-training-and-alignment/safety-alignment/README.md)
 - [知识编辑与模型更新](05-post-training-and-alignment/knowledge-editing/README.md)
+- [过程监督与验证器](05-post-training-and-alignment/process-supervision/README.md)
+- [模型合并与任务向量](05-post-training-and-alignment/model-merging/README.md)
+- [可扩展监督与弱到强泛化](05-post-training-and-alignment/scalable-supervision/README.md)
 
 <a id="06-reinforcement-learning"></a>
 
@@ -104,6 +122,10 @@
 - [探索与奖励设计](06-reinforcement-learning/exploration/README.md)
 - [离线强化学习](06-reinforcement-learning/offline-rl/README.md)
 - [基于模型的强化学习](06-reinforcement-learning/model-based-rl/README.md)
+- [连续控制与 SAC、DDPG、TD3](06-reinforcement-learning/continuous-control/README.md)
+- [模仿学习与行为克隆](06-reinforcement-learning/imitation-learning/README.md)
+- [多智能体强化学习（MARL）](06-reinforcement-learning/multi-agent-rl/README.md)
+- [MCTS 与搜索决策](06-reinforcement-learning/mcts-and-search/README.md)
 
 <a id="07-agents"></a>
 
@@ -122,6 +144,7 @@
 - [Agent Harness、Skills 与执行框架](07-agents/harness-and-skills/README.md)
 - [浏览器与计算机使用 Agent](07-agents/computer-use/README.md)
 - [Agent 学习与轨迹优化](07-agents/agent-learning/README.md)
+- [Agent 安全与提示注入](07-agents/agent-security/README.md)
 
 <a id="08-multimodal-and-generative-models"></a>
 
@@ -138,6 +161,8 @@
 - [视频理解与生成](08-multimodal-and-generative-models/video-models/README.md)
 - [世界模型](08-multimodal-and-generative-models/world-models/README.md)
 - [视觉语言动作模型（VLA）](08-multimodal-and-generative-models/vision-language-action/README.md)
+- [离散表示与多模态 Tokenizer](08-multimodal-and-generative-models/discrete-representations/README.md)
+- [Score Matching 与基于分数的生成](08-multimodal-and-generative-models/score-matching/README.md)
 
 <a id="09-training-and-inference-engineering"></a>
 
@@ -160,6 +185,8 @@
 - [推理服务与调度](09-training-and-inference-engineering/serving-and-scheduling/README.md)
 - [前缀缓存与请求复用](09-training-and-inference-engineering/prefix-caching/README.md)
 - [数据管道与训练恢复](09-training-and-inference-engineering/data-pipeline-and-checkpointing/README.md)
+- [模型剪枝与稀疏化](09-training-and-inference-engineering/pruning-and-sparsity/README.md)
+- [性能分析与计算瓶颈](09-training-and-inference-engineering/performance-profiling/README.md)
 
 <a id="10-evaluation-and-research"></a>
 

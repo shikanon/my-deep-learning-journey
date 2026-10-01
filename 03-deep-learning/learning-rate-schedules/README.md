@@ -11,4 +11,9 @@
 - 超参数迁移
 - 梯度裁剪
 
+## 关联索引
+
+- [μP 与超参数迁移](../mup-and-hyperparameter-transfer/README.md)
+- [缩放定律](../../04-large-language-models/scaling-laws/README.md)
+
 <!-- new-note-index -->

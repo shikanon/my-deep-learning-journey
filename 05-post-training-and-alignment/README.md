@@ -17,5 +17,8 @@
 | [持续学习与遗忘](continual-learning/README.md) | 灾难性遗忘、Replay、正则化、领域继续预训练、增量学习、长期适应 |
 | [安全对齐与奖励投机](safety-alignment/README.md) | 拒答与有用性、Reward Hacking、目标错配、越狱、过度拒答、能力与安全权衡 |
 | [知识编辑与模型更新](knowledge-editing/README.md) | 事实更新、局部参数编辑、ROME 与 MEMIT、编辑范围、副作用、与 RAG 的比较 |
+| [过程监督与验证器](process-supervision/README.md) | 结果监督与过程监督、过程奖励模型（PRM）、步骤正确性、验证器、搜索与重排序、监督成本 |
+| [模型合并与任务向量](model-merging/README.md) | 权重平均、Model Soups、Task Arithmetic、TIES 与 DARE、合并干扰、与蒸馏、LoRA 合并的区别 |
+| [可扩展监督与弱到强泛化](scalable-supervision/README.md) | 监督者能力不足、Weak-to-Strong、可扩展监督、分解与辩论、监督可靠性、安全与能力 |
 
 <!-- new-note-index -->

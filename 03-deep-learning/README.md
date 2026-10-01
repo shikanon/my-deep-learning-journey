@@ -19,5 +19,9 @@
 | [RNN、LSTM 与 GRU](recurrent-networks/README.md) | 序列状态、BPTT、门控、长程依赖、与注意力和状态空间模型的比较 |
 | [深度网络正则化](regularization-techniques/README.md) | Dropout、数据增强、Weight Decay、Early Stopping、随机深度、训练与推理差异 |
 | [训练循环与调试](training-loop/README.md) | 前向、损失、反传与更新、梯度清零、train 与 eval、过拟合小样本、异常定位 |
+| [学习动力学与泛化现象](learning-dynamics/README.md) | 优化轨迹、损失景观、隐式偏置、NTK、Grokking、双下降、能力变化与解释边界 |
+| [μP 与超参数迁移](mup-and-hyperparameter-transfer/README.md) | 参数化方式、宽度与更新尺度、Maximal Update Parametrization、μTransfer、小模型调参与大模型迁移、适用条件 |
+| [Vision Transformer（ViT）](vision-transformer/README.md) | 图像 Patch、视觉 Token、位置编码、ViT 与 CNN、Swin、视觉骨干与预训练 |
+| [图神经网络（GNN）](graph-neural-networks/README.md) | 图结构、消息传递、GCN、GraphSAGE、GAT、过平滑、表达能力 |
 
 <!-- new-note-index -->

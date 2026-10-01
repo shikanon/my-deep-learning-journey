@@ -11,4 +11,9 @@
 - 数据质量与数量
 - 数据合成
 
+## 关联索引
+
+- [缩放定律](../scaling-laws/README.md)
+- [数据管道与训练恢复](../../09-training-and-inference-engineering/data-pipeline-and-checkpointing/README.md)
+
 <!-- new-note-index -->

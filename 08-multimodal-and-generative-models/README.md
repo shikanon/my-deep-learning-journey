@@ -17,5 +17,7 @@
 | [视频理解与生成](video-models/README.md) | 时空表示、运动与一致性、视频 Token、时序注意力、长视频、生成评估 |
 | [世界模型](world-models/README.md) | 预测环境动态、潜在状态、可交互生成、规划、物理一致性、模型误差 |
 | [视觉语言动作模型（VLA）](vision-language-action/README.md) | 观测与动作、机器人数据、动作 Token、连续控制、迁移、具身评测 |
+| [离散表示与多模态 Tokenizer](discrete-representations/README.md) | VQ-VAE、码本、量化承诺损失、Residual VQ、图像与音频 Token、离散与连续表示 |
+| [Score Matching 与基于分数的生成](score-matching/README.md) | 概率密度的 Score、Score Matching、Denoising Score Matching、Langevin Dynamics、SDE、与扩散的关系 |
 
 <!-- new-note-index -->

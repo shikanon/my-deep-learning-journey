@@ -10,4 +10,8 @@
 - On-policy 与 Off-policy
 - 稳定性
 
+## 关联索引
+
+- [连续控制与 SAC、DDPG、TD3](../continuous-control/README.md)
+
 <!-- new-note-index -->

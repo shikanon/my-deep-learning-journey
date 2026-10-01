@@ -19,5 +19,6 @@
 | [Agent Harness、Skills 与执行框架](harness-and-skills/README.md) | 模型与控制层、工具循环、能力封装、沙箱、持久状态、检查点、恢复 |
 | [浏览器与计算机使用 Agent](computer-use/README.md) | 视觉与 DOM、页面状态、动作定位、交互反馈、环境评测、错误恢复 |
 | [Agent 学习与轨迹优化](agent-learning/README.md) | 示范轨迹、行为克隆、Agent RL、信用分配、工具使用训练、任务级奖励 |
+| [Agent 安全与提示注入](agent-security/README.md) | 外部内容与指令边界、间接提示注入、工具权限、最小授权、沙箱、数据外泄、攻击与防御评估 |
 
 <!-- new-note-index -->

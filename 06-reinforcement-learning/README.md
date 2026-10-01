@@ -18,5 +18,9 @@
 | [探索与奖励设计](exploration/README.md) | Epsilon-greedy、熵奖励、内在奖励、好奇心、奖励塑形、稀疏奖励 |
 | [离线强化学习](offline-rl/README.md) | 分布外动作、保守估计、CQL、IQL、行为约束、数据覆盖 |
 | [基于模型的强化学习](model-based-rl/README.md) | 环境模型、规划、模型误差、Dyna、Dreamer、模型与策略联合学习 |
+| [连续控制与 SAC、DDPG、TD3](continuous-control/README.md) | 连续动作、确定与随机策略、DDPG、TD3、SAC、最大熵目标、熵温度、控制任务 |
+| [模仿学习与行为克隆](imitation-learning/README.md) | 专家示范、Behavior Cloning、分布偏移、DAgger、逆强化学习、与离线 RL 的区别 |
+| [多智能体强化学习（MARL）](multi-agent-rl/README.md) | 非平稳环境、合作与竞争、集中训练分散执行、MADDPG、价值分解、信用分配、与 LLM 多 Agent 的区别 |
+| [MCTS 与搜索决策](mcts-and-search/README.md) | 蒙特卡洛树搜索、选择、扩展、模拟与回传、UCT/PUCT、AlphaZero、策略与价值引导、搜索预算 |
 
 <!-- new-note-index -->

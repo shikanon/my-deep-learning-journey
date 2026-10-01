@@ -11,4 +11,8 @@
 - 偏差
 - 奖励泛化
 
+## 关联索引
+
+- [过程监督与验证器](../process-supervision/README.md)
+
 <!-- new-note-index -->

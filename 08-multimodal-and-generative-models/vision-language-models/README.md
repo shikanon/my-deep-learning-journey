@@ -11,4 +11,9 @@
 - 分辨率
 - 多图理解
 
+## 关联索引
+
+- [Vision Transformer（ViT）](../../03-deep-learning/vision-transformer/README.md)
+- [离散表示与多模态 Tokenizer](../discrete-representations/README.md)
+
 <!-- new-note-index -->
