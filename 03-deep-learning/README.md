@@ -1,22 +1,23 @@
-# 深度学习
+# 深度学习基础
 
-从计算图出发，理解神经网络的训练机制。
+[返回总索引](../README.md)
 
-[返回首页](../README.md) · [笔记模板](../templates/knowledge-note.md) · [资料库](../resources/README.md)
+## 二级知识点
 
-## 小知识点索引
-
-| 小知识点 | 状态 | 下一步 |
-| --- | --- | --- |
-| 感知机、MLP 与激活函数 | 待学习 | 创建独立笔记 |
-| [反向传播与自动微分](001-backpropagation.md) | 草稿示范 | 补充个人实践与复习答案 |
-| 损失函数与梯度下降 | 待学习 | 创建独立笔记 |
-| SGD、Momentum 与 Adam | 待学习 | 创建独立笔记 |
-| 初始化、归一化与残差连接 | 待学习 | 创建独立笔记 |
-| CNN 与卷积 | 待学习 | 创建独立笔记 |
-| RNN、LSTM 与序列建模 | 待学习 | 创建独立笔记 |
-| PyTorch 训练循环与调试 | 待学习 | 创建独立笔记 |
-
-未建立文档的知识点只列为学习计划。新增笔记后，把对应主题改为相对链接并更新状态；序号表示笔记标识，学习顺序可以调整。
+| 知识点 | 子主题范围 |
+| --- | --- |
+| [反向传播与自动微分](backpropagation/README.md) | 计算图、链式法则、反向与前向自动微分、梯度累计、梯度检查 |
+| [损失函数](loss-functions/README.md) | MSE 与 MAE、交叉熵、Focal Loss、Label Smoothing、对比损失、多任务损失、损失与评估目标的差异 |
+| [激活函数](activation-functions/README.md) | Sigmoid 与 Tanh、ReLU 与变体、GELU、SiLU、GLU 与 SwiGLU、非线性与门控 |
+| [归一化](normalization/README.md) | BatchNorm、LayerNorm、RMSNorm、GroupNorm、Pre-Norm 与 Post-Norm、无归一化架构 |
+| [优化器](optimizers/README.md) | SGD、Momentum、AdaGrad、RMSProp、Adam、AdamW、Adafactor、Lion、Muon、优化器状态 |
+| [学习率与调度策略](learning-rate-schedules/README.md) | Warmup、Cosine Decay、WSD、学习率与 Batch Size、超参数迁移、梯度裁剪 |
+| [初始化与梯度稳定性](initialization-and-gradients/README.md) | Xavier 与 He 初始化、梯度消失与爆炸、信号传播、残差尺度、深度与宽度 |
+| [残差连接与网络深度](residual-networks/README.md) | 残差路径、ResNet、梯度传播、深层网络可训练性、残差与归一化的配合 |
+| [MLP 与前馈网络](mlp-and-ffn/README.md) | 感知机、隐藏层、通用逼近直觉、Transformer FFN、门控 FFN、参数与计算开销 |
+| [卷积与 CNN](convolution/README.md) | 局部连接、权重共享、感受野、卷积、池化与步幅、深度可分离卷积 |
+| [RNN、LSTM 与 GRU](recurrent-networks/README.md) | 序列状态、BPTT、门控、长程依赖、与注意力和状态空间模型的比较 |
+| [深度网络正则化](regularization-techniques/README.md) | Dropout、数据增强、Weight Decay、Early Stopping、随机深度、训练与推理差异 |
+| [训练循环与调试](training-loop/README.md) | 前向、损失、反传与更新、梯度清零、train 与 eval、过拟合小样本、异常定位 |
 
 <!-- new-note-index -->

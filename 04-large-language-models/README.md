@@ -1,23 +1,30 @@
-# 大语言模型
+# 大语言模型与序列架构
 
-理解语言模型的结构、训练目标和生成过程。
+[返回总索引](../README.md)
 
-[返回首页](../README.md) · [笔记模板](../templates/knowledge-note.md) · [资料库](../resources/README.md)
+## 二级知识点
 
-## 小知识点索引
-
-| 小知识点 | 状态 | 下一步 |
-| --- | --- | --- |
-| Tokenization 与词表 | 待学习 | 创建独立笔记 |
-| Embedding 与位置编码 | 待学习 | 创建独立笔记 |
-| [自注意力与 QKV](001-self-attention.md) | 草稿示范 | 补充个人实践与复习答案 |
-| 多头注意力与 Transformer | 待学习 | 创建独立笔记 |
-| Decoder-only 与自回归生成 | 待学习 | 创建独立笔记 |
-| 预训练目标与数据配比 | 待学习 | 创建独立笔记 |
-| Scaling Laws 与计算预算 | 待学习 | 创建独立笔记 |
-| KV Cache 与采样解码 | 待学习 | 创建独立笔记 |
-| 长上下文与 MoE | 待学习 | 创建独立笔记 |
-
-未建立文档的知识点只列为学习计划。新增笔记后，把对应主题改为相对链接并更新状态；序号表示笔记标识，学习顺序可以调整。
+| 知识点 | 子主题范围 |
+| --- | --- |
+| [自注意力与 QKV](self-attention/README.md) | Q、K、V 的含义、缩放点积、Mask、张量维度、加权聚合 |
+| [注意力机制](attention-mechanisms/README.md) | 加性与点积注意力、Self 与 Cross Attention、多头注意力、因果与双向注意力、注意力的作用与边界 |
+| [Transformer 架构](transformer/README.md) | Encoder、Decoder、Encoder-Decoder、Attention 与 FFN、残差路径、架构演进 |
+| [Tokenizer 与文本切分](tokenizer/README.md) | 字符、词与子词、BPE、WordPiece、Unigram、SentencePiece、Byte-level、特殊 Token、无固定词表建模 |
+| [Embedding 与表示空间](embeddings/README.md) | Token Embedding、位置表示、输入输出权重绑定、语义空间、上下文化表示 |
+| [位置编码](positional-encoding/README.md) | 正弦与可学习绝对位置、相对位置、RoPE、ALiBi、旋转频率、位置与顺序建模 |
+| [预训练目标](pretraining-objectives/README.md) | 自回归语言建模、Masked Language Modeling、去噪目标、因果 Mask、训练目标与能力 |
+| [预训练数据与数据配比](pretraining-data/README.md) | 清洗与去重、质量筛选、领域配比、课程学习、数据质量与数量、数据合成 |
+| [缩放定律（Scaling Laws）](scaling-laws/README.md) | 模型、数据与算力、Kaplan Scaling、Chinchilla、Compute-optimal、数据质量、训练与推理预算 |
+| [解码与采样](decoding-and-sampling/README.md) | Greedy、Beam Search、Temperature、Top-k 与 Top-p、重复惩罚、约束解码、随机性与可复现性 |
+| [MQA、GQA 与 MLA](gqa-and-mla/README.md) | 共享 KV 头、多查询与分组查询、潜在注意力、质量、缓存与带宽的权衡 |
+| [混合专家模型（MoE）](mixture-of-experts/README.md) | 稀疏激活、路由、Top-k 专家、负载均衡、容量、专家并行、总参数与激活参数 |
+| [稀疏注意力与线性注意力](efficient-attention/README.md) | 局部与滑窗、块稀疏、线性化、递归状态、质量与复杂度、与精确注意力的区别 |
+| [状态空间模型与混合架构](state-space-models/README.md) | SSM、S4、Mamba、选择性状态、Transformer 混合、表达能力与硬件效率 |
+| [长上下文外推](long-context-extrapolation/README.md) | 训练长度与推理长度、位置插值、NTK-aware Scaling、YaRN、长文本续训、检索与真实长程理解 |
+| [上下文学习与 Prompting](in-context-learning/README.md) | Zero-shot 与 Few-shot、示例选择、指令格式、Prompt 敏感性、上下文学习与参数学习 |
+| [推理与 Chain-of-Thought](reasoning/README.md) | 中间步骤、Self-Consistency、任务验证、推理轨迹、可解释性边界、推理与记忆 |
+| [推理时计算与 Test-time Scaling](test-time-compute/README.md) | 长推理、Best-of-N、搜索与验证器、预算分配、质量、延迟与成本 |
+| [多 Token 预测（MTP）](multi-token-prediction/README.md) | 多步训练目标、辅助预测头、联合学习、与推测解码的联系、接受率与训练成本 |
+| [扩散语言模型](diffusion-language-models/README.md) | 离散去噪、Masked Diffusion、并行生成、重掩码、自回归与扩散的比较 |
 
 <!-- new-note-index -->

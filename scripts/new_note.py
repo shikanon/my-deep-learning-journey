@@ -10,12 +10,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('topic', help='Existing topic directory, e.g. 04-large-language-models')
+    parser.add_argument('topic', help='Existing topic directory, e.g. 04-large-language-models/positional-encoding')
     parser.add_argument('slug', help='File stem, e.g. 002-tokenization')
     parser.add_argument('title', help='Chinese note title')
     args = parser.parse_args()
-    topics = {p.name for p in ROOT.iterdir() if p.is_dir() and re.fullmatch(r'\d{2}-[a-z-]+', p.name) and p.name != '00-learning-roadmap'}
-    if args.topic not in topics:
+    topic_dir = (ROOT / args.topic).resolve()
+    if not re.fullmatch(r'\d{2}-[a-z-]+(?:/[a-z0-9]+(?:-[a-z0-9]+)*)?', args.topic) or args.topic.startswith('00-') or not topic_dir.is_relative_to(ROOT) or not (topic_dir / 'README.md').is_file():
         parser.error('Unknown topic: ' + args.topic)
     if not re.fullmatch(r'\d{3}-[a-z0-9]+(?:-[a-z0-9]+)*', args.slug):
         parser.error('Use a slug such as 002-tokenization')
@@ -34,7 +34,8 @@ def main():
     # YAML double-quoted scalars require quote and backslash escaping.
     yaml_title = args.title.replace('\\', '\\\\').replace('"', '\\"')
     content = template.replace('title: "{{title}}"', f'title: "{yaml_title}"')
-    content = content.replace('{{title}}', args.title).replace('{{topic}}', args.topic).replace('{{date}}', today)
+    home = '../' * len(Path(args.topic).parts) + 'README.md'
+    content = content.replace('{{title}}', args.title).replace('{{topic}}', args.topic).replace('{{date}}', today).replace('{{home}}', home)
     heading = '## 新增笔记\n\n| 知识点 | 状态 |\n| --- | --- |\n'
     addition = f'| [{args.title}]({dest.name}) | 草稿 |\n'
     if heading not in before:
