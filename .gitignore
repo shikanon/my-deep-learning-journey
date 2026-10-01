@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+node_modules/
+checkpoints/
+wandb/
+*.pt
+*.pth
+*.safetensors
