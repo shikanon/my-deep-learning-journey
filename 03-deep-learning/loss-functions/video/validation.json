@@ -257,5 +257,22 @@
     "runtimeErrors": 0,
     "contrastPassed": 98,
     "motionCheckEnabled": false
+  },
+  "projectCleanup": {
+    "report": "cleanup-projects-report.json",
+    "historicalProjectsRemoved": 5,
+    "bytesReclaimed": 483861183,
+    "remainingProject": "loss-explainer-v6",
+    "finalVideoUnchanged": true,
+    "standaloneTimelineRebuild": {
+      "status": "passed",
+      "historicalDirectoriesPresent": false,
+      "allFourBatchesRebuiltFromLocalCopies": true,
+      "duration": 179.0,
+      "scenes": 17,
+      "captions": 101,
+      "chapterAndCaptionTimingMatchesWithinOneFrame": true,
+      "originalFinalMediaModified": false
+    }
   }
 }

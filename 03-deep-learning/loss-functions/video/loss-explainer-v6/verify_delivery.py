@@ -5,6 +5,7 @@ import cv2
 from PIL import Image,ImageDraw
 B=Path(__file__).resolve().parent;F=os.environ.get('VIDEO_FFMPEG') or shutil.which('ffmpeg') or 'ffmpeg'
 probe=os.environ.get('VIDEO_FFPROBE') or shutil.which('ffprobe') or 'ffprobe'
+(B/'qa').mkdir(exist_ok=True)
 D=json.loads((B/'timeline.json').read_text());S=json.loads((B/'storyboard.json').read_text())
 video=B/'renders/loss-functions-v6.mp4'
 P=json.loads(subprocess.check_output([probe,'-v','error','-show_streams','-show_format','-show_chapters','-of','json',str(video)],text=True))
@@ -53,8 +54,13 @@ prov=json.loads((B/'qa/reference-provenance.json').read_text())
 assert hashlib.sha256((B/'assets/author-handdraw.png').read_bytes()).hexdigest()==prov['character_sha256']
 assert hashlib.sha256((B/'audio/author-reference-original.m4a').read_bytes()).hexdigest()==prov['voice_sha256']
 requests=json.loads((B/'audio/generation-requests.json').read_text())
-assert len(requests)==4 and all(r['references']==[{'audio_path':str(B.with_name('loss-explainer-v3')/'audio/author-reference.wav')}] for r in requests)
+audio_provenance=json.loads((B/'audio-provenance.json').read_text())
+for item in audio_provenance['files'].values():
+ assert hashlib.sha256((B/item['path']).read_bytes()).hexdigest()==item['sha256'],item['path']
+assert len(requests)==4 and all(len(r['references'])==1 and Path(r['references'][0]['audio_path']).name=='author-reference.wav' for r in requests)
+assert [x['request_id'] for x in D['audio_audit']]==audio_provenance['original_seed_request_ids']
+historical_narration_matches=hashlib.sha256((B/'audio/narration.m4a').read_bytes()).hexdigest()==audio_provenance['files']['narration']['sha256']
 rate=json.loads((B/'qa/speech-rate.json').read_text());assert rate['measured_cpm']==320
-report={'version':'v6','revision':'no-qr-ending','width':v['width'],'height':v['height'],'fps':v['avg_frame_rate'],'frames':int(v['nb_frames']),'duration':float(P['format']['duration']),'codecs':[v['codec_name'],a['codec_name']],'bytes':video.stat().st_size,'sha256':hashlib.sha256(video.read_bytes()).hexdigest(),'chapters':len(P['chapters']),'captions':len(D['captions']),'explanation_beats':sum(len(s['beats']) for s in S['scenes']),'full_decode_errors':0,'qr_absent_from_ending':True,'ending_frames_checked':len(ending_frames),'literal_last_frame_checked':True,'qr_detector_positive_control':control.exists(),'author_source_sha256_verified':True,'voice_source_sha256_verified':True,'all_four_requests_use_author_reference':True,'original_v3_seed_jobs_complete':len(D['audio_audit']),'new_audio_generation_calls':0,'narration_reused_from_v3':hashlib.sha256((B/'audio/narration.m4a').read_bytes()).hexdigest()==hashlib.sha256((B.with_name('loss-explainer-v3')/'audio/narration.m4a').read_bytes()).hexdigest(),'measured_han_cpm':rate['measured_cpm'],'content_shares':[c['share'] for c in D['chapters']],'cta_excluded_from_content_shares':True,'contact_frames':len(frames)}
+report={'version':'v6','revision':'no-qr-ending','width':v['width'],'height':v['height'],'fps':v['avg_frame_rate'],'frames':int(v['nb_frames']),'duration':float(P['format']['duration']),'codecs':[v['codec_name'],a['codec_name']],'bytes':video.stat().st_size,'sha256':hashlib.sha256(video.read_bytes()).hexdigest(),'chapters':len(P['chapters']),'captions':len(D['captions']),'explanation_beats':sum(len(s['beats']) for s in S['scenes']),'full_decode_errors':0,'qr_absent_from_ending':True,'ending_frames_checked':len(ending_frames),'literal_last_frame_checked':True,'qr_detector_positive_control':control.exists(),'author_source_sha256_verified':True,'voice_source_sha256_verified':True,'all_four_requests_use_author_reference':True,'original_v3_seed_jobs_complete':len(D['audio_audit']),'new_audio_generation_calls':0,'narration_reused_from_v3':historical_narration_matches,'measured_han_cpm':rate['measured_cpm'],'content_shares':[c['share'] for c in D['chapters']],'cta_excluded_from_content_shares':True,'contact_frames':len(frames)}
 (B/'qa/delivery-validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))

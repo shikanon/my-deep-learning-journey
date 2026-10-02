@@ -33,4 +33,4 @@ ctx.drawImage(atlas, ...frame.atlas_rect, x - 192, y - 548, 384, 576);
 
 动画切换最好安排在回落或自然停顿处；讲解循环可减少眨眼帧出现频率。视频工程使用 SVG 图集视口与 GSAP 的离散帧选择，拖动和导出使用同一时间轴，避免预览与成片不同步。
 
-本次视频内的副本位于 `03-deep-learning/loss-functions/video/loss-explainer-v4/assets/author-animation/`。制作脚本 `register_sprite.py` 每次把接受的素材先写入本素材库，再同步到视频工程；以后新增动作应保留新名称或新版本，避免覆盖已使用的素材。
+本库是首次用于损失函数 V4 的历史素材；旧视频工程已按要求清理，公共素材仍保留。当前视频使用 [固定闭嘴的 V3 素材库](../shikanon-animation-v3/README.md)及最终 V6 工程内的副本。以后新增动作应保留新名称或新版本，避免覆盖已使用的素材。

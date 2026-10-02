@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "sourceGenerationVersion": "v3",
+  "currentProjectVersion": "v6",
+  "originalAndCurrentCopiesMatchedBeforeCleanup": true,
+  "files": {
+    "narration": {
+      "path": "audio/narration.m4a",
+      "sha256": "36526b4aa1c67b5fdbad469632d16d9d87e109831dfcbae71040947237151865",
+      "bytes": 4330003
+    },
+    "reference": {
+      "path": "audio/author-reference.wav",
+      "sha256": "a998097654f7766e0fce35a51aba4814ec20fde6c2118c5fa6d2362414196cc4",
+      "bytes": 635918
+    },
+    "requests": {
+      "path": "audio/generation-requests.json",
+      "sha256": "088ea6402ebbe0aca98641dc90d5d332cf186e07ed0fa71f4a09497cd471cc0a",
+      "bytes": 7138
+    }
+  },
+  "original_seed_request_ids": [
+    "1e9e26f1-845e-4a32-b870-e482e17afd4b",
+    "77e8bfab-49d5-4ef5-9b53-578bbab58789",
+    "80b3e8eb-5c20-4d88-b804-da0deea00349",
+    "9c9fc924-7bcf-4574-993c-cd48b885bfb6"
+  ],
+  "notes": "Original V3 request parameters are retained as historical evidence. Verification and rebuilding use the copies under this final project, without accessing historical project directories."
+}

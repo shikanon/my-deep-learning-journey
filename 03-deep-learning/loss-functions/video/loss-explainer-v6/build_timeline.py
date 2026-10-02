@@ -7,6 +7,11 @@ N=json.loads((BASE/'narration.json').read_text());CPM=N['target_cpm']
 def han(t):return ''.join(re.findall(r'[\u4e00-\u9fff]',t))
 def duration(p):return float(subprocess.check_output([a.ffprobe,'-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(p)],text=True))
 def ff(cmd):subprocess.run([a.ffmpeg,'-hide_banner','-loglevel','error',*cmd],check=True)
+def job_asset(manifest_path,job,key):
+    # Keep original service paths as audit evidence, but use this project's copy.
+    asset=manifest_path.parent/Path(job[key]).name
+    if not asset.is_file():raise FileNotFoundError(f'Missing local Seed Audio asset: {asset}')
+    return asset
 def zhnum(n):
     if n=='1805':return '一八零五'
     if n=='0':return '零'
@@ -45,15 +50,15 @@ def aligned(expected,observed,times,mode):
 sets=[('chapter-1',N['scenes'][:5]),('chapter-2a',N['scenes'][5:9]),('chapter-2b',N['scenes'][9:13]),('chapter-3',N['scenes'][13:])]
 offset=0;scenes=[];caps=[];clips=[];audit=[];reports=[]
 for name,ss in sets:
-    manifests=[json.loads(p.read_text()) for p in (BASE/'audio/seed'/name).glob('*/manifest.json')]
-    good=[m for m in manifests if m.get('status')=='complete'];assert len(good)==1,(name,len(good))
-    job=good[0];raw=Path(job['audio_path']);chars=sum(len(han(s['text'])) for s in ss);target=chars/CPM*60
+    manifests=[(p,json.loads(p.read_text())) for p in (BASE/'audio/seed'/name).glob('*/manifest.json')]
+    good=[(p,m) for p,m in manifests if m.get('status')=='complete'];assert len(good)==1,(name,len(good))
+    manifest_path,job=good[0];raw=job_asset(manifest_path,job,'audio_path');chars=sum(len(han(s['text'])) for s in ss);target=chars/CPM*60
     rawdur=duration(raw);speed=rawdur/target;wav=BASE/'audio'/f'{name}-calibrated.wav'
     ff(['-y','-i',str(raw),'-af',f'atempo={speed:.12f},apad=whole_dur={target:.12f}', '-t',f'{target:.12f}','-ar','48000','-ac','1',str(wav)])
     clips.append(wav)
     expected=han(''.join(s['text'] for s in ss))
     if job.get('subtitle_json_path'):
-        data=json.loads(Path(job['subtitle_json_path']).read_text());items=[w for s in data['sentences'] for w in s.get('words',[]) if han(w['text'])]
+        data=json.loads(job_asset(manifest_path,job,'subtitle_json_path').read_text());items=[w for s in data['sentences'] for w in s.get('words',[]) if han(w['text'])]
         observed='';wt=[]
         for w in items:
             txt=han(w['text']);st=w['start_time']/1000/speed;en=w['end_time']/1000/speed

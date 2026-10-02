@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "cleanedAt": "2026-10-02T13:17:45.816414+00:00",
+  "authorization": "User requested deletion of historical loss-explainer projects under video, keeping only the final project.",
+  "removedProjects": [
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer",
+      "filesRemoved": 146,
+      "bytesRemoved": 54685059
+    },
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v2",
+      "filesRemoved": 141,
+      "bytesRemoved": 69201544
+    },
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v3",
+      "filesRemoved": 125,
+      "bytesRemoved": 53049992
+    },
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v4",
+      "filesRemoved": 232,
+      "bytesRemoved": 138430568
+    },
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v5",
+      "filesRemoved": 375,
+      "bytesRemoved": 168494020
+    }
+  ],
+  "projectCount": 5,
+  "filesRemoved": 1019,
+  "bytesReclaimed": 483861183,
+  "preservedProject": "03-deep-learning/loss-functions/video/loss-explainer-v6",
+  "finalVideoSha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
+  "finalVideoUnchanged": true,
+  "inputReferenceRelocated": {
+    "path": "03-deep-learning/loss-functions/video/loss-explainer-v6/assets/style-reference.mp4",
+    "sha256": "b6931c2de7419a602a8ebc4b1dabe509f5c397695fe7df8ad6db0dcaf020b282",
+    "bytes": 27370426,
+    "gitIgnored": true
+  },
+  "publicAuthorLibrariesPreserved": true,
+  "cloudObjectsDeleted": false,
+  "validation": {
+    "verifiedAt": "2026-10-02T13:19:07.533474+00:00",
+    "localMarkdownLinksPassed": true,
+    "currentFinalMediaDecodePassed": true,
+    "finalMediaSha256MatchesPublication": true,
+    "standaloneTimelineRebuild": {
+      "status": "passed",
+      "historicalDirectoriesPresent": false,
+      "allFourBatchesRebuiltFromLocalCopies": true,
+      "duration": 179.0,
+      "scenes": 17,
+      "captions": 101,
+      "chapterAndCaptionTimingMatchesWithinOneFrame": true,
+      "originalFinalMediaModified": false
+    }
+  }
+}

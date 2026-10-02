@@ -28,7 +28,7 @@ class PlayerHandler(http.server.SimpleHTTPRequestHandler):
 p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=8770);p.add_argument('--background',action='store_true');a=p.parse_args()
 if a.background:
     url=f'http://127.0.0.1:{a.port}/video/loss-explainer-v6/watch.html'
-    # The earlier edition serves the same topic root and can serve V3 too.
+    # Reuse a topic-root server only when it serves the final player.
     try:
         with urlopen(url,timeout=2) as response:existing=response.status==200 and 'loss-functions-v6.mp4' in response.read().decode('utf-8')
     except Exception:existing=False
