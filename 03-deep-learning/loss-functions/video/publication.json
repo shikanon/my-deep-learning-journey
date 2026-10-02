@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "title": "损失函数：换把评分尺，模型就换答案",
+  "topic": "loss-functions",
+  "publishedAt": "2026-10-02T11:55:34.674Z",
+  "durationSeconds": 179,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "frameCount": 5370,
+  "chapters": [
+    {
+      "title": "01 · 换把评分尺，模型就换答案",
+      "start": 0,
+      "end": 10.105
+    },
+    {
+      "title": "02 · 误差不能直接相加",
+      "start": 10.105,
+      "end": 20.236
+    },
+    {
+      "title": "03 · 把错多少变成扣几分",
+      "start": 20.236,
+      "end": 29.28
+    },
+    {
+      "title": "04 · 准确率为什么不够",
+      "start": 29.28,
+      "end": 39.745
+    },
+    {
+      "title": "05 · 评分、求导、更新",
+      "start": 39.745,
+      "end": 50.072
+    },
+    {
+      "title": "06 · 平方和绝对值：谁怕大错",
+      "start": 50.072,
+      "end": 59.112
+    },
+    {
+      "title": "07 · 一个异常值，两个答案",
+      "start": 59.112,
+      "end": 67.733
+    },
+    {
+      "title": "08 · Huber：给大残差限速",
+      "start": 67.733,
+      "end": 78.383
+    },
+    {
+      "title": "09 · 交叉熵：别排除正确答案",
+      "start": 78.383,
+      "end": 89.583
+    },
+    {
+      "title": "10 · Focal：会的题轻声说",
+      "start": 89.583,
+      "end": 102.39
+    },
+    {
+      "title": "11 · 标签平滑：少一点绝对",
+      "start": 102.39,
+      "end": 112.095
+    },
+    {
+      "title": "12 · 对比学习：学习谁和谁配",
+      "start": 112.095,
+      "end": 124.331
+    },
+    {
+      "title": "13 · DPO：把偏好写成目标",
+      "start": 124.331,
+      "end": 135.39
+    },
+    {
+      "title": "14 · SigLIP 2：组合多种目标",
+      "start": 135.39,
+      "end": 148.043
+    },
+    {
+      "title": "15 · GSPO / VESPO：按整段回答想",
+      "start": 148.043,
+      "end": 159.287
+    },
+    {
+      "title": "16 · 下一条公式，先问什么",
+      "start": 159.287,
+      "end": 170.174
+    },
+    {
+      "title": "17 · 关注 GitHub 项目",
+      "start": 170.174,
+      "end": 179
+    }
+  ],
+  "assets": {
+    "video": {
+      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
+      "key": "my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
+      "bytes": 14175132,
+      "sha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+      "contentType": "video/mp4",
+      "verification": {
+        "headStatus": 200,
+        "contentLength": 14175132,
+        "contentType": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/14175132",
+        "fullDownloadSha256Matches": true,
+        "verifiedAt": "2026-10-02T11:55:33.164Z"
+      }
+    },
+    "poster": {
+      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/a6f0afd14d93a62e/poster.jpg",
+      "key": "my-deep-learning-journey/knowledge-videos/loss-functions/a6f0afd14d93a62e/poster.jpg",
+      "bytes": 175065,
+      "sha256": "a6f0afd14d93a62e821c990b00bb1d89816e6ce8829cbf39ece0b6f1399d447a",
+      "contentType": "image/jpeg",
+      "verification": {
+        "headStatus": 200,
+        "contentLength": 175065,
+        "contentType": "image/jpeg",
+        "fullDownloadSha256Matches": true,
+        "verifiedAt": "2026-10-02T11:55:34.674Z"
+      }
+    }
+  }
+}

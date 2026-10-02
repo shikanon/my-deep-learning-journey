@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "applied": true,
+  "recordedAt": "2026-10-02T11:54:30.887156+00:00",
+  "retainedFinal": "loss-explainer-v6/renders/loss-functions-v6.mp4",
+  "retainedFinalSha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+  "retainedInputVideos": [
+    "loss-explainer/assets/video.mp4"
+  ],
+  "removed": [
+    {
+      "path": "loss-explainer/renders/loss-functions.mp4",
+      "bytes": 25311324
+    },
+    {
+      "path": "loss-explainer-v2/qa/first-pass-master.mp4",
+      "bytes": 171987128
+    },
+    {
+      "path": "loss-explainer-v2/renders/loss-functions-v2-final-master.mp4",
+      "bytes": 172341244
+    },
+    {
+      "path": "loss-explainer-v2/renders/loss-functions-v2.mp4",
+      "bytes": 17816010
+    },
+    {
+      "path": "loss-explainer-v3/renders/loss-functions-v3-master.mp4",
+      "bytes": 105642465
+    },
+    {
+      "path": "loss-explainer-v3/renders/loss-functions-v3.mp4",
+      "bytes": 13046392
+    },
+    {
+      "path": "loss-explainer-v4/renders/loss-functions-v4-master.mp4",
+      "bytes": 114154059
+    },
+    {
+      "path": "loss-explainer-v4/renders/loss-functions-v4.mp4",
+      "bytes": 15531619
+    },
+    {
+      "path": "loss-explainer-v5/renders/loss-functions-v5-master.mp4",
+      "bytes": 106636943
+    },
+    {
+      "path": "loss-explainer-v5/renders/loss-functions-v5.mp4",
+      "bytes": 13566783
+    },
+    {
+      "path": "loss-explainer-v6/renders/loss-functions-v6-master.mp4",
+      "bytes": 113319296
+    }
+  ],
+  "fileCount": 11,
+  "bytesReclaimed": 869353263
+}

@@ -1,0 +1,13 @@
+node_modules/
+audio/
+renders/
+.hyperframes/
+qa/
+*.mp4
+*.wav
+*.mp3
+
+.venv/
+__pycache__/
+
+.thumbnails/

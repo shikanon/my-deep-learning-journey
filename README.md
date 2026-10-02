@@ -2,6 +2,8 @@
 
 深度学习、大模型、RL 与 Agent 学习笔记索引。按兴趣选择任意二级知识点；目录编号仅用于分类。当前建立 **140 个二级知识点目录**，各目录的 README 列出可继续展开的子主题。
 
+内容制作：[知识点图文与视频 Skill](knowledge-video-production/SKILL.md) · [作者形象与动作素材](assets/README.md) · [损失函数图文与配套视频](03-deep-learning/loss-functions/001-introduction.md)
+
 [数学基础](#01-math-foundations) · [机器学习](#02-machine-learning) · [深度学习基础](#03-deep-learning) · [大语言模型：架构、预训练与推理](#04-large-language-models) · [后训练与对齐](#05-post-training-and-alignment) · [强化学习](#06-reinforcement-learning) · [Agent 与知识系统](#07-agents) · [多模态与生成模型](#08-multimodal-and-generative-models) · [训练与推理工程](#09-training-and-inference-engineering) · [评估与研究方法](#10-evaluation-and-research)
 
 <a id="01-math-foundations"></a>

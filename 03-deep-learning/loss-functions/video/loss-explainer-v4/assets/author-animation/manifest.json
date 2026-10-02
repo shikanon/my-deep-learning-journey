@@ -1,0 +1,1767 @@
+{
+  "schema": "shikanon-sprite-library/v1",
+  "version": 1,
+  "character": "shikanon",
+  "style": "children-colored-pencil",
+  "source_image": "reference.png",
+  "source_sha256": "b722655378b74964862d31d8b785dee26e86bfc7176345f72a7b96812e0e920a",
+  "frame_size": [
+    384,
+    576
+  ],
+  "anchor": [
+    192,
+    548
+  ],
+  "generator": "built-in image_gen",
+  "actions": {
+    "talk": {
+      "name": "talk",
+      "fps": 10,
+      "loop": true,
+      "frame_count": 12,
+      "columns": 4,
+      "rows": 3,
+      "atlas": "atlases/talk.png",
+      "atlas_size": [
+        1536,
+        1728
+      ],
+      "atlas_sha256": "f3b34c03c178e71c9b7c6a472ea7b33d41a31fc27f8d04e1c61574d240a7f2a4",
+      "generated_atlas": "atlases/talk-generated.png",
+      "generated_atlas_sha256": "3ee1576025d2a92e2d4b66e911c831e424620748202ef0ba1ffcd7c22caa7974",
+      "prompt": "prompts/talk.txt",
+      "preview": "previews/talk.webp",
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/talk/000.png",
+          "sha256": "906e2434b54d20dfe536c846fcf103ade01b69f76ca506e93743f38bd3268609",
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            63,
+            6,
+            208,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            206,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 1,
+          "file": "frames/talk/001.png",
+          "sha256": "1727aebcf045119b498bd36f7d2a240e3fd7f61d393aafe15ef9042eb8ad8557",
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            369,
+            6,
+            214,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 2,
+          "file": "frames/talk/002.png",
+          "sha256": "0815a78f91d9eb065ea487d97c9f0390208a6c59054e70c6db4ab36f3c3196e4",
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            677,
+            5,
+            212,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            210,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 3,
+          "file": "frames/talk/003.png",
+          "sha256": "578ff8c035ec66ab45aff468882d8c1e96e9b51949abfbf7d5a86211c9a48b53",
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            989,
+            6,
+            242,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            240,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 4,
+          "file": "frames/talk/004.png",
+          "sha256": "6cb50dfc5515d3f62139e71487f4c46cd1677382cbd1c23fe37db481e03664f9",
+          "atlas_rect": [
+            0,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            59,
+            421,
+            230,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            228,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 5,
+          "file": "frames/talk/005.png",
+          "sha256": "b39c18c6ad4483ffbfb7a97f8142e95252d974b6522308780f4ab18f8a0784df",
+          "atlas_rect": [
+            384,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            367,
+            422,
+            255,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            253,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 6,
+          "file": "frames/talk/006.png",
+          "sha256": "d02879c4a0abe13a6d51951bb3551bf42ac138240e8e9c13d94ac40b8fb3c899",
+          "atlas_rect": [
+            768,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            678,
+            421,
+            251,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            249,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 7,
+          "file": "frames/talk/007.png",
+          "sha256": "2fee8162bbd13323fcb802f43f96ec3bc719d870a7161114ceef5a75d89e1f77",
+          "atlas_rect": [
+            1152,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            988,
+            422,
+            244,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            242,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 8,
+          "file": "frames/talk/008.png",
+          "sha256": "f59248ac7963222a0544e9862c5ba7cc1bc55c40579433d5d7029e7edee6f0d0",
+          "atlas_rect": [
+            0,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            61,
+            836,
+            243,
+            412
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            241,
+            410
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 9,
+          "file": "frames/talk/009.png",
+          "sha256": "06a05c940fd74665e5ec35c6d98784769d0c6ccb3dae724e6ba63c30f0bdafd8",
+          "atlas_rect": [
+            384,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            368,
+            837,
+            212,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            210,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 10,
+          "file": "frames/talk/010.png",
+          "sha256": "86f3316e4ce7d97009cbc585c96ed5fb4a35a13e531ba4662eec41c22416ae96",
+          "atlas_rect": [
+            768,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            679,
+            837,
+            215,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            213,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 11,
+          "file": "frames/talk/011.png",
+          "sha256": "2d33cb8c1bed6af269bb35ee1b099fe52947aab43c3fa2d37d16c5fb757810c0",
+          "atlas_rect": [
+            1152,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            993,
+            837,
+            214,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        }
+      ],
+      "generation_output_path": "/Users/bytedance/.codex/generated_images/01a0f828-680d-76c0-81dd-a4948d00c64f/exec-acf38237-7375-4b8d-9e5e-a0628116b26d.png",
+      "identity_reference": "reference.png",
+      "alpha_background": true
+    },
+    "point-right": {
+      "name": "point-right",
+      "fps": 10,
+      "loop": true,
+      "frame_count": 12,
+      "columns": 4,
+      "rows": 3,
+      "atlas": "atlases/point-right.png",
+      "atlas_size": [
+        1536,
+        1728
+      ],
+      "atlas_sha256": "e135b50463a7b91269d19ca21e2595d075f2e112bdd2b01cfb5216837d026824",
+      "generated_atlas": "atlases/point-right-generated.png",
+      "generated_atlas_sha256": "3d26375affcb43ea7a977a937ea9248c4089328b129026877976e5c9a480529f",
+      "prompt": "prompts/point-right.txt",
+      "preview": "previews/point-right.webp",
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/point-right/000.png",
+          "sha256": "b51b1795609d26f499e1320760327dd64b25a811576e7c09650599e8d1033717",
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            56,
+            4,
+            203,
+            402
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            201,
+            400
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 1,
+          "file": "frames/point-right/001.png",
+          "sha256": "ed35ad0717737e9d1e87f7050061a99e1d0fbff127cfa19aa01df6a37761496e",
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            367,
+            4,
+            206,
+            402
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            204,
+            400
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 2,
+          "file": "frames/point-right/002.png",
+          "sha256": "4991352443422fc3f3d605459afba2beb119e15dcfd7192da305cfe2da6e3744",
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            674,
+            3,
+            214,
+            403
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            401
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 3,
+          "file": "frames/point-right/003.png",
+          "sha256": "fe41c48272a8ecbe6060d22a3770f6b80a8d20c601e7fd30f58d13e0f294addb",
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            987,
+            4,
+            246,
+            402
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            244,
+            400
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 4,
+          "file": "frames/point-right/004.png",
+          "sha256": "913f2ee4679d55df3eca6b7658f27e144442177e589a0c42e791b22ba0a40ba8",
+          "atlas_rect": [
+            0,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            45,
+            421,
+            257,
+            403
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            255,
+            401
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 5,
+          "file": "frames/point-right/005.png",
+          "sha256": "7a5a2c3bbefc7b214fc2666524b0a6a43f0871cb97e3303f425794fe54c92a06",
+          "atlas_rect": [
+            384,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            346,
+            421,
+            267,
+            402
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            265,
+            400
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 6,
+          "file": "frames/point-right/006.png",
+          "sha256": "270220cfb19d99b342a7dd81918029a63c78a4dcef262a6647ab32a465ee749b",
+          "atlas_rect": [
+            768,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            659,
+            421,
+            283,
+            403
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            281,
+            401
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 7,
+          "file": "frames/point-right/007.png",
+          "sha256": "e75c05709f40c18b940bcacb09cd9e9508431ff42aa57efded4bf894cfc1b25a",
+          "atlas_rect": [
+            1152,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            972,
+            421,
+            259,
+            402
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            257,
+            400
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 8,
+          "file": "frames/point-right/008.png",
+          "sha256": "98880aacca2335d6bcbfa4bb7b2fff9d3a516389c03fe7185b0e09f27ab3d461",
+          "atlas_rect": [
+            0,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            43,
+            839,
+            261,
+            403
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            259,
+            401
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 9,
+          "file": "frames/point-right/009.png",
+          "sha256": "7a4fc4143ca0b63fd17052f66217222382620c1a01a19818a2336ec4af32cc39",
+          "atlas_rect": [
+            384,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            360,
+            839,
+            233,
+            403
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            401
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 10,
+          "file": "frames/point-right/010.png",
+          "sha256": "2d9619add7998ed1a965d4d188a8d9ea68a8a7e24be057d1fd5460d1355809e5",
+          "atlas_rect": [
+            768,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            682,
+            838,
+            205,
+            404
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            203,
+            402
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 11,
+          "file": "frames/point-right/011.png",
+          "sha256": "3287c91ef30c081941238494aac9703b303dd780c7157822398111a3f1ee9a50",
+          "atlas_rect": [
+            1152,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            995,
+            838,
+            205,
+            404
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            203,
+            402
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        }
+      ],
+      "generation_output_path": "/Users/bytedance/.codex/generated_images/01a0f828-680d-76c0-81dd-a4948d00c64f/exec-907400f4-0676-4706-82e6-a6775f71ab29.png",
+      "identity_reference": "reference.png",
+      "alpha_background": true
+    },
+    "celebrate": {
+      "name": "celebrate",
+      "fps": 10,
+      "loop": true,
+      "frame_count": 12,
+      "columns": 4,
+      "rows": 3,
+      "atlas": "atlases/celebrate.png",
+      "atlas_size": [
+        1536,
+        1728
+      ],
+      "atlas_sha256": "1791032f1307a04a2106c3d65d64b20c18e9e03b650319e44dcb8e2cf9692921",
+      "generated_atlas": "atlases/celebrate-generated.png",
+      "generated_atlas_sha256": "f6a2358e2f4349276b784db59fd9bf2724eeac77a92d8e10242205cd7c9b732a",
+      "prompt": "prompts/celebrate.txt",
+      "preview": "previews/celebrate.webp",
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/celebrate/000.png",
+          "sha256": "fe6c253038a44b4cf46c61642af6e6435181d3cbfaef0b3b2f8c90df3fb82d96",
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            61,
+            10,
+            212,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            210,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 1,
+          "file": "frames/celebrate/001.png",
+          "sha256": "0557144b4e98b27b3ebd08780e1823d40f447f883995294fe488e0728b4b0e4c",
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            374,
+            9,
+            211,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            209,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 2,
+          "file": "frames/celebrate/002.png",
+          "sha256": "1180f5baf269e8b66636b9dd53a7cf2acf94c55b1435394edb138b8795f38c58",
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            685,
+            9,
+            210,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            208,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 3,
+          "file": "frames/celebrate/003.png",
+          "sha256": "fc2491d8630fae97e4eadf00f3c9cc4a710f73bfe2eabded940ca769592a1e9d",
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            999,
+            9,
+            211,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            209,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 4,
+          "file": "frames/celebrate/004.png",
+          "sha256": "7256829808d37d2d5e68f720bc8ce2ea5ea63a2ff9fb16a122b3ee419261a5e2",
+          "atlas_rect": [
+            0,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            61,
+            424,
+            215,
+            412
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            213,
+            410
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 5,
+          "file": "frames/celebrate/005.png",
+          "sha256": "a5a916bc28d73345f0815810ff5d686697ce1017c0ce347ddda979373f4fdf66",
+          "atlas_rect": [
+            384,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            374,
+            424,
+            212,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            210,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 6,
+          "file": "frames/celebrate/006.png",
+          "sha256": "bd4f6bb1bd86eca95e78cc3d2a5399484cc1cbb98038232ea9ddd784eb7ae885",
+          "atlas_rect": [
+            768,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            685,
+            425,
+            214,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 7,
+          "file": "frames/celebrate/007.png",
+          "sha256": "e389166a3ddc5117c2976c23ee28e91a110d9fcc61b69e82e15837868899eae4",
+          "atlas_rect": [
+            1152,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            1000,
+            424,
+            214,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 8,
+          "file": "frames/celebrate/008.png",
+          "sha256": "4ce0da7cf6efdd50e419428fd05eb649ac2d431839a6f268d5299c07738dc1aa",
+          "atlas_rect": [
+            0,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            63,
+            836,
+            213,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            211,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 9,
+          "file": "frames/celebrate/009.png",
+          "sha256": "279d2b0f73805a4e0cd3e50a95d8ba7fc8c46b211553a843bb4a9da36227a32f",
+          "atlas_rect": [
+            384,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            373,
+            836,
+            214,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 10,
+          "file": "frames/celebrate/010.png",
+          "sha256": "cc56e124415d5455a63e8842c42910e54cd4cb16a3ea6331cccb54397ec9ca31",
+          "atlas_rect": [
+            768,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            685,
+            837,
+            213,
+            412
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            211,
+            410
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 11,
+          "file": "frames/celebrate/011.png",
+          "sha256": "e78417f799f52de7219dcdd5a6579876b280f415068ef7a40988379b33c107b2",
+          "atlas_rect": [
+            1152,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            999,
+            837,
+            212,
+            412
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            210,
+            410
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        }
+      ],
+      "generation_output_path": "/Users/bytedance/.codex/generated_images/01a0f828-680d-76c0-81dd-a4948d00c64f/exec-fa30b91f-11d8-43df-a9da-9095ca0ddeca.png",
+      "identity_reference": "reference.png",
+      "alpha_background": true
+    },
+    "wave": {
+      "name": "wave",
+      "fps": 10,
+      "loop": true,
+      "frame_count": 12,
+      "columns": 4,
+      "rows": 3,
+      "atlas": "atlases/wave.png",
+      "atlas_size": [
+        1536,
+        1728
+      ],
+      "atlas_sha256": "e9f72dc543c3f7d24f30bbc9754f0597903de4ef45fd758f6380c9a297dc9bfb",
+      "generated_atlas": "atlases/wave-generated.png",
+      "generated_atlas_sha256": "3b367fd69a74ede7a08fca270526ba886ec7c922640424e58d00d7c554824eed",
+      "prompt": "prompts/wave.txt",
+      "preview": "previews/wave.webp",
+      "frames": [
+        {
+          "index": 0,
+          "file": "frames/wave/000.png",
+          "sha256": "28a32018021c9e4296da5b8777a4a7d57692870b630f070cbbd7056d1563390f",
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            60,
+            6,
+            214,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            212,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 1,
+          "file": "frames/wave/001.png",
+          "sha256": "352d02befa2130431a350266d8fbb45833c07e1a40a1b129db94f978d98c2899",
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            369,
+            6,
+            235,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            233,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 2,
+          "file": "frames/wave/002.png",
+          "sha256": "70fc91e945f805244398ab540143d1532bcee1bd18b3d78943decd2d3ef63ae2",
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            680,
+            6,
+            233,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 3,
+          "file": "frames/wave/003.png",
+          "sha256": "690c9a7a5eea6f6f503305d8ac6112ffe4f5304a19d4a3fdd2652efa0ea82a1d",
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            991,
+            6,
+            245,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            243,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 4,
+          "file": "frames/wave/004.png",
+          "sha256": "c286bd74fd2a8cc82c3cf205a3c2ae6386eee85db62459512148756199e84828",
+          "atlas_rect": [
+            0,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            58,
+            422,
+            256,
+            415
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            254,
+            413
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 5,
+          "file": "frames/wave/005.png",
+          "sha256": "12d88c877403dd344ef993b0c82fc050079ea5233305f3c1b709c97b5880f79e",
+          "atlas_rect": [
+            384,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            369,
+            422,
+            225,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            223,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 6,
+          "file": "frames/wave/006.png",
+          "sha256": "b375dcba2c0f311a8a7c6d59010a7aeeedc26127f4900cdc7c5dc17685a6a072",
+          "atlas_rect": [
+            768,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            679,
+            422,
+            253,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            251,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 7,
+          "file": "frames/wave/007.png",
+          "sha256": "7c57a758c1e847f4018931ffe29a8290a9e81843446d3e1a2683361f6592355e",
+          "atlas_rect": [
+            1152,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            990,
+            422,
+            243,
+            414
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            241,
+            412
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 8,
+          "file": "frames/wave/008.png",
+          "sha256": "19fae69b0de034552a6bb8ab95849fd9a2107b76637f3bba2354d75a0891ecd5",
+          "atlas_rect": [
+            0,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            59,
+            836,
+            248,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            246,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 9,
+          "file": "frames/wave/009.png",
+          "sha256": "328a7b58101611cf07534c74272c957edfc42df14bdc304f410ac265d89d18bb",
+          "atlas_rect": [
+            384,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            368,
+            839,
+            216,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            214,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 10,
+          "file": "frames/wave/010.png",
+          "sha256": "bfa632a264997dfd5b642d26ee7ad15eabd03ca21e6b2cb58a810f4c09fb9dd3",
+          "atlas_rect": [
+            768,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            681,
+            839,
+            217,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            215,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 11,
+          "file": "frames/wave/011.png",
+          "sha256": "0b3fe6d3bd802988edda1c1168c15aed052c560f93f404b7c42870aded684f98",
+          "atlas_rect": [
+            1152,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            991,
+            839,
+            220,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            218,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        }
+      ],
+      "generation_output_path": "/Users/bytedance/.codex/generated_images/01a0f828-680d-76c0-81dd-a4948d00c64f/exec-54294177-8599-4388-a01c-ff8588e17c95.png",
+      "identity_reference": "reference.png",
+      "alpha_background": true
+    },
+    "think": {
+      "name": "think",
+      "fps": 10,
+      "loop": true,
+      "frame_count": 12,
+      "columns": 4,
+      "rows": 3,
+      "atlas": "atlases/think.png",
+      "atlas_size": [
+        1536,
+        1728
+      ],
+      "atlas_sha256": "5fe6819e827ca5d2ec3267201f8d083e32fdde87d334c76984d148df812ecffa",
+      "generated_atlas": "atlases/think-generated.png",
+      "generated_atlas_sha256": "f68b7ef66d464dec3b2e0d84514b96957bb8954e49700288428cf59a95797663",
+      "prompt": "prompts/think-final.txt",
+      "preview": "previews/think.webp",
+      "frames": [
+        {
+          "index": 0,
+          "source_index": 0,
+          "file": "frames/think/000.png",
+          "sha256": "360f6ef5f8c7c23284534aa6b3af22cb4fd66febe1e9374260dbc30ac2e97d33",
+          "atlas_rect": [
+            0,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            62,
+            7,
+            222,
+            416
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            220,
+            414
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 1,
+          "source_index": 1,
+          "file": "frames/think/001.png",
+          "sha256": "b3b586a6ca76e383546286d0f054a8c8e226c97663f7993efce9091207060e81",
+          "atlas_rect": [
+            384,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            359,
+            7,
+            234,
+            416
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            232,
+            414
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 2,
+          "source_index": 2,
+          "file": "frames/think/002.png",
+          "sha256": "2e97257f017ecfa6f244189593438c7f34690b0cb6475bd11f15dc776f24cae2",
+          "atlas_rect": [
+            768,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            672,
+            7,
+            233,
+            416
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            414
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 3,
+          "source_index": 3,
+          "file": "frames/think/003.png",
+          "sha256": "f862cfa4a29589ea9bf567a8f5d190a70c709c7dc6b54890eace7a1425102fb9",
+          "atlas_rect": [
+            1152,
+            0,
+            384,
+            576
+          ],
+          "source_rect": [
+            986,
+            6,
+            231,
+            417
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            229,
+            415
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 4,
+          "source_index": 4,
+          "file": "frames/think/004.png",
+          "sha256": "bd1d2e5149e6687e91de2bf58d3634f7f7ac7a7d3efc201cfe357b5efffc8efd",
+          "atlas_rect": [
+            0,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            60,
+            421,
+            227,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            225,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 5,
+          "source_index": 5,
+          "file": "frames/think/005.png",
+          "sha256": "6d399366cbbb44b76a9f89b4aa83b609064c6aca5a154827db15f219ffcb0872",
+          "atlas_rect": [
+            384,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            359,
+            423,
+            235,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            233,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 6,
+          "source_index": 6,
+          "file": "frames/think/006.png",
+          "sha256": "63eb16ee1dd13c803b56d1938bab1c7f40f76f66cb79dff4dcbea24b857effe5",
+          "atlas_rect": [
+            768,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            672,
+            423,
+            233,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 7,
+          "source_index": 7,
+          "file": "frames/think/007.png",
+          "sha256": "1ad28af573f36eb28b416a4efadf1e7f0377d851ca2bc851d31e002365ed604c",
+          "atlas_rect": [
+            1152,
+            576,
+            384,
+            576
+          ],
+          "source_rect": [
+            985,
+            423,
+            233,
+            410
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            408
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 8,
+          "source_index": 8,
+          "file": "frames/think/008.png",
+          "sha256": "335347859e928f2d516fbc3907c651450039243aa0dbf72e03244e14c46ca8bc",
+          "atlas_rect": [
+            0,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            58,
+            833,
+            231,
+            413
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            229,
+            411
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 9,
+          "source_index": 2,
+          "file": "frames/think/009.png",
+          "sha256": "2e97257f017ecfa6f244189593438c7f34690b0cb6475bd11f15dc776f24cae2",
+          "atlas_rect": [
+            384,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            672,
+            7,
+            233,
+            416
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            231,
+            414
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 10,
+          "source_index": 10,
+          "file": "frames/think/010.png",
+          "sha256": "fbce61cdc0fe38924eb7f623e6e3d6b94f28543736289ebbda8651195c5c4633",
+          "atlas_rect": [
+            768,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            677,
+            834,
+            231,
+            411
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            229,
+            409
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        },
+        {
+          "index": 11,
+          "source_index": 11,
+          "file": "frames/think/011.png",
+          "sha256": "98406b16ad2c2bf761362c9d4adc8347e0c31ac451ca44cf4be7eab2c8a549d8",
+          "atlas_rect": [
+            1152,
+            1152,
+            384,
+            576
+          ],
+          "source_rect": [
+            991,
+            834,
+            228,
+            412
+          ],
+          "source_visible_bbox": [
+            2,
+            2,
+            226,
+            410
+          ],
+          "anchor": [
+            192,
+            548
+          ]
+        }
+      ],
+      "generation_output_path": "/Users/bytedance/.codex/generated_images/01a0f828-680d-76c0-81dd-a4948d00c64f/exec-c5f4679c-734b-4986-b440-b168510727bb.png",
+      "identity_reference": "reference.png",
+      "alpha_background": true,
+      "assembly_note": "Source pose 9 replaced with source pose 2 for same-hand retraction; no warped or invented frames."
+    }
+  }
+}

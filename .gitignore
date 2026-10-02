@@ -13,3 +13,10 @@ wandb/
 *.pt
 *.pth
 *.safetensors
+
+# Knowledge-video exports and private voice references stay local.
+**/video/**/audio/
+**/video/**/renders/
+**/video/**/qa/
+**/video/**/*.mp4
+assets/参考音频/

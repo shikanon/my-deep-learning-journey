@@ -1,0 +1,7 @@
+{
+  "name": "knowledge-video-production-tools",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "dependencies": { "ali-oss": "6.23.0" }
+}

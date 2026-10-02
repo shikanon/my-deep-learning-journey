@@ -1,0 +1,4 @@
+interface:
+  display_name: "知识点图文与视频制作"
+  short_description: "制作通俗图文与手绘科普视频，复用人物动作并验证最终发布结果"
+  default_prompt: "使用 $knowledge-video-production 将当前知识点制作成图文文章和手绘科普解说视频，并按本次要求完成验收与发布。"

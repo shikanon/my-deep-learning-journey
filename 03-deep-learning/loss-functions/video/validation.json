@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "version": "v6",
+  "media": {
+    "version": "v6",
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "frames": 5370,
+    "duration": 179.0,
+    "codecs": [
+      "h264",
+      "aac"
+    ],
+    "bytes": 14175132,
+    "sha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+    "chapters": 17,
+    "captions": 101,
+    "explanation_beats": 82,
+    "full_decode_errors": 0,
+    "qr_decoded_from_final": "https://github.com/shikanon/my-deep-learning-journey",
+    "qr_decoded_at_540p": "https://github.com/shikanon/my-deep-learning-journey",
+    "author_source_sha256_verified": true,
+    "voice_source_sha256_verified": true,
+    "all_four_requests_use_author_reference": true,
+    "original_v3_seed_jobs_complete": 4,
+    "new_audio_generation_calls": 0,
+    "narration_reused_from_v3": true,
+    "measured_han_cpm": 320.0,
+    "content_shares": [
+      0.2950276243093923,
+      0.5027624309392266,
+      0.2022099447513812
+    ],
+    "cta_excluded_from_content_shares": true,
+    "contact_frames": 17
+  },
+  "validationScope": "Local final-render checks plus byte-identical OSS upload, anonymous transport verification, and real cloud playback on 2026-10-02.",
+  "cloudPlayback": {
+    "status": "passed",
+    "verifiedAt": "2026-10-02T11:54:30.944991+00:00",
+    "player": "loss-explainer-v6/watch.html",
+    "currentSrc": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
+    "mediaSha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+    "currentTime": 179,
+    "duration": 179,
+    "ended": true,
+    "readyState": 4,
+    "playbackRate": 1,
+    "muted": false,
+    "mediaError": null,
+    "consoleWarnings": 0,
+    "consoleErrors": 0,
+    "continuousWithoutSeeking": true,
+    "events": [
+      {
+        "name": "play",
+        "time": 0,
+        "wallTime": "2026-10-02T11:49:05.971Z"
+      },
+      {
+        "name": "pause",
+        "time": 179,
+        "wallTime": "2026-10-02T11:52:05.067Z"
+      },
+      {
+        "name": "ended",
+        "time": 179,
+        "wallTime": "2026-10-02T11:52:05.067Z"
+      }
+    ]
+  },
+  "sources": {
+    "project": "loss-explainer-v6",
+    "publicAuthorLibrary": "../../../assets/手绘形象/shikanon-animation-v3/manifest.json",
+    "detailedLocalQa": "loss-explainer-v6/qa/"
+  },
+  "cloudPlayerControls": {
+    "chaptersVerified": 17,
+    "primaryChaptersVerified": 3,
+    "allTargetsHaveCorrectTitles": true,
+    "allTargetsReadyState": 4,
+    "chapterSeekTimes": [
+      0.02,
+      10.124928,
+      20.256401,
+      29.29963,
+      39.765226,
+      50.091592,
+      59.132453,
+      67.753314,
+      78.402613,
+      89.602653,
+      102.409681,
+      112.115371,
+      124.351338,
+      135.410478,
+      148.063478,
+      159.306752,
+      170.193726
+    ],
+    "keyboardEndTime": 179,
+    "physicalDragTime": 151.81,
+    "draggedChapterTitle": "15 · GSPO / VESPO：按整段回答想",
+    "afterValidation": "Paused at 0; temporary viewport restored."
+  },
+  "responsive": {
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobilePageWidth": 390,
+    "mobileVideoWidth": 352,
+    "desktopViewport": [
+      1280,
+      720
+    ],
+    "desktopPageWidth": 1280,
+    "horizontalOverflow": false,
+    "temporaryOverrideRestored": true
+  },
+  "authorRig": {
+    "version": 3,
+    "mouth_animation": false,
+    "expression": "closed-smile",
+    "actions": {
+      "talk": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.2716979999999999,
+        "max_leg_angle_step_deg": 0.189746,
+        "head_changed_pixels_mean_max": 22,
+        "foot_changed_pixels_mean_max": 7.5458,
+        "arm_changed_pixels_mean_max": 76.8748,
+        "first_last_frames_identical": true
+      },
+      "point-right": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.23094399999999993,
+        "max_leg_angle_step_deg": 0.189746,
+        "head_changed_pixels_mean_max": 20,
+        "foot_changed_pixels_mean_max": 7.5458,
+        "arm_changed_pixels_mean_max": 79.9141,
+        "first_last_frames_identical": true
+      },
+      "think": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.29886900000000005,
+        "max_leg_angle_step_deg": 0.189746,
+        "head_changed_pixels_mean_max": 22,
+        "foot_changed_pixels_mean_max": 7.5458,
+        "arm_changed_pixels_mean_max": 0.3521,
+        "first_last_frames_identical": true
+      },
+      "celebrate": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.3396229999999999,
+        "max_leg_angle_step_deg": 0.46081,
+        "head_changed_pixels_mean_max": 25,
+        "foot_changed_pixels_mean_max": 14.6223,
+        "arm_changed_pixels_mean_max": 65.5707,
+        "first_last_frames_identical": true
+      },
+      "wave": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.3396229999999999,
+        "max_leg_angle_step_deg": 0.46081,
+        "head_changed_pixels_mean_max": 24,
+        "foot_changed_pixels_mean_max": 14.6223,
+        "arm_changed_pixels_mean_max": 75.7616,
+        "first_last_frames_identical": true
+      },
+      "think-question": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.29886900000000005,
+        "max_leg_angle_step_deg": 0.189746,
+        "head_changed_pixels_mean_max": 22,
+        "foot_changed_pixels_mean_max": 7.5458,
+        "arm_changed_pixels_mean_max": 0.3521,
+        "first_last_frames_identical": true
+      },
+      "teach-pointer": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.23094399999999993,
+        "max_leg_angle_step_deg": 0.189746,
+        "head_changed_pixels_mean_max": 20,
+        "foot_changed_pixels_mean_max": 7.5458,
+        "arm_changed_pixels_mean_max": 79.9141,
+        "first_last_frames_identical": true
+      },
+      "step": {
+        "frames": 24,
+        "fps": 20,
+        "max_head_angle_step_deg": 0.2716979999999999,
+        "max_leg_angle_step_deg": 0.70477,
+        "head_changed_pixels_mean_max": 21,
+        "foot_changed_pixels_mean_max": 19.9831,
+        "arm_changed_pixels_mean_max": 76.8904,
+        "first_last_frames_identical": true
+      }
+    },
+    "frames_verified": 192,
+    "max_mouth_texture_error": 1,
+    "max_torso_drift": 0,
+    "canvas_edge_clipping": 0,
+    "shared_neutral_pose": true,
+    "cache_copy_files": 222,
+    "copies_byte_identical": true,
+    "new_image_generation_calls": 0
+  },
+  "currentPublication": {
+    "generatedVideosRemoved": 11,
+    "bytesReclaimed": 869353263,
+    "newImageGenerationCalls": 0,
+    "newAudioGenerationCalls": 0,
+    "credentialsInGit": false,
+    "largeMediaInGit": false
+  }
+}

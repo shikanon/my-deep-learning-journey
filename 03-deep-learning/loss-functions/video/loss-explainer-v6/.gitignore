@@ -1,0 +1,16 @@
+node_modules/
+audio/
+renders/
+.hyperframes/
+qa/
+*.mp4
+*.wav
+*.mp3
+
+.venv/
+__pycache__/
+
+.thumbnails/
+
+# Rebuilt from build_composition.py; embedded atlases need not be duplicated in Git.
+/index.html
