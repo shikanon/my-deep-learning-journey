@@ -3,6 +3,7 @@
   "version": "v6",
   "media": {
     "version": "v6",
+    "revision": "no-qr-ending",
     "width": 1080,
     "height": 1920,
     "fps": "30/1",
@@ -12,14 +13,16 @@
       "h264",
       "aac"
     ],
-    "bytes": 14175132,
-    "sha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+    "bytes": 14170540,
+    "sha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
     "chapters": 17,
     "captions": 101,
     "explanation_beats": 82,
     "full_decode_errors": 0,
-    "qr_decoded_from_final": "https://github.com/shikanon/my-deep-learning-journey",
-    "qr_decoded_at_540p": "https://github.com/shikanon/my-deep-learning-journey",
+    "qr_absent_from_ending": true,
+    "ending_frames_checked": 88,
+    "literal_last_frame_checked": true,
+    "qr_detector_positive_control": true,
     "author_source_sha256_verified": true,
     "voice_source_sha256_verified": true,
     "all_four_requests_use_author_reference": true,
@@ -35,13 +38,13 @@
     "cta_excluded_from_content_shares": true,
     "contact_frames": 17
   },
-  "validationScope": "Local final-render checks plus byte-identical OSS upload, anonymous transport verification, and real cloud playback on 2026-10-02.",
+  "validationScope": "Fresh full-video render; current-file decode, full ending and literal last-frame QR absence, encoded author animation and audio identity, plus verified real cloud playback on 2026-10-02.",
   "cloudPlayback": {
     "status": "passed",
-    "verifiedAt": "2026-10-02T11:54:30.944991+00:00",
+    "verifiedAt": "2026-10-02T12:37:13.183047+00:00",
     "player": "loss-explainer-v6/watch.html",
-    "currentSrc": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
-    "mediaSha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+    "currentSrc": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4",
+    "mediaSha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
     "currentTime": 179,
     "duration": 179,
     "ended": true,
@@ -56,17 +59,22 @@
       {
         "name": "play",
         "time": 0,
-        "wallTime": "2026-10-02T11:49:05.971Z"
+        "wallTime": "2026-10-02T12:31:19.755Z"
+      },
+      {
+        "name": "waiting",
+        "time": 0,
+        "wallTime": "2026-10-02T12:31:19.755Z"
       },
       {
         "name": "pause",
         "time": 179,
-        "wallTime": "2026-10-02T11:52:05.067Z"
+        "wallTime": "2026-10-02T12:34:19.221Z"
       },
       {
         "name": "ended",
         "time": 179,
-        "wallTime": "2026-10-02T11:52:05.067Z"
+        "wallTime": "2026-10-02T12:34:19.221Z"
       }
     ]
   },
@@ -74,50 +82,6 @@
     "project": "loss-explainer-v6",
     "publicAuthorLibrary": "../../../assets/手绘形象/shikanon-animation-v3/manifest.json",
     "detailedLocalQa": "loss-explainer-v6/qa/"
-  },
-  "cloudPlayerControls": {
-    "chaptersVerified": 17,
-    "primaryChaptersVerified": 3,
-    "allTargetsHaveCorrectTitles": true,
-    "allTargetsReadyState": 4,
-    "chapterSeekTimes": [
-      0.02,
-      10.124928,
-      20.256401,
-      29.29963,
-      39.765226,
-      50.091592,
-      59.132453,
-      67.753314,
-      78.402613,
-      89.602653,
-      102.409681,
-      112.115371,
-      124.351338,
-      135.410478,
-      148.063478,
-      159.306752,
-      170.193726
-    ],
-    "keyboardEndTime": 179,
-    "physicalDragTime": 151.81,
-    "draggedChapterTitle": "15 · GSPO / VESPO：按整段回答想",
-    "afterValidation": "Paused at 0; temporary viewport restored."
-  },
-  "responsive": {
-    "mobileViewport": [
-      390,
-      844
-    ],
-    "mobilePageWidth": 390,
-    "mobileVideoWidth": 352,
-    "desktopViewport": [
-      1280,
-      720
-    ],
-    "desktopPageWidth": 1280,
-    "horizontalOverflow": false,
-    "temporaryOverrideRestored": true
   },
   "authorRig": {
     "version": 3,
@@ -215,11 +179,83 @@
     "new_image_generation_calls": 0
   },
   "currentPublication": {
-    "generatedVideosRemoved": 11,
-    "bytesReclaimed": 869353263,
+    "revision": "no-qr-ending",
     "newImageGenerationCalls": 0,
     "newAudioGenerationCalls": 0,
     "credentialsInGit": false,
-    "largeMediaInGit": false
+    "largeMediaInGit": false,
+    "generatedVideosRemoved": 2,
+    "bytesReclaimed": 127530851
+  },
+  "revision": "no-qr-ending",
+  "encodedAuthor": {
+    "video": "loss-functions-v6.mp4",
+    "sha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
+    "decoded_frames": 161,
+    "verified_actions": 7,
+    "mouth_animation": false,
+    "head_and_foot_motion_intentional": true,
+    "mouth_reference_verified_in_encoded_pixels": true,
+    "torso_stable": true,
+    "max_mouth_error": 9.0254,
+    "max_closed_open_error_ratio": 0.1861
+  },
+  "audioUnchanged": {
+    "encoded_audio_sha256": "304f6cb69aa52b4ec6215cbc3dcaabab13aa79ea68425d55e9bf7b131b75ad5d",
+    "encoded_audio_byte_identical": true,
+    "new_audio_generation_calls": 0
+  },
+  "cloudPlayerControls": {
+    "chaptersVerified": 17,
+    "primaryChaptersVerified": 3,
+    "allTargetsHaveCorrectTitles": true,
+    "allTargetsReadyState": 4,
+    "chapterSeekTimes": [
+      0.02,
+      10.124928,
+      20.256401,
+      29.29963,
+      39.765226,
+      50.091592,
+      59.132453,
+      67.753314,
+      78.402613,
+      89.602653,
+      102.409681,
+      112.115371,
+      124.351338,
+      135.410478,
+      148.063478,
+      159.306752,
+      170.193726
+    ],
+    "keyboardEndTime": 179,
+    "physicalDragTime": 151.81,
+    "draggedChapterTitle": "15 · GSPO / VESPO：按整段回答想",
+    "afterValidation": "Paused at the text-only ending; temporary viewport restored."
+  },
+  "responsive": {
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobilePageWidth": 390,
+    "mobileVideoWidth": 352,
+    "desktopViewport": [
+      1280,
+      720
+    ],
+    "desktopPageWidth": 1280,
+    "horizontalOverflow": false,
+    "temporaryOverrideRestored": true
+  },
+  "compositionCheck": {
+    "strict": true,
+    "passed": true,
+    "layoutSamples": 23,
+    "layoutIssues": 0,
+    "runtimeErrors": 0,
+    "contrastPassed": 98,
+    "motionCheckEnabled": false
   }
 }

@@ -13,7 +13,7 @@ def beat_duration(el):
     labels=len(el.findall('.//text'));paths=[p for p in el.findall('.//path') if 'draw' in p.attrib.get('class','').split()]
     appearance=max(.30,.38+.035*max(0,labels-1),.63+.018*min(8,max(0,len(paths)-1)))
     action=el.attrib.get('data-action','')
-    spans={'hop':1.55,'ruler':.66+.018*max(0,len(el.findall('.//path'))-1),'left-to-center':1.75,'right-to-center':1.75,'cells':.54+.020*max(0,len(paths)-1),'sum':1.33,'underline':1.33,'relative':1.33,'celebrate':1.33,'question':1.33,'score-contrast':1.33,'bar':1.05,'samples':.60+.07*max(0,len(el.findall('.//circle'))-1),'pull-mean':1.85,'brake':1.95,'easy-down':1.692,'split-prob':1.23,'pull-positive':2.15,'push-negative':2.15,'zoom-local':1.28,'teach':1.70,'tokens':.60+.10*max(0,labels-1),'soften':1.23,'qr':.60,'resources':.60}
+    spans={'hop':1.55,'ruler':.66+.018*max(0,len(el.findall('.//path'))-1),'left-to-center':1.75,'right-to-center':1.75,'cells':.54+.020*max(0,len(paths)-1),'sum':1.33,'underline':1.33,'relative':1.33,'celebrate':1.33,'question':1.33,'score-contrast':1.33,'bar':1.05,'samples':.60+.07*max(0,len(el.findall('.//circle'))-1),'pull-mean':1.85,'brake':1.95,'easy-down':1.692,'split-prob':1.23,'pull-positive':2.15,'push-negative':2.15,'zoom-local':1.28,'teach':1.70,'tokens':.60+.10*max(0,labels-1),'soften':1.23,'project-card':1.33,'resources':.60}
     return max(appearance,spans.get(action,0))
 scenes=[];plans=[]
 for si,s in enumerate(D['scenes']):

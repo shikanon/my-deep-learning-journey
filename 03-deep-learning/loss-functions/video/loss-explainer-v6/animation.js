@@ -68,7 +68,7 @@ D.scenes.forEach((s,i)=>{
     // Teacher points; student responds with a hand gesture.
     if(b.action==='tokens')tl.from(group.querySelectorAll('text'),{y:12,duration:.25,stagger:.10,ease:'back.out(1.4)'},t+.35);
     if(b.action==='soften')pulse(group.querySelectorAll('path.draw'),t+.35,1.025);
-    if(b.action==='qr')tl.from(group.querySelector('image'),{opacity:0,scale:.96,duration:.4,transformOrigin:'50% 50%'},t+.2);
+    if(b.action==='project-card')pulse(group.querySelectorAll('.project-star'),t+.35,1.10);
     if(b.action==='resources')tl.from(group.querySelectorAll('text'),{x:-15,duration:.4,ease:'power2.out'},t+.2);
   });
   if(s.kind==='curves')pathMarker('curve-marker',s,plan,'均方误差',e=>e*e,9);

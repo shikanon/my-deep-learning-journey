@@ -19,11 +19,11 @@ tags: [损失函数, 均方误差, 交叉熵, 稳健估计, 对比学习, 偏好
 
 ## 配套解说视频
 
-[![点击观看：换把评分尺，模型就换答案](video/loss-explainer-v6/assets/poster.jpg)](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4)
+[![点击观看：换把评分尺，模型就换答案](video/loss-explainer-v6/assets/poster.jpg)](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4)
 
-[观看或下载最终视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4) · [章节播放器与制作工程](video/README.md) · [可复用制作 Skill](../../knowledge-video-production/SKILL.md)
+[观看或下载最终视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4) · [章节播放器与制作工程](video/README.md) · [可复用制作 Skill](../../knowledge-video-production/SKILL.md)
 
-视频采用作者手绘形象与参考音色，闭嘴微笑，配合手势、点头、脚步和教棍讲解。点击封面即可打开公开 MP4；正文可独立阅读。
+视频采用作者手绘形象与参考音色，闭嘴微笑，配合手势、点头、脚步和教棍讲解。片尾使用文字关注提示，不展示二维码。点击封面即可打开公开 MP4；正文可独立阅读。
 
 <!-- allocation:why:start -->
 ## 一句话认识这个概念

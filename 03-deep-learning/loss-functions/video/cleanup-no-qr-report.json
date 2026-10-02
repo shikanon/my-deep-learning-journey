@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "applied": true,
+  "recordedAt": "2026-10-02T12:37:13.339712+00:00",
+  "retainedFinal": "loss-explainer-v6/renders/loss-functions-v6.mp4",
+  "retainedFinalSha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
+  "retainedInputVideos": [
+    "loss-explainer/assets/video.mp4"
+  ],
+  "removed": [
+    {
+      "path": "loss-explainer-v6/renders/loss-functions-v6-master.mp4",
+      "bytes": 113355719
+    },
+    {
+      "path": "loss-explainer-v6/renders/loss-functions-v6-with-qr.mp4",
+      "bytes": 14175132
+    }
+  ],
+  "fileCount": 2,
+  "bytesReclaimed": 127530851
+}

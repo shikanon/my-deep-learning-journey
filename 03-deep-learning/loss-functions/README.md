@@ -13,6 +13,6 @@
 - 损失与评估目标的差异
 
 - [001 · 损失函数：你怎么扣分，AI 就怎么学](001-introduction.md)
-- [观看最终解说视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4) · [配套工程与章节播放器](video/README.md)
+- [观看最终解说视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4) · [配套工程与章节播放器](video/README.md)
 
 <!-- new-note-index -->

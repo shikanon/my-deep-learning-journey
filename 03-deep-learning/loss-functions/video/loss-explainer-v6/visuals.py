@@ -82,7 +82,8 @@ def artwork(kind):
     if kind=='ending':
         return g('训练分数',text(455,75,'一个更低的 loss',47,weight=600)+card(95,170,325,165,'训练分数 ↓','改善了代理目标',YELLOW)+card(505,170,315,165,'任务成功？','还要独立检查',TEAL))+g('修复哪种失败',rect(145,435,620,85,PAPER)+text(455,490,'① 修复哪种失败？',42))+g('独立评测和消融',rect(145,565,620,85,PAPER)+text(455,620,'② 独立评测与消融？',40))+g('一种取舍',author(125,745,1.1)+text(585,815,'你怎么扣分',54,weight=600)+text(585,885,'模型就朝哪里学',43)+stars(780,700),'celebrate')
     if kind=='follow':
-        return g('想继续学',author(90,200,2.7)+stars(220,120),'hop')+g('开源项目',rect(430,140,335,335,'#FFFFFF')+'<image href="assets/github-project-qr.svg" x="450" y="160" width="295" height="295"/>'+text(595,540,'扫码，关注项目',35),'qr')+g('我的深度学习之路',text(455,660,'我的深度学习之路',56,weight=600)+text(455,725,'github.com/shikanon',34)+text(455,774,'/my-deep-learning-journey',31),'underline')+g('文章论文和实验代码',rect(140,825,635,95,YELLOW)+text(457,884,'文章 · 论文 · 实验代码',40),'resources')+g('下个知识点见',stars(770,90)+text(455,970,'下个知识点见！',36),'celebrate')
+        project_card=rect(430,140,355,360,YELLOW)+text(607,215,'在 GitHub 上关注',32)+text(607,288,'shikanon',46,weight=600)+path('M473,324 Q607,315 742,324',INK,2.5)+f'<g class="project-star">'+stars(607,374,INK)+'</g>'+text(607,470,'点亮 Star，一起学习',28)
+        return g('想继续学',author(90,200,2.7)+stars(220,120),'hop')+g('开源项目',project_card,'project-card')+g('我的深度学习之路',text(455,660,'我的深度学习之路',56,weight=600)+text(455,725,'github.com/shikanon',34)+text(455,774,'/my-deep-learning-journey',31),'underline')+g('文章论文和实验代码',rect(140,825,635,95,YELLOW)+text(457,884,'文章 · 论文 · 实验代码',40),'resources')+g('下个知识点见',stars(770,90)+text(455,970,'下个知识点见！',36),'celebrate')
     raise ValueError(kind)
 
 INSIGHTS={

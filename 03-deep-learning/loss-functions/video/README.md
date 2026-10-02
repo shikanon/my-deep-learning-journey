@@ -1,9 +1,10 @@
 # 损失函数 · 配套视频
 
 - [知识点文章](../001-introduction.md)
-- [最终 V6 竖屏视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4)：固定闭嘴微笑，手势、点头、脚步与工具动画
+- [最终 V6 竖屏视频 · 2 分 59 秒](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4)：固定闭嘴微笑，手势、点头、脚步与工具动画；片尾使用文字关注提示，不展示二维码
 - [交互播放器](loss-explainer-v6/watch.html) · [本机播放入口](http://127.0.0.1:8770/video/loss-explainer-v6/watch.html)
-- [公开媒体信息与上传验收](publication.json) · [制作与播放验收摘要](validation.json) · [中间视频清理记录](cleanup-report.json)
+- [公开媒体信息与上传验收](publication.json) · [制作与播放验收摘要](validation.json) · [历史中间视频清理记录](cleanup-report.json) · [本次无二维码修订清理记录](cleanup-no-qr-report.json)
+- [无二维码片尾实际最后一帧](loss-explainer-v6/assets/ending-no-qr.jpg)
 - [八组人物动作预览](loss-explainer-v6/assets/author-animation/preview.html)
 - [公共动作素材库 V3](../../../assets/手绘形象/shikanon-animation-v3/README.md) · [复用方法](../../../assets/手绘形象/shikanon-animation-v3/REUSE.md)
 - [解说原文](loss-explainer-v6/narration.json) · [字幕](loss-explainer-v6/captions.srt)

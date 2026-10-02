@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "title": "损失函数：换把评分尺，模型就换答案",
+  "title": "损失函数：换把评分尺，模型就换答案（无二维码片尾）",
   "topic": "loss-functions",
-  "publishedAt": "2026-10-02T11:55:34.674Z",
+  "publishedAt": "2026-10-02T12:29:59.814Z",
   "durationSeconds": 179,
   "width": 1080,
   "height": 1920,
@@ -99,20 +99,20 @@
   ],
   "assets": {
     "video": {
-      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
-      "key": "my-deep-learning-journey/knowledge-videos/loss-functions/d443e69387d815f7/loss-functions-v6.mp4",
-      "bytes": 14175132,
-      "sha256": "d443e69387d815f718cedfe242a77ccac5d16d513082488c9327c14fd853d8e7",
+      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4",
+      "key": "my-deep-learning-journey/knowledge-videos/loss-functions/3c129f1d4f95d9aa/loss-functions-v6.mp4",
+      "bytes": 14170540,
+      "sha256": "3c129f1d4f95d9aad74da74ab8e93a457e7a7c54fb4ee32ca9e92b6bc7948729",
       "contentType": "video/mp4",
       "verification": {
         "headStatus": 200,
-        "contentLength": 14175132,
+        "contentLength": 14170540,
         "contentType": "video/mp4",
         "rangeStatus": 206,
         "rangeBytes": 1024,
-        "contentRange": "bytes 0-1023/14175132",
+        "contentRange": "bytes 0-1023/14170540",
         "fullDownloadSha256Matches": true,
-        "verifiedAt": "2026-10-02T11:55:33.164Z"
+        "verifiedAt": "2026-10-02T12:29:58.156Z"
       }
     },
     "poster": {
@@ -126,8 +126,9 @@
         "contentLength": 175065,
         "contentType": "image/jpeg",
         "fullDownloadSha256Matches": true,
-        "verifiedAt": "2026-10-02T11:55:34.674Z"
+        "verifiedAt": "2026-10-02T12:29:59.814Z"
       }
     }
-  }
+  },
+  "revision": "no-qr-ending"
 }

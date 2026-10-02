@@ -2712,10 +2712,10 @@
           "id": "s17-b01",
           "cue": "开源项目",
           "start": 171.20222,
-          "end": 171.83222,
-          "action": "qr",
+          "end": 172.53222,
+          "action": "project-card",
           "frame_start": 5136,
-          "frame_end": 5155
+          "frame_end": 5176
         },
         {
           "id": "s17-b02",
