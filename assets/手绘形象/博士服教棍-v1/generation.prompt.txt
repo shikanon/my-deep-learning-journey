@@ -1,0 +1,18 @@
+Use case: illustration-story
+Asset type: transparent animation sprite sheet, 8 chronological raising-arm keyframes, EXACTLY 4 columns x 2 rows of equally sized square cells. Reading order left-to-right top-to-bottom. Wide 2:1 canvas.
+Input image: identity and children's colored-pencil/crayon drawing style reference.
+Subject: the SAME cute big round-headed author from the reference with full cheeks, thick brows, black side-parted voluminous hair visible under a doctoral hat, black semi-rimless rectangular glasses, friendly smile. Same hand-drawn 2D pencil/crayon texture and slightly wobbly dark outlines. Now dressed in a black DOCTORAL ACADEMIC GOWN with restrained deep red velvet trim and academic hood, and a black square mortarboard with small golden tassel. Pale sneakers visible below gown. No words needed on robe.
+Action: full-body standing lecturer raises a LONG straight thin wooden teaching pointer toward the SCREEN UPPER-RIGHT. One hand at SCREEN RIGHT holds the same pointer throughout; the other hand rests at side, does not move. The pointer is rigid, single straight shaft with unchanged length, about 80% of character's standing height. Hand fingers wrapped around the handle, no detached or doubled stick.
+Eight poses are successive SMALL changes of ONE raise:
+1 arm down, hand by hip, pointer hangs diagonally DOWN-RIGHT, tip just above ground.
+2 hand starts lifting, stick points downward-right at about 60 degrees below horizontal.
+3 hand lifts farther, stick about 35 degrees below horizontal.
+4 elbow bends, stick about 15 degrees below horizontal.
+5 stick nearly horizontal pointing RIGHT.
+6 forearm raises, stick about 15 degrees ABOVE horizontal.
+7 hand reaches upper chest height, stick about 30 degrees above horizontal.
+8 arm fully lifted to shoulder height, pointer clearly points diagonally UP-RIGHT at 45 degrees. Pointer tip extends far into empty upper-right area. This is pointing, not waving.
+Frame continuity: fixed camera, identical face/expression/cap/gown, identical character size and body position/feet baseline in every cell; only the pointer hand, its arm/sleeve and pointer angle change smoothly. Front-facing body with a slight consistent three-quarter turn to screen right. No stepping, bobbing, zoom, mirrored poses, switched hand, moving head or feet.
+Layout: character torso slightly LEFT of each cell center, generous empty space on right for long pointer; arrange positions identically in all 8 cells. ENTIRE cap, feet and full pointer MUST stay inside each cell with at least 8% clear transparent padding on every edge. No overlap between cells. Transparent gaps separating cells.
+Background: actual transparent alpha outside characters/pointer, no environment, board, grid, cell borders, labels, numbers, shadows, paper panels or watermark. Character interiors filled with opaque colors; hand-drawn texture inside contours only.
+Avoid: 3D render, photorealism, glossy shading, realistic human proportions, extra people/props, changing pointer length, clipped pointer tips.

@@ -1,0 +1,308 @@
+{
+  "name": "shikanon 博士服手绘 · 教棍指向右上角",
+  "generator": "built-in image_gen",
+  "frameSize": {
+    "width": 512,
+    "height": 512
+  },
+  "frameCount": 16,
+  "fps": 8,
+  "durationSeconds": 2,
+  "alpha": true,
+  "sheet": "sequence.png",
+  "columns": 4,
+  "rows": 4,
+  "ordering": "row-major",
+  "action": "arm-down → point-screen-upper-right → arm-down",
+  "frames": [
+    "frames/001.png",
+    "frames/002.png",
+    "frames/003.png",
+    "frames/004.png",
+    "frames/005.png",
+    "frames/006.png",
+    "frames/007.png",
+    "frames/008.png",
+    "frames/009.png",
+    "frames/010.png",
+    "frames/011.png",
+    "frames/012.png",
+    "frames/013.png",
+    "frames/014.png",
+    "frames/015.png",
+    "frames/016.png"
+  ],
+  "sourcePoseOrder": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "anchor": {
+    "x": 180,
+    "y": 456
+  },
+  "uniformScale": 1.0287443267776097,
+  "sourcePoses": [
+    {
+      "region": {
+        "left": 0,
+        "top": 0,
+        "width": 443,
+        "height": 443
+      },
+      "b": {
+        "x": 44,
+        "y": 81,
+        "width": 375,
+        "height": 337
+      },
+      "body": {
+        "x": 44,
+        "y": 81,
+        "width": 213,
+        "height": 330
+      },
+      "anchor": {
+        "x": 142,
+        "y": 411
+      },
+      "placement": {
+        "left": 79,
+        "top": 117,
+        "width": 386,
+        "height": 347
+      }
+    },
+    {
+      "region": {
+        "left": 443,
+        "top": 0,
+        "width": 444,
+        "height": 443
+      },
+      "b": {
+        "x": 41,
+        "y": 81,
+        "width": 387,
+        "height": 330
+      },
+      "body": {
+        "x": 41,
+        "y": 81,
+        "width": 217,
+        "height": 330
+      },
+      "anchor": {
+        "x": 139.5,
+        "y": 411
+      },
+      "placement": {
+        "left": 79,
+        "top": 117,
+        "width": 398,
+        "height": 339
+      }
+    },
+    {
+      "region": {
+        "left": 887,
+        "top": 0,
+        "width": 443,
+        "height": 443
+      },
+      "b": {
+        "x": 41,
+        "y": 81,
+        "width": 388,
+        "height": 330
+      },
+      "body": {
+        "x": 41,
+        "y": 81,
+        "width": 216,
+        "height": 330
+      },
+      "anchor": {
+        "x": 138.5,
+        "y": 411
+      },
+      "placement": {
+        "left": 80,
+        "top": 117,
+        "width": 399,
+        "height": 339
+      }
+    },
+    {
+      "region": {
+        "left": 1330,
+        "top": 0,
+        "width": 444,
+        "height": 443
+      },
+      "b": {
+        "x": 37,
+        "y": 81,
+        "width": 387,
+        "height": 330
+      },
+      "body": {
+        "x": 37,
+        "y": 81,
+        "width": 221,
+        "height": 330
+      },
+      "anchor": {
+        "x": 135,
+        "y": 411
+      },
+      "placement": {
+        "left": 79,
+        "top": 117,
+        "width": 398,
+        "height": 339
+      }
+    },
+    {
+      "region": {
+        "left": 0,
+        "top": 443,
+        "width": 443,
+        "height": 444
+      },
+      "b": {
+        "x": 44,
+        "y": 49,
+        "width": 390,
+        "height": 331
+      },
+      "body": {
+        "x": 44,
+        "y": 49,
+        "width": 213,
+        "height": 331
+      },
+      "anchor": {
+        "x": 142,
+        "y": 380
+      },
+      "placement": {
+        "left": 79,
+        "top": 115,
+        "width": 401,
+        "height": 341
+      }
+    },
+    {
+      "region": {
+        "left": 443,
+        "top": 443,
+        "width": 444,
+        "height": 444
+      },
+      "b": {
+        "x": 42,
+        "y": 49,
+        "width": 390,
+        "height": 331
+      },
+      "body": {
+        "x": 42,
+        "y": 49,
+        "width": 216,
+        "height": 331
+      },
+      "anchor": {
+        "x": 140,
+        "y": 380
+      },
+      "placement": {
+        "left": 79,
+        "top": 115,
+        "width": 401,
+        "height": 341
+      }
+    },
+    {
+      "region": {
+        "left": 887,
+        "top": 443,
+        "width": 443,
+        "height": 444
+      },
+      "b": {
+        "x": 41,
+        "y": 49,
+        "width": 389,
+        "height": 331
+      },
+      "body": {
+        "x": 41,
+        "y": 49,
+        "width": 216,
+        "height": 331
+      },
+      "anchor": {
+        "x": 139,
+        "y": 380
+      },
+      "placement": {
+        "left": 79,
+        "top": 115,
+        "width": 400,
+        "height": 341
+      }
+    },
+    {
+      "region": {
+        "left": 1330,
+        "top": 443,
+        "width": 444,
+        "height": 444
+      },
+      "b": {
+        "x": 39,
+        "y": 24,
+        "width": 382,
+        "height": 356
+      },
+      "body": {
+        "x": 39,
+        "y": 49,
+        "width": 219,
+        "height": 331
+      },
+      "anchor": {
+        "x": 137,
+        "y": 380
+      },
+      "placement": {
+        "left": 79,
+        "top": 90,
+        "width": 393,
+        "height": 366
+      }
+    }
+  ],
+  "animations": {
+    "once": "animation-once.apng",
+    "loop": "animation-loop.apng"
+  },
+  "notes": [
+    "Lowering reverses the identical raising poses; first and last PNGs are byte-identical.",
+    "AI-drawn key poses may retain small outline/face/fabric variations; this is not a rigged model render."
+  ]
+}

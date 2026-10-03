@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>shikanon · 博士服手绘教棍</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#293a36;background:#f5f4ef}*{box-sizing:border-box}body{max-width:920px;margin:auto;padding:28px}h1{font-size:25px;margin:0 0 10px}p{color:#687570;font-size:14px;line-height:1.65}.stage{border:1px solid #d8ded8;border-radius:18px;overflow:hidden;max-width:600px;background-color:#fafafa;background-image:linear-gradient(45deg,#e9ede6 25%,transparent 25%),linear-gradient(-45deg,#e9ede6 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e9ede6 75%),linear-gradient(-45deg,transparent 75%,#e9ede6 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}.stage.dark{background:#24343b}.stage.white{background:white}canvas{display:block;width:100%;height:auto}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}button,select,a{font:inherit;font-size:13px;border:1px solid #d6ddd6;border-radius:8px;padding:9px 12px;background:#fff;color:#365448;text-decoration:none;cursor:pointer}input{width:min(600px,100%);accent-color:#557c65}#position{font-size:14px;color:#596d62}.sheet{display:block;width:100%;margin-top:24px;border-radius:12px;border:1px solid #deded6}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #87b29b}
+</style>
+<h1>shikanon · 博士服手绘教棍</h1><p>手放下 → 举起教棍指向画面右上角 → 手放下<br>16 帧 · 512×512 透明 PNG · 8 fps · 2 秒。第 8、9 帧短暂停留，首尾姿势一致。</p>
+<div class="stage" id="stage"><canvas id="canvas" width="512" height="512" aria-label="博士服教棍动画"></canvas></div>
+<div class="toolbar"><button id="play">暂停</button><button id="replay">重播</button><label>播放方式 <select id="mode"><option value="loop">循环</option><option value="once">单次</option></select></label><label>背景 <select id="background"><option value="checker">透明棋盘格</option><option value="white">白色</option><option value="dark">深色</option></select></label><span id="position">加载中</span></div>
+<input id="scrub" type="range" min="0" max="15" value="0" step="1" aria-label="选择帧">
+<div class="toolbar"><a href="sequence.png" download>透明序列图</a><a href="animation-once.apng" download>单次 APNG</a><a href="animation-loop.apng" download>循环 APNG</a><a href="manifest.json" download>帧序清单</a><a id="current" href="frames/001.png" download>当前帧 PNG</a></div>
+<p>返回动作复用抬手姿势的倒序，避免回程造型漂移。关键姿势仍可能有少量手绘轮廓变化；适合视频生成参考。下图为带浅色背景的查看总览，实际素材请使用透明 PNG。</p>
+<img class="sheet" src="overview.png" alt="博士服教棍16帧动作总览">
+<script>
+const canvas=document.querySelector('#canvas'),ctx=canvas.getContext('2d'),position=document.querySelector('#position'),scrub=document.querySelector('#scrub'),play=document.querySelector('#play');
+const images=Array.from({length:16},(_,i)=>{const im=new Image();im.src='frames/'+String(i+1).padStart(3,'0')+'.png';return im;});let ready=false,index=0,playing=true,start=performance.now();
+function draw(){ctx.clearRect(0,0,512,512);if(ready)ctx.drawImage(images[index],0,0);position.textContent=(index+1)+' / 16';scrub.value=index;document.querySelector('#current').href='frames/'+String(index+1).padStart(3,'0')+'.png';}
+function toggle(p){playing=p;start=performance.now()-index/8*1000;play.textContent=p?'暂停':'播放';}
+play.onclick=()=>toggle(!playing);document.querySelector('#replay').onclick=()=>{index=0;toggle(true);draw();};scrub.oninput=e=>{toggle(false);index=Number(e.target.value);draw();};document.querySelector('#mode').onchange=()=>{index=0;toggle(true);draw();};document.querySelector('#background').onchange=e=>document.querySelector('#stage').className='stage '+e.target.value;
+Promise.all(images.map(im=>im.decode())).then(()=>{ready=true;start=performance.now();draw();}).catch(()=>{position.textContent='图片加载失败';});
+function tick(t){if(ready&&playing){let i=Math.floor(Math.max(0,t-start)*8/1000);if(document.querySelector('#mode').value==='loop')i%=16;else if(i>=15){i=15;toggle(false);}if(i!==index){index=i;draw();}}requestAnimationFrame(tick);}requestAnimationFrame(tick);
+</script></html>

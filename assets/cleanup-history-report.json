@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_at": "2026-10-03T13:06:52.892129+00:00",
+  "retained_author_library": "assets/手绘形象/shikanon-animation-v3",
+  "retained_video_projects": [
+    "03-deep-learning/activation-functions/video/activation-explainer-v6",
+    "03-deep-learning/loss-functions/video/loss-explainer-v6"
+  ],
+  "retained_source": "assets/手绘形象/shikanon-animation-v3/source/registered-art",
+  "removed": [
+    {
+      "path": "assets/手绘形象/shikanon-animation-v1",
+      "file_count": 87,
+      "bytes": 48968886
+    },
+    {
+      "path": "assets/手绘形象/shikanon-animation-v2",
+      "file_count": 106,
+      "bytes": 35401750
+    },
+    {
+      "path": "03-deep-learning/loss-functions/video/loss-explainer-v6/diagnose_registration.py",
+      "file_count": 1,
+      "bytes": 2206
+    },
+    {
+      "path": "assets/手绘道具/铅笔书写-v1",
+      "file_count": 4,
+      "bytes": 22329
+    }
+  ],
+  "removed_file_count": 198,
+  "bytes_removed": 84395171,
+  "independent_author_rebuild": "assets/手绘形象/shikanon-animation-v3/source/rebuild-validation.json",
+  "author_copy_files_identical": 313,
+  "author_frames_verified": 192,
+  "different_current_asset_roles": [
+    "博士服教棍-v1",
+    "抱大铅笔写字-v2"
+  ]
+}

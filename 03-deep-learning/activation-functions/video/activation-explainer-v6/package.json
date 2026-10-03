@@ -1,0 +1,8 @@
+{
+  "name": "activation-explainer-v6",
+  "private": true,
+  "description": "Editable deterministic portrait explainer with local media QA",
+  "devDependencies": {
+    "@ffprobe-installer/darwin-arm64": "5.0.1"
+  }
+}

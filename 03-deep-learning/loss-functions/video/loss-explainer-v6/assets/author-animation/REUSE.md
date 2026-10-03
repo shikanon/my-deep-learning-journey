@@ -17,6 +17,6 @@ ctx.drawImage(atlas, ...frame.atlas_rect, x - 192, y - 548, 384, 576);
 
 先绘制透明帧，再按实际场景安排位置。不同动作可以用同一个画布坐标和锚点切换。若需要连续场景切换，优先在首尾中立帧切换；不要给每张帧图另算包围框中心。嘴部随整颗头移动，但表情和形状始终来自同一张参考图。
 
-来源为 V2 已配准的手绘素材，使用确定性关节变换和透明合成，无新增图片生成调用。重建脚本为仓库 `03-deep-learning/loss-functions/video/loss-explainer-v6/rig_author.py`。后续视频直接复制此文件夹，不必重新生成；`sync_author_library.py --destination <新视频素材目录>` 会同时核对 SHA-256。
+来源为已配准的手绘素材，使用确定性关节变换和透明合成，无新增图片生成调用。重建所需的 84 张原始姿势、人物底稿和道具已保存在 `source/registered-art/`，文件哈希见 [source/provenance.json](source/provenance.json)。重建脚本为仓库 `03-deep-learning/loss-functions/video/loss-explainer-v6/rig_author.py`，无需历史动作库。后续视频直接复制此文件夹，不必重新生成；`sync_author_library.py --destination <新视频素材目录>` 会同时核对 SHA-256。
 
 全帧验收包括：实际嘴部像素与同一参考头部变换后的像素一致、身体纹理固定、关节角度连续、循环首尾一致、无边缘裁切，以及公共库和视频副本逐文件一致。结果位于视频工程 `qa/rig-validation.json`。

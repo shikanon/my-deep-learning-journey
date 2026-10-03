@@ -1,0 +1,15 @@
+Use case: illustration-story
+Edit target: reference 8-pose sprite sheet, retain EXACT cute author identity, black/red doctoral gown, black mortarboard and golden tassel, glasses, same children's colored-pencil/crayon hand-drawn style.
+Create corrected full 8-frame raising sequence in 4 columns by 2 rows, equal square cells, transparent background. CRITICAL CHANGE: the current pointer is too short. Make the rigid wooden teaching pointer MUCH LONGER, its handle-to-tip length must be 85% of the character's full standing cap-to-shoes height, SAME length throughout.
+To fit that long pointer, make the character SMALLER inside every cell with large right-side and upper-right empty space. In each cell the full character occupies only 55% of cell height, with cap around 30% from top and feet around 85% from top; body center x=28% of cell width. The pointer occupies the right half of the cell. Generous fully transparent gutters, everything stays inside its OWN cell. Identical character scale, cap, face, head position and foot positions in all eight frames. Other arm motionless at side.
+The same SCREEN-RIGHT hand grips one end of the long straight shaft, NEVER the middle. Hand begins down at hip and gradually lifts to shoulder level. Eight chronological small increments:
+1 arm lowered, hand at hip; shaft angles 25 degrees DOWN-RIGHT.
+2 arm begins lifting, shaft 15 degrees DOWN-RIGHT.
+3 shaft 5 degrees DOWN-RIGHT.
+4 shaft 5 degrees UP-RIGHT.
+5 shaft 15 degrees UP-RIGHT.
+6 shaft 25 degrees UP-RIGHT.
+7 shaft 35 degrees UP-RIGHT.
+8 arm raised, shaft 45 degrees UP-RIGHT; tip clearly in the cell's UPPER-RIGHT corner.
+There must be a clearly visible LONG shaft between gripping hand and tip, not a short baton. The elbow and sleeve move smoothly with the hand, standing body remains still. Same pointer thickness and tip, no bending, no double stick, no detaching. Entire pointer and full body in every cell with transparent padding at all edges.
+Opaque character colors with crayon texture; actual alpha zero outside characters. No grid lines, numbers, words, borders, shadows, background, paper, extra props, 3D rendering. Keep the original adorable face and drawing style.

@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-03T11:35:52.691443+00:00",
+  "status": "passed",
+  "scope": "Local activation-functions/video history only",
+  "retained_project": "activation-explainer-v6",
+  "retained_final": "activation-explainer-v6/renders/activation-functions-v6.mp4",
+  "retained_final_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+  "retained_inputs": "Final source, current assets, raw audio used for final voice and term repair, source subtitles, checked ASR evidence and local runtime dependencies.",
+  "removed": [
+    {
+      "path": "activation-explainer-v1",
+      "file_count": 328,
+      "bytes": 224900265,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v2",
+      "file_count": 357,
+      "bytes": 213802487,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v3",
+      "file_count": 379,
+      "bytes": 221891725,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v4",
+      "file_count": 423,
+      "bytes": 304063368,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v5",
+      "file_count": 451,
+      "bytes": 324667408,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v6/renders/activation-functions-v6-formula-carry-draft.mp4",
+      "file_count": 1,
+      "bytes": 24409404,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/make_writer_preview.py",
+      "file_count": 1,
+      "bytes": 3858,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/assets/pencil-hand",
+      "file_count": 4,
+      "bytes": 22329,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v6/audio/evolution-a-calibrated.wav",
+      "file_count": 1,
+      "bytes": 6084078,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/audio/evolution-b-calibrated.wav",
+      "file_count": 1,
+      "bytes": 4662078,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/audio/seed/evolution-a",
+      "file_count": 4,
+      "bytes": 13990262,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v6/audio/seed/evolution-b-v4-readable",
+      "file_count": 3,
+      "bytes": 13744430,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v6/qa/superseded-draft.json",
+      "file_count": 1,
+      "bytes": 317,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/__pycache__",
+      "file_count": 3,
+      "bytes": 84253,
+      "type": "directory"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-0.1.jpg",
+      "file_count": 1,
+      "bytes": 197101,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-0.2.jpg",
+      "file_count": 1,
+      "bytes": 219514,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-0.4.jpg",
+      "file_count": 1,
+      "bytes": 223352,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-0.7.jpg",
+      "file_count": 1,
+      "bytes": 249018,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-0.jpg",
+      "file_count": 1,
+      "bytes": 342036,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-1.4.jpg",
+      "file_count": 1,
+      "bytes": 254638,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-2.65.jpg",
+      "file_count": 1,
+      "bytes": 262821,
+      "type": "file"
+    },
+    {
+      "path": "activation-explainer-v6/qa/opening-carry-3.4.jpg",
+      "file_count": 1,
+      "bytes": 296539,
+      "type": "file"
+    }
+  ],
+  "removed_file_count": 1965,
+  "bytes_removed": 1354371281,
+  "verified_at": "2026-10-03T11:38:46.290961+00:00",
+  "remaining_projects": [
+    "activation-explainer-v6"
+  ],
+  "verification": {
+    "final_media_sha256_unchanged": true,
+    "isolated_rebuild": {
+      "duration": 240.7,
+      "frames": 7221,
+      "scenes": 19,
+      "captions": 130,
+      "han_per_minute": 297.37627651217593,
+      "equivalent_units_per_minute": 320.0,
+      "alignment_ratios": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "identical_rebuilt_files": [
+      "timeline.json",
+      "captions.srt",
+      "chapters.ffmetadata",
+      "audio/narration.m4a",
+      "audio/narration.wav"
+    ],
+    "unchanged_rendered_frames": [
+      "0",
+      "21",
+      "42",
+      "144",
+      "234",
+      "402",
+      "456",
+      "3610",
+      "7220"
+    ],
+    "audio_continuity": "passed",
+    "local_player_access": "passed",
+    "media_range_status": 206,
+    "evidence": [
+      "activation-explainer-v6/qa/cleanup-validation.json",
+      "activation-explainer-v6/qa/cleanup-player-check.json",
+      "activation-explainer-v6/qa/audio-continuity.json",
+      "activation-explainer-v6/validation.json"
+    ]
+  }
+}

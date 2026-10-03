@@ -2,7 +2,7 @@
 
 No face or lip animation is sampled from the old frames. Hands retain the
 existing painted poses; head and lower legs use deterministic rigid transforms.
-All source art is preserved in V2. V3 is a reusable, baked transparent library.
+Required registered source art is preserved inside the current V3 library.
 """
 from pathlib import Path
 import hashlib,json,math,shutil
@@ -10,8 +10,8 @@ import cv2,numpy as np
 from PIL import Image,ImageDraw,ImageFont
 
 B=Path(__file__).resolve().parent;ROOT=B.parents[3]
-SOURCE=ROOT/'assets/手绘形象/shikanon-animation-v2'
 LIB=ROOT/'assets/手绘形象/shikanon-animation-v3'
+SOURCE=LIB/'source/registered-art'
 W,H=384,576;COUNT=24;FPS=20;COLS=6;ROWS=4
 Y,X=np.mgrid[:H,:W]
 ACTIONS=['talk','point-right','think','celebrate','wave','think-question','teach-pointer','step']
@@ -48,7 +48,7 @@ save_rgba(left,LIB/'rig/leg-left.png');save_rgba(right,LIB/'rig/leg-right.png')
 save_rgba(part(fixed,1-head_mask),LIB/'rig/body-neutral.png')
 mouth_box=[151,273,202,301]
 Image.fromarray(base[273:301,151:202]).save(LIB/'rig/mouth-reference.png')
-manifest={'schema':'shikanon-sprite-library/v3','version':3,'character':'shikanon','style':'children-colored-pencil','source_image':'reference.png','source_sha256':sha(LIB/'reference.png'),'frame_size':[W,H],'anchor':[192,548],'generator':'Existing registered artwork, immutable closed-smile head layer, deterministic head/leg joints and existing SVG props','repair_source':'../shikanon-animation-v2/manifest.json','mouth_animation':False,'facial_expression':'closed-smile','rig':{'head_layer':'rig/head-closed-smile.png','head_sha256':sha(LIB/'rig/head-closed-smile.png'),'mouth_reference':'rig/mouth-reference.png','mouth_sha256':sha(LIB/'rig/mouth-reference.png'),'mouth_box_head_local':mouth_box,'head_pivot':[174,333],'left_leg_pivot':[143,463],'right_leg_pivot':[209,463],'body_scale':1,'head_scale':1,'notes':'Motion is intentional rigid rotation around named joints, never per-frame recentering or generated face deformation.'},'actions':{}}
+manifest={'schema':'shikanon-sprite-library/v3','version':3,'character':'shikanon','style':'children-colored-pencil','source_image':'reference.png','source_sha256':sha(LIB/'reference.png'),'frame_size':[W,H],'anchor':[192,548],'generator':'Existing registered artwork, immutable closed-smile head layer, deterministic head/leg joints and existing SVG props','repair_source':'source/registered-art/manifest.json','mouth_animation':False,'facial_expression':'closed-smile','rig':{'head_layer':'rig/head-closed-smile.png','head_sha256':sha(LIB/'rig/head-closed-smile.png'),'mouth_reference':'rig/mouth-reference.png','mouth_sha256':sha(LIB/'rig/mouth-reference.png'),'mouth_box_head_local':mouth_box,'head_pivot':[174,333],'left_leg_pivot':[143,463],'right_leg_pivot':[209,463],'body_scale':1,'head_scale':1,'notes':'Motion is intentional rigid rotation around named joints, never per-frame recentering or generated face deformation.'},'actions':{}}
 cache={a:[premul(np.array(Image.open(SOURCE/f'frames/{a}/{i:03}.png'))) for i in range(12)] for a in ACTIONS if a!='step'}
 # Question belongs to the head gesture. The pointer stays with its painted hand.
 question=cache['think-question'][0]-cache['think'][0]

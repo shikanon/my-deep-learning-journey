@@ -36,7 +36,7 @@ for ci,c in enumerate(C):
   # Negative control: the old open talking mouth must fit encoded pixels worse
   # than the fixed smile. This tolerates real H.264/minification differences
   # without accepting an open mouth under a loose absolute-error threshold.
-  opened=np.array(Image.open(B.parents[3]/'assets/手绘形象/shikanon-animation-v2/frames/talk/006.png'))
+  opened=np.array(Image.open(L/'source/registered-art/frames/talk/006.png'))
   opened=cv2.warpAffine(opened,hm,(384,576),flags=cv2.INTER_CUBIC)
   negative=render_reference(opened)
   open_error=float(np.abs(decoded[mouthmask].astype(float)-negative[mouthmask].astype(float)).mean())

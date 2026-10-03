@@ -1,0 +1,83 @@
+{
+  "research_checked": "2026-10-02",
+  "article_count_scope": "Han characters between narrative markers, including section headings and tables; links, Latin names and LaTeX notation do not add Han counts; supporting reading/practice/CTA excluded",
+  "article_han": {
+    "motivation": 1392,
+    "evolution": 2387,
+    "frontier": 948
+  },
+  "article_shares": {
+    "motivation": 0.294478527607362,
+    "evolution": 0.5049714406600381,
+    "frontier": 0.20055003173259997
+  },
+  "author_assets_identical": true,
+  "copied_files": 313,
+  "voice_reference_sha256": "a998097654f7766e0fce35a51aba4814ec20fde6c2118c5fa6d2362414196cc4",
+  "revision_date": "2026-10-03",
+  "history_checked": "2026-10-03",
+  "doctor_pointer": {
+    "root_asset": "assets/手绘形象/博士服教棍-v1",
+    "manifest_sha256": "c1df2965b31b47b209569349bfa1fb8593532265105c8354bf4372432d9e7c55",
+    "frames": 16,
+    "fps": 8,
+    "source_identical": true,
+    "replacement_scenes": [
+      "s02",
+      "s08",
+      "s12",
+      "s17"
+    ]
+  },
+  "spoken_person_names": [
+    "辛顿",
+    "何恺明"
+  ],
+  "visual_revision": 6,
+  "handwritten_formulas": 17,
+  "audio_revision": 4,
+  "pronunciation_policy": "English full names for ReLU, GELU and SiLU; spell Swish with individual English letters, then Gated Linear Unit for SwiGLU; clear English Sigmoid; Chinese beta, Tanh and PowLU names. No Chinese homophone function names.",
+  "changed_pronunciation_scenes": [
+    "s06",
+    "s08",
+    "s10",
+    "s11",
+    "s13"
+  ],
+  "english_aligned": true,
+  "spoken_han": {
+    "motivation": 356,
+    "evolution": 563,
+    "frontier": 233
+  },
+  "spoken_equivalent_units": {
+    "motivation": 356.0,
+    "evolution": 655.0,
+    "frontier": 233.0
+  },
+  "spoken_shares": {
+    "motivation": 0.2861736334405145,
+    "evolution": 0.5265273311897106,
+    "frontier": 0.1872990353697749
+  },
+  "timing_method": "Chinese character units plus explicitly counted English syllable units; actual provider word timestamps scaled with audio, Han rate measured separately",
+  "pencil_writer": {
+    "root_asset": "assets/手绘形象/抱大铅笔写字-v2",
+    "source_archive_sha256": "61394aa633970c0d60fcb3b87e079ed9f17ccca1ed6f21547613cabf6f2f3e46",
+    "frames": 16,
+    "fps": 8,
+    "source_frames_unchanged": true,
+    "tip_registration": "assets/pencil-writer/video-registration.json",
+    "rigged_motion_certified": false
+  },
+  "opening_revision": {
+    "intro_formula": false,
+    "semantic_sequence": [
+      "问号人物思考",
+      "多层神经网络与信号流",
+      "异或四点与分类错误"
+    ],
+    "first_handwriting": "s02 only; z = W x + b",
+    "author_asset_reused": "shikanon-animation-v3 / think-question"
+  }
+}

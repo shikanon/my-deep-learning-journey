@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-03T11:31:19.672725+00:00",
+  "verification": "Before cleanup, the encoded AAC packets and decoded PCM from the final V6 and accepted V4 were compared byte for byte. Future local checks compare the final export to these recorded hashes.",
+  "source_project": "activation-explainer-v4",
+  "source_video_sha256": "c5f2417f9e522cbe8e85568597115f5a3f41962d34a29d875079ab3ebf133bf4",
+  "visual_source_project": "activation-explainer-v5",
+  "visual_source_video_sha256": "3947ca5d7df070da13610cf9c049d4ac829011d4d68e44798ad4b62f79180125",
+  "narration_sha256": "a6bf9f4c7b8a0f45462c37d17efe996c44c48ac3d9b8c4ceb08436f80eb25579",
+  "timeline_sha256": "982c12b944de6fa0e8bc1549808b52940b3c55932bb5ffd8eb76263229cf410d",
+  "audio_file": "audio/narration.m4a",
+  "audio_sha256": "44c8a3da2c3842000cacbddf92f9a5f461adfdbb676ef2ff244d2949426a94c1",
+  "aac_sha256": "db5fa3661e517004984f0daab306447b877fb224f8407c2c5dee8164fbec9d15",
+  "aac_bytes": 4915084,
+  "encoded_pcm_sha256": "bee8ec58d89f1a3bf534cf558851aaa897748fcd3e182a8b8ae4d187c231d206",
+  "source_pronunciation_evidence": "qa/source-v4-pronunciation-asr.json",
+  "source_pronunciation_evidence_sha256": "3186cd000bab7857792b871b3ab3a3735daae900542f0b1b6f1b5ee21892f902",
+  "retained_term_occurrences": 11,
+  "original_browser_evidence": "qa/playback-complete.json",
+  "new_asr_run": false
+}

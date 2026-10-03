@@ -1,0 +1,1312 @@
+{
+  "status": "passed",
+  "revision_date": "2026-10-03",
+  "history_checked": "2026-10-03",
+  "research_checked": "2026-10-02",
+  "scope": "local encoded video and loopback player",
+  "file": "renders/activation-functions-v6.mp4",
+  "sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+  "bytes": 24548128,
+  "duration_seconds": 240.7,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": "30/1",
+  "codecs": [
+    "h264",
+    "aac"
+  ],
+  "frames": 7221,
+  "chapters": 19,
+  "caption_groups": 130,
+  "faststart": true,
+  "complete_decode_errors": 0,
+  "local_byte_range": {
+    "status": 206,
+    "received_bytes": 1024,
+    "content_range": "bytes 0-1023/24548128",
+    "accept_ranges": "bytes"
+  },
+  "formula_cases": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "new_animation": {
+    "status": "passed",
+    "video_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+    "xor_math_samples": 270,
+    "minimum_wrong_points": 1,
+    "unique_W": 236,
+    "unique_b": 81,
+    "pen_path_samples": 1360,
+    "pen_tip_matches_stroke_endpoint": true,
+    "formulas_written": 17,
+    "formula_scene_count": 17,
+    "intro_has_formula": false,
+    "writer_asset_copies_identical": true,
+    "writer": {
+      "source_archive_sha256": "61394aa633970c0d60fcb3b87e079ed9f17ccca1ed6f21547613cabf6f2f3e46",
+      "source_frames_unchanged": true,
+      "frames": 16,
+      "fps": 8,
+      "display_size": [
+        300,
+        300
+      ],
+      "maximum_tip_registration_error_px": 0.6093609766433801,
+      "encoded_source_frame_selection": [
+        {
+          "source_index": 0,
+          "encoded_frame": 398,
+          "rgb_mae": 3.097566666666667,
+          "tip_error_px": 0.2987067437610942
+        },
+        {
+          "source_index": 1,
+          "encoded_frame": 402,
+          "rgb_mae": 2.962985185185185,
+          "tip_error_px": 0.34214306216004825
+        },
+        {
+          "source_index": 2,
+          "encoded_frame": 405,
+          "rgb_mae": 3.1779148148148146,
+          "tip_error_px": 0.4968235418111988
+        },
+        {
+          "source_index": 3,
+          "encoded_frame": 409,
+          "rgb_mae": 2.9846074074074074,
+          "tip_error_px": 0.44111738762646274
+        },
+        {
+          "source_index": 4,
+          "encoded_frame": 413,
+          "rgb_mae": 2.762477777777778,
+          "tip_error_px": 0.038876936191859765
+        },
+        {
+          "source_index": 5,
+          "encoded_frame": 417,
+          "rgb_mae": 3.0665037037037037,
+          "tip_error_px": 0.4602733238461392
+        },
+        {
+          "source_index": 6,
+          "encoded_frame": 420,
+          "rgb_mae": 3.0080222222222224,
+          "tip_error_px": 0.6093609766433801
+        },
+        {
+          "source_index": 7,
+          "encoded_frame": 424,
+          "rgb_mae": 2.934814814814815,
+          "tip_error_px": 0.4210606181289562
+        },
+        {
+          "source_index": 8,
+          "encoded_frame": 428,
+          "rgb_mae": 2.9932333333333334,
+          "tip_error_px": 0.1804328477575332
+        },
+        {
+          "source_index": 9,
+          "encoded_frame": 432,
+          "rgb_mae": 3.0407703703703706,
+          "tip_error_px": 0.40348967518739537
+        },
+        {
+          "source_index": 10,
+          "encoded_frame": 435,
+          "rgb_mae": 3.225233333333333,
+          "tip_error_px": 0.5409500442213555
+        },
+        {
+          "source_index": 11,
+          "encoded_frame": 439,
+          "rgb_mae": 3.031262962962963,
+          "tip_error_px": 0.4523919367313962
+        },
+        {
+          "source_index": 12,
+          "encoded_frame": 443,
+          "rgb_mae": 3.1442111111111113,
+          "tip_error_px": 0.34600795603142426
+        },
+        {
+          "source_index": 13,
+          "encoded_frame": 447,
+          "rgb_mae": 3.219825925925926,
+          "tip_error_px": 0.3101001734854127
+        },
+        {
+          "source_index": 14,
+          "encoded_frame": 450,
+          "rgb_mae": 3.08437037037037,
+          "tip_error_px": 0.5648636999468656
+        },
+        {
+          "source_index": 15,
+          "encoded_frame": 454,
+          "rgb_mae": 2.9376074074074072,
+          "tip_error_px": 0.3756144933382235
+        },
+        {
+          "source_index": 15,
+          "encoded_frame": 454,
+          "rgb_mae": 2.9376074074074072,
+          "tip_error_px": 0.3756144933382235
+        },
+        {
+          "source_index": 14,
+          "encoded_frame": 450,
+          "rgb_mae": 3.08437037037037,
+          "tip_error_px": 0.5648636999468656
+        },
+        {
+          "source_index": 13,
+          "encoded_frame": 447,
+          "rgb_mae": 3.219825925925926,
+          "tip_error_px": 0.3101001734854127
+        },
+        {
+          "source_index": 12,
+          "encoded_frame": 443,
+          "rgb_mae": 3.1442111111111113,
+          "tip_error_px": 0.34600795603142426
+        },
+        {
+          "source_index": 11,
+          "encoded_frame": 439,
+          "rgb_mae": 3.031262962962963,
+          "tip_error_px": 0.4523919367313962
+        },
+        {
+          "source_index": 10,
+          "encoded_frame": 435,
+          "rgb_mae": 3.225233333333333,
+          "tip_error_px": 0.5409500442213555
+        },
+        {
+          "source_index": 9,
+          "encoded_frame": 432,
+          "rgb_mae": 3.0407703703703706,
+          "tip_error_px": 0.40348967518739537
+        },
+        {
+          "source_index": 8,
+          "encoded_frame": 428,
+          "rgb_mae": 2.9932333333333334,
+          "tip_error_px": 0.1804328477575332
+        },
+        {
+          "source_index": 7,
+          "encoded_frame": 424,
+          "rgb_mae": 2.934814814814815,
+          "tip_error_px": 0.4210606181289562
+        },
+        {
+          "source_index": 6,
+          "encoded_frame": 420,
+          "rgb_mae": 3.0080222222222224,
+          "tip_error_px": 0.6093609766433801
+        },
+        {
+          "source_index": 5,
+          "encoded_frame": 417,
+          "rgb_mae": 3.0665037037037037,
+          "tip_error_px": 0.4602733238461392
+        },
+        {
+          "source_index": 4,
+          "encoded_frame": 413,
+          "rgb_mae": 2.762477777777778,
+          "tip_error_px": 0.038876936191859765
+        },
+        {
+          "source_index": 3,
+          "encoded_frame": 409,
+          "rgb_mae": 2.9846074074074074,
+          "tip_error_px": 0.44111738762646274
+        },
+        {
+          "source_index": 2,
+          "encoded_frame": 405,
+          "rgb_mae": 3.1779148148148146,
+          "tip_error_px": 0.4968235418111988
+        },
+        {
+          "source_index": 1,
+          "encoded_frame": 402,
+          "rgb_mae": 2.962985185185185,
+          "tip_error_px": 0.34214306216004825
+        },
+        {
+          "source_index": 0,
+          "encoded_frame": 398,
+          "rgb_mae": 3.097566666666667,
+          "tip_error_px": 0.2987067437610942
+        }
+      ],
+      "rigged_motion_certified": false
+    },
+    "actual_encoded_handwriting_samples": [
+      {
+        "scene": "s02",
+        "frame": 407,
+        "phase": 0.65,
+        "rgb_mae": 1.7709343267628659
+      },
+      {
+        "scene": "s02",
+        "frame": 429,
+        "phase": 1.4,
+        "rgb_mae": 1.7307412996321796
+      },
+      {
+        "scene": "s02",
+        "frame": 467,
+        "phase": 2.65,
+        "rgb_mae": 1.4601637901222924
+      },
+      {
+        "scene": "s03",
+        "frame": 852,
+        "phase": 0.65,
+        "rgb_mae": 1.8033716872583232
+      },
+      {
+        "scene": "s03",
+        "frame": 875,
+        "phase": 1.4,
+        "rgb_mae": 1.7813543336791473
+      },
+      {
+        "scene": "s03",
+        "frame": 912,
+        "phase": 2.65,
+        "rgb_mae": 1.5232277028513943
+      },
+      {
+        "scene": "s04",
+        "frame": 1196,
+        "phase": 0.65,
+        "rgb_mae": 1.829405199786224
+      },
+      {
+        "scene": "s04",
+        "frame": 1218,
+        "phase": 1.4,
+        "rgb_mae": 1.775388254896413
+      },
+      {
+        "scene": "s04",
+        "frame": 1256,
+        "phase": 2.65,
+        "rgb_mae": 1.5388860071049073
+      },
+      {
+        "scene": "s05",
+        "frame": 1642,
+        "phase": 0.65,
+        "rgb_mae": 1.7708557326542802
+      },
+      {
+        "scene": "s05",
+        "frame": 1665,
+        "phase": 1.4,
+        "rgb_mae": 1.8449668332861768
+      },
+      {
+        "scene": "s05",
+        "frame": 1702,
+        "phase": 2.65,
+        "rgb_mae": 1.564970605803389
+      },
+      {
+        "scene": "s06",
+        "frame": 2027,
+        "phase": 0.65,
+        "rgb_mae": 1.7520308717658524
+      },
+      {
+        "scene": "s06",
+        "frame": 2049,
+        "phase": 1.4,
+        "rgb_mae": 1.768108082618127
+      },
+      {
+        "scene": "s06",
+        "frame": 2087,
+        "phase": 2.65,
+        "rgb_mae": 1.543823289006256
+      },
+      {
+        "scene": "s07",
+        "frame": 2455,
+        "phase": 0.65,
+        "rgb_mae": 1.7548987707881418
+      },
+      {
+        "scene": "s07",
+        "frame": 2477,
+        "phase": 1.4,
+        "rgb_mae": 1.7341735043541135
+      },
+      {
+        "scene": "s07",
+        "frame": 2515,
+        "phase": 2.65,
+        "rgb_mae": 1.4487197019711402
+      },
+      {
+        "scene": "s08",
+        "frame": 2829,
+        "phase": 0.65,
+        "rgb_mae": 1.8160992172026784
+      },
+      {
+        "scene": "s08",
+        "frame": 2851,
+        "phase": 1.4,
+        "rgb_mae": 1.8095939828350467
+      },
+      {
+        "scene": "s08",
+        "frame": 2889,
+        "phase": 2.65,
+        "rgb_mae": 1.573743280203716
+      },
+      {
+        "scene": "s09",
+        "frame": 3242,
+        "phase": 0.65,
+        "rgb_mae": 1.7336870068219685
+      },
+      {
+        "scene": "s09",
+        "frame": 3264,
+        "phase": 1.4,
+        "rgb_mae": 1.776802948850954
+      },
+      {
+        "scene": "s09",
+        "frame": 3302,
+        "phase": 2.65,
+        "rgb_mae": 1.518626803734792
+      },
+      {
+        "scene": "s10",
+        "frame": 3588,
+        "phase": 0.65,
+        "rgb_mae": 1.8011058191077998
+      },
+      {
+        "scene": "s10",
+        "frame": 3610,
+        "phase": 1.4,
+        "rgb_mae": 1.8033606840831211
+      },
+      {
+        "scene": "s10",
+        "frame": 3648,
+        "phase": 2.65,
+        "rgb_mae": 1.5567535917507624
+      },
+      {
+        "scene": "s11",
+        "frame": 4039,
+        "phase": 0.65,
+        "rgb_mae": 1.7559126347888963
+      },
+      {
+        "scene": "s11",
+        "frame": 4061,
+        "phase": 1.4,
+        "rgb_mae": 1.8479934924078092
+      },
+      {
+        "scene": "s11",
+        "frame": 4099,
+        "phase": 2.65,
+        "rgb_mae": 1.5322000062875287
+      },
+      {
+        "scene": "s12",
+        "frame": 4466,
+        "phase": 0.65,
+        "rgb_mae": 1.752529944355371
+      },
+      {
+        "scene": "s12",
+        "frame": 4489,
+        "phase": 1.4,
+        "rgb_mae": 1.7825073092520984
+      },
+      {
+        "scene": "s12",
+        "frame": 4526,
+        "phase": 2.65,
+        "rgb_mae": 1.4894031563394008
+      },
+      {
+        "scene": "s13",
+        "frame": 4873,
+        "phase": 0.65,
+        "rgb_mae": 1.7965316419881165
+      },
+      {
+        "scene": "s13",
+        "frame": 4895,
+        "phase": 1.4,
+        "rgb_mae": 1.7781217579930209
+      },
+      {
+        "scene": "s13",
+        "frame": 4933,
+        "phase": 2.65,
+        "rgb_mae": 1.5611973026501933
+      },
+      {
+        "scene": "s14",
+        "frame": 5359,
+        "phase": 0.65,
+        "rgb_mae": 1.8046284070546073
+      },
+      {
+        "scene": "s14",
+        "frame": 5382,
+        "phase": 1.4,
+        "rgb_mae": 1.7617356722940047
+      },
+      {
+        "scene": "s14",
+        "frame": 5419,
+        "phase": 2.65,
+        "rgb_mae": 1.5465984469804144
+      },
+      {
+        "scene": "s15",
+        "frame": 5710,
+        "phase": 0.65,
+        "rgb_mae": 1.7888907227514226
+      },
+      {
+        "scene": "s15",
+        "frame": 5732,
+        "phase": 1.4,
+        "rgb_mae": 1.7602636046401963
+      },
+      {
+        "scene": "s15",
+        "frame": 5770,
+        "phase": 2.65,
+        "rgb_mae": 1.5055290955389984
+      },
+      {
+        "scene": "s16",
+        "frame": 6028,
+        "phase": 0.65,
+        "rgb_mae": 1.750771008205225
+      },
+      {
+        "scene": "s16",
+        "frame": 6051,
+        "phase": 1.4,
+        "rgb_mae": 1.7373950768650381
+      },
+      {
+        "scene": "s16",
+        "frame": 6088,
+        "phase": 2.65,
+        "rgb_mae": 1.462790405231224
+      },
+      {
+        "scene": "s17",
+        "frame": 6367,
+        "phase": 0.65,
+        "rgb_mae": 1.7543108868559212
+      },
+      {
+        "scene": "s17",
+        "frame": 6390,
+        "phase": 1.4,
+        "rgb_mae": 1.7140597000848816
+      },
+      {
+        "scene": "s17",
+        "frame": 6427,
+        "phase": 2.65,
+        "rgb_mae": 1.4173787292904523
+      },
+      {
+        "scene": "s18",
+        "frame": 6666,
+        "phase": 0.65,
+        "rgb_mae": 1.773382533245308
+      },
+      {
+        "scene": "s18",
+        "frame": 6688,
+        "phase": 1.4,
+        "rgb_mae": 1.791654091609293
+      },
+      {
+        "scene": "s18",
+        "frame": 6726,
+        "phase": 2.65,
+        "rgb_mae": 1.5475337168725831
+      }
+    ],
+    "actual_encoded_xor_parameter_states": [
+      {
+        "W": [
+          0.94,
+          1.06
+        ],
+        "b": -0.5,
+        "points": [
+          {
+            "x": [
+              0,
+              0
+            ],
+            "target": 0,
+            "z": -0.5,
+            "prediction": 0,
+            "wrong": false
+          },
+          {
+            "x": [
+              0,
+              1
+            ],
+            "target": 1,
+            "z": 0.56,
+            "prediction": 1,
+            "wrong": false
+          },
+          {
+            "x": [
+              1,
+              0
+            ],
+            "target": 1,
+            "z": 0.44,
+            "prediction": 1,
+            "wrong": false
+          },
+          {
+            "x": [
+              1,
+              1
+            ],
+            "target": 0,
+            "z": 1.5,
+            "prediction": 1,
+            "wrong": true
+          }
+        ],
+        "errors": 1
+      },
+      {
+        "W": [
+          -0.53,
+          1.31
+        ],
+        "b": -0.46,
+        "points": [
+          {
+            "x": [
+              0,
+              0
+            ],
+            "target": 0,
+            "z": -0.46,
+            "prediction": 0,
+            "wrong": false
+          },
+          {
+            "x": [
+              0,
+              1
+            ],
+            "target": 1,
+            "z": 0.85,
+            "prediction": 1,
+            "wrong": false
+          },
+          {
+            "x": [
+              1,
+              0
+            ],
+            "target": 1,
+            "z": -0.99,
+            "prediction": 0,
+            "wrong": true
+          },
+          {
+            "x": [
+              1,
+              1
+            ],
+            "target": 0,
+            "z": 0.32,
+            "prediction": 1,
+            "wrong": true
+          }
+        ],
+        "errors": 2
+      },
+      {
+        "W": [
+          -1.41,
+          -0.09
+        ],
+        "b": 0.01,
+        "points": [
+          {
+            "x": [
+              0,
+              0
+            ],
+            "target": 0,
+            "z": 0.01,
+            "prediction": 1,
+            "wrong": true
+          },
+          {
+            "x": [
+              0,
+              1
+            ],
+            "target": 1,
+            "z": -0.08,
+            "prediction": 0,
+            "wrong": true
+          },
+          {
+            "x": [
+              1,
+              0
+            ],
+            "target": 1,
+            "z": -1.4,
+            "prediction": 0,
+            "wrong": true
+          },
+          {
+            "x": [
+              1,
+              1
+            ],
+            "target": 0,
+            "z": -1.49,
+            "prediction": 0,
+            "wrong": false
+          }
+        ],
+        "errors": 3
+      },
+      {
+        "W": [
+          0.85,
+          -1.13
+        ],
+        "b": -0.24,
+        "points": [
+          {
+            "x": [
+              0,
+              0
+            ],
+            "target": 0,
+            "z": -0.24,
+            "prediction": 0,
+            "wrong": false
+          },
+          {
+            "x": [
+              0,
+              1
+            ],
+            "target": 1,
+            "z": -1.37,
+            "prediction": 0,
+            "wrong": true
+          },
+          {
+            "x": [
+              1,
+              0
+            ],
+            "target": 1,
+            "z": 0.61,
+            "prediction": 1,
+            "wrong": false
+          },
+          {
+            "x": [
+              1,
+              1
+            ],
+            "target": 0,
+            "z": -0.52,
+            "prediction": 0,
+            "wrong": false
+          }
+        ],
+        "errors": 1
+      }
+    ],
+    "xor_motion_rgb_mae": 11.12066222258799,
+    "actual_encoded_knowledge_card_motion": [
+      {
+        "scene": "s01",
+        "knowledge_card_motion_rgb_mae": 7.773037318816816
+      },
+      {
+        "scene": "s02",
+        "knowledge_card_motion_rgb_mae": 5.614780465388311
+      },
+      {
+        "scene": "s03",
+        "knowledge_card_motion_rgb_mae": 4.939310465446755
+      },
+      {
+        "scene": "s04",
+        "knowledge_card_motion_rgb_mae": 5.005144910109821
+      },
+      {
+        "scene": "s05",
+        "knowledge_card_motion_rgb_mae": 5.067701842985505
+      },
+      {
+        "scene": "s06",
+        "knowledge_card_motion_rgb_mae": 5.841923365616551
+      },
+      {
+        "scene": "s07",
+        "knowledge_card_motion_rgb_mae": 4.7057326395720835
+      },
+      {
+        "scene": "s08",
+        "knowledge_card_motion_rgb_mae": 4.6144201445461
+      },
+      {
+        "scene": "s09",
+        "knowledge_card_motion_rgb_mae": 4.778719675273096
+      },
+      {
+        "scene": "s10",
+        "knowledge_card_motion_rgb_mae": 3.8344228008424244
+      },
+      {
+        "scene": "s11",
+        "knowledge_card_motion_rgb_mae": 5.494006106847977
+      },
+      {
+        "scene": "s12",
+        "knowledge_card_motion_rgb_mae": 5.901115427998496
+      },
+      {
+        "scene": "s13",
+        "knowledge_card_motion_rgb_mae": 4.823830553187148
+      },
+      {
+        "scene": "s14",
+        "knowledge_card_motion_rgb_mae": 6.415748453247633
+      },
+      {
+        "scene": "s15",
+        "knowledge_card_motion_rgb_mae": 3.4494071693520767
+      },
+      {
+        "scene": "s16",
+        "knowledge_card_motion_rgb_mae": 5.104945963869031
+      },
+      {
+        "scene": "s17",
+        "knowledge_card_motion_rgb_mae": 6.731412144378995
+      },
+      {
+        "scene": "s18",
+        "knowledge_card_motion_rgb_mae": 4.569326934989032
+      },
+      {
+        "scene": "s19",
+        "knowledge_card_motion_rgb_mae": 10.986219511306414
+      }
+    ],
+    "audio_source_sha256": "44c8a3da2c3842000cacbddf92f9a5f461adfdbb676ef2ff244d2949426a94c1"
+  },
+  "opening_story": {
+    "status": "passed",
+    "video_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+    "intro_has_formula": false,
+    "opening_formula_writing_passes": 1,
+    "narration_order_verified": true,
+    "narration_cues": {
+      "question_end": 1.037169789516127,
+      "network_start": 1.0786565793786127,
+      "depth_increase_start": 4.4205734835727,
+      "four_points_start": 7.200188515048356,
+      "first_handwriting_start": 13.208339327087039
+    },
+    "opening_actor": "one cached think-question actor, moves from board to presenter lane",
+    "encoded_samples": [
+      {
+        "time": 0.7,
+        "frame": 21,
+        "board_and_actor_rgb_mae": 1.6275243699954474
+      },
+      {
+        "time": 1.0666666666666667,
+        "frame": 32,
+        "board_and_actor_rgb_mae": 1.6268217241102274
+      },
+      {
+        "time": 1.4,
+        "frame": 42,
+        "board_and_actor_rgb_mae": 1.7615961677512653
+      },
+      {
+        "time": 1.9666666666666666,
+        "frame": 59,
+        "board_and_actor_rgb_mae": 1.7616363380734315
+      },
+      {
+        "time": 2.7,
+        "frame": 81,
+        "board_and_actor_rgb_mae": 1.8363133017326798
+      },
+      {
+        "time": 4.8,
+        "frame": 144,
+        "board_and_actor_rgb_mae": 2.1141918400685573
+      },
+      {
+        "time": 5.3,
+        "frame": 159,
+        "board_and_actor_rgb_mae": 2.1681265231247155
+      },
+      {
+        "time": 7.8,
+        "frame": 234,
+        "board_and_actor_rgb_mae": 2.282916900993546
+      },
+      {
+        "time": 12.4,
+        "frame": 372,
+        "board_and_actor_rgb_mae": 2.2030890977745643
+      },
+      {
+        "time": 13.3,
+        "frame": 399,
+        "board_and_actor_rgb_mae": 1.8157527918373906
+      },
+      {
+        "time": 14.3,
+        "frame": 429,
+        "board_and_actor_rgb_mae": 1.8412371789721753
+      },
+      {
+        "time": 15.266666666666667,
+        "frame": 458,
+        "board_and_actor_rgb_mae": 1.8732495782116172
+      },
+      {
+        "time": 16.4,
+        "frame": 492,
+        "board_and_actor_rgb_mae": 1.9672665434776786
+      }
+    ],
+    "comparison": "actual encoded board and actor versus deterministic source",
+    "visual_review_contact": "qa/opening-encoded-contact.jpg"
+  },
+  "opening_preview": {
+    "source_final_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+    "start_seconds": 0,
+    "duration_seconds": 18,
+    "clips": [
+      {
+        "file": "renders/opening-preview.mp4",
+        "sha256": "6975cab7c20c04a184b3f920ee162c819470d007c39697e3085913abf9dfae9f",
+        "duration": 18,
+        "dimensions": [
+          540,
+          960
+        ],
+        "frames": 540,
+        "complete_decode_errors": 0
+      }
+    ]
+  },
+  "pronunciation": {
+    "audio_file": "qa/encoded-audio.wav",
+    "audio_sha256": "bee8ec58d89f1a3bf534cf558851aaa897748fcd3e182a8b8ae4d187c231d206",
+    "terms": [
+      {
+        "scene": "s06",
+        "expected": "Sigmoid",
+        "start": 72.81994767604635,
+        "end": 73.6754436572341,
+        "file": "qa/pronunciation-clips/01-s06.wav",
+        "sha256": "eb3c938f03e7ada1f747e54a4a8cd001a93de05ca13b8edf1a3d4f6aa67fab3d"
+      },
+      {
+        "scene": "s08",
+        "expected": "Rectified Linear Unit",
+        "start": 93.79996816707906,
+        "end": 95.22579480239196,
+        "file": "qa/pronunciation-clips/02-s08.wav",
+        "sha256": "49305143e1f78e0ceec7a85f23c8bef5e9e3c5f0a86af2c89154168a6d0c94e3"
+      },
+      {
+        "scene": "s10",
+        "expected": "Gaussian Error Linear Unit",
+        "start": 125.6570089903559,
+        "end": 127.20504933726704,
+        "file": "qa/pronunciation-clips/03-s10.wav",
+        "sha256": "1396dcdbdcbe7951cb0522c2c861962bc1065a1f1cdfa332948b630c077575a6"
+      },
+      {
+        "scene": "s11",
+        "expected": "Sigmoid Linear Unit",
+        "start": 136.00101257291237,
+        "end": 137.48572218856648,
+        "file": "qa/pronunciation-clips/04-s11.wav",
+        "sha256": "15f932e9cd9944eb2414b6f482a828c65ae6b4eae2d41b161a4f574a5bbefa59"
+      },
+      {
+        "scene": "s11",
+        "expected": "Sigmoid",
+        "start": 138.3424726553046,
+        "end": 139.08239351294202,
+        "file": "qa/pronunciation-clips/05-s11.wav",
+        "sha256": "16e5a19306a55a5cbac52350521290f9a643ebcd1bd022bfb0e145e56b4c1ae6"
+      },
+      {
+        "scene": "s11",
+        "expected": "S W I S H",
+        "start": 143.52191865876677,
+        "end": 145.46907881044427,
+        "file": "qa/pronunciation-clips/06-s11.wav",
+        "sha256": "06d9ec690e438d44e5a8d95de63e28c9aedf283b167125adc23c1c7a813a3995"
+      },
+      {
+        "scene": "s11",
+        "expected": "贝塔",
+        "start": 146.13111326201462,
+        "end": 146.36477248021595,
+        "file": "qa/pronunciation-clips/07-s11.wav",
+        "sha256": "fa562ac46f159cd740e263b03d6e9158f16feaf2b324a59599950a3444d8704a"
+      },
+      {
+        "scene": "s13",
+        "expected": "Sigmoid",
+        "start": 161.94205369363604,
+        "end": 162.6819745512735,
+        "file": "qa/pronunciation-clips/08-s13.wav",
+        "sha256": "53c2b75b2af36273ea63556e1247cd5bdb09b93b0c52b878dd4ea27ff2d39cbf"
+      },
+      {
+        "scene": "s13",
+        "expected": "Sigmoid Linear Unit",
+        "start": 166.26474923036014,
+        "end": 167.74945884601425,
+        "file": "qa/pronunciation-clips/09-s13.wav",
+        "sha256": "16d7a9995656c25d4a0dfa1996b7a51df501a1a7757beee6066040ef3ce5756d"
+      },
+      {
+        "scene": "s13",
+        "expected": "S W I S H Gated Linear Unit",
+        "start": 168.3336068915175,
+        "end": 171.7070618542988,
+        "file": "qa/pronunciation-clips/10-s13.wav",
+        "sha256": "4100c6fe2a2d692d002a0038b07022a9a2cc0450bb7cb18c4e0257ef14e7b44c"
+      },
+      {
+        "scene": "s13",
+        "expected": "Llama",
+        "start": 176.30235981225772,
+        "end": 176.65284863955966,
+        "file": "qa/pronunciation-clips/11-s13.wav",
+        "sha256": "0f59f1358b8870bae36e4d10bbe04f5cff7feb6c88252edc359b5a35a63f048c"
+      }
+    ],
+    "raw_word_timestamps_preserved": true,
+    "script_has_no_chinese_homophones": true,
+    "status": "passed",
+    "method": "Independent local Whisper medium.en int8; English decode of actual aligned term clips; no initial prompt, hotwords or expected text given to ASR",
+    "model": "medium.en",
+    "results": [
+      {
+        "scene": "s06",
+        "expected": "Sigmoid",
+        "start": 72.81994767604635,
+        "end": 73.6754436572341,
+        "file": "qa/pronunciation-clips/01-s06.wav",
+        "sha256": "eb3c938f03e7ada1f747e54a4a8cd001a93de05ca13b8edf1a3d4f6aa67fab3d",
+        "recognized": "sigmoid",
+        "passed": true
+      },
+      {
+        "scene": "s08",
+        "expected": "Rectified Linear Unit",
+        "start": 93.79996816707906,
+        "end": 95.22579480239196,
+        "file": "qa/pronunciation-clips/02-s08.wav",
+        "sha256": "49305143e1f78e0ceec7a85f23c8bef5e9e3c5f0a86af2c89154168a6d0c94e3",
+        "recognized": "Rectify the linear unit 1",
+        "passed": true,
+        "alternate_model": "small",
+        "alternate_recognized": "Rectify the linear unit.",
+        "context_model": "small/zh",
+        "context_start": 93.59996816707906,
+        "context_duration": 5,
+        "context_recognized": "Rectified Linear Unit 换了个取舍 复数归零 正数原样通过 正侧导"
+      },
+      {
+        "scene": "s10",
+        "expected": "Gaussian Error Linear Unit",
+        "start": 125.6570089903559,
+        "end": 127.20504933726704,
+        "file": "qa/pronunciation-clips/03-s10.wav",
+        "sha256": "1396dcdbdcbe7951cb0522c2c861962bc1065a1f1cdfa332948b630c077575a6",
+        "recognized": "Gaussian error linear unit",
+        "passed": true
+      },
+      {
+        "scene": "s11",
+        "expected": "Sigmoid Linear Unit",
+        "start": 136.00101257291237,
+        "end": 137.48572218856648,
+        "file": "qa/pronunciation-clips/04-s11.wav",
+        "sha256": "15f932e9cd9944eb2414b6f482a828c65ae6b4eae2d41b161a4f574a5bbefa59",
+        "recognized": "sigmoid, linear unit",
+        "passed": true
+      },
+      {
+        "scene": "s11",
+        "expected": "Sigmoid",
+        "start": 138.3424726553046,
+        "end": 139.08239351294202,
+        "file": "qa/pronunciation-clips/05-s11.wav",
+        "sha256": "16e5a19306a55a5cbac52350521290f9a643ebcd1bd022bfb0e145e56b4c1ae6",
+        "recognized": "sigmoid",
+        "passed": true
+      },
+      {
+        "scene": "s11",
+        "expected": "S W I S H",
+        "start": 143.52191865876677,
+        "end": 145.46907881044427,
+        "file": "qa/pronunciation-clips/06-s11.wav",
+        "sha256": "06d9ec690e438d44e5a8d95de63e28c9aedf283b167125adc23c1c7a813a3995",
+        "recognized": "S-W-I-S-H",
+        "passed": true
+      },
+      {
+        "scene": "s11",
+        "expected": "贝塔",
+        "start": 146.13111326201462,
+        "end": 146.36477248021595,
+        "file": "qa/pronunciation-clips/07-s11.wav",
+        "sha256": "fa562ac46f159cd740e263b03d6e9158f16feaf2b324a59599950a3444d8704a",
+        "recognized": "beta",
+        "passed": true
+      },
+      {
+        "scene": "s13",
+        "expected": "Sigmoid",
+        "start": 161.94205369363604,
+        "end": 162.6819745512735,
+        "file": "qa/pronunciation-clips/08-s13.wav",
+        "sha256": "53c2b75b2af36273ea63556e1247cd5bdb09b93b0c52b878dd4ea27ff2d39cbf",
+        "recognized": "sigmoid",
+        "passed": true
+      },
+      {
+        "scene": "s13",
+        "expected": "Sigmoid Linear Unit",
+        "start": 166.26474923036014,
+        "end": 167.74945884601425,
+        "file": "qa/pronunciation-clips/09-s13.wav",
+        "sha256": "16d7a9995656c25d4a0dfa1996b7a51df501a1a7757beee6066040ef3ce5756d",
+        "recognized": "sigmoid, linear unit",
+        "passed": true
+      },
+      {
+        "scene": "s13",
+        "expected": "S W I S H Gated Linear Unit",
+        "start": 168.3336068915175,
+        "end": 171.7070618542988,
+        "file": "qa/pronunciation-clips/10-s13.wav",
+        "sha256": "4100c6fe2a2d692d002a0038b07022a9a2cc0450bb7cb18c4e0257ef14e7b44c",
+        "recognized": "SWISH Gated Linear Unit",
+        "passed": true
+      },
+      {
+        "scene": "s13",
+        "expected": "Llama",
+        "start": 176.30235981225772,
+        "end": 176.65284863955966,
+        "file": "qa/pronunciation-clips/11-s13.wav",
+        "sha256": "0f59f1358b8870bae36e4d10bbe04f5cff7feb6c88252edc359b5a35a63f048c",
+        "recognized": "Llama",
+        "passed": true
+      }
+    ],
+    "video_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+    "verification_mode": "V4 ASR results retained after actual encoded AAC and PCM match the pre-cleanup verified hashes",
+    "source_video_sha256": "c5f2417f9e522cbe8e85568597115f5a3f41962d34a29d875079ab3ebf133bf4",
+    "audio_continuity_evidence": "qa/audio-continuity.json",
+    "new_asr_run": false
+  },
+  "audio_continuity": {
+    "status": "passed",
+    "video_sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+    "source_video_sha256": "c5f2417f9e522cbe8e85568597115f5a3f41962d34a29d875079ab3ebf133bf4",
+    "verification": "Actual encoded AAC and decoded PCM match the retained hashes compared byte for byte with the ASR-checked V4 before cleanup.",
+    "aac_sha256": "db5fa3661e517004984f0daab306447b877fb224f8407c2c5dee8164fbec9d15",
+    "aac_bytes": 4915084,
+    "encoded_audio_sha256": "bee8ec58d89f1a3bf534cf558851aaa897748fcd3e182a8b8ae4d187c231d206",
+    "timeline_sha256": "982c12b944de6fa0e8bc1549808b52940b3c55932bb5ffd8eb76263229cf410d",
+    "source_pronunciation_evidence": "qa/source-v4-pronunciation-asr.json",
+    "retained_term_occurrences": 11,
+    "baseline_evidence": "audio-provenance.json",
+    "historical_projects_required": false,
+    "new_asr_run": false
+  },
+  "random_seek_frame_reconstruction": true,
+  "text_layout": {
+    "sampled_frames": 647,
+    "text_boxes": 10300,
+    "violations": [],
+    "all_caption_midpoints_checked": true,
+    "contrast": {
+      "ink_on_paper": 10.642843933444972,
+      "teal_on_green": 5.027549614308173,
+      "coral_on_paper": 5.173151435799644
+    },
+    "doctor_pointer_sweep_samples": 64,
+    "doctor_pointer_glyph_intersections": 0
+  },
+  "author": {
+    "files_identical": true,
+    "v3_closed_head_verified": true,
+    "doctor_pointer": {
+      "source": "assets/手绘形象/博士服教棍-v1",
+      "frames": 16,
+      "fps": 8,
+      "first_last_identical": true,
+      "reverse_identical": true,
+      "closed_smile_visual_review": true,
+      "rigged_motion_certified": false,
+      "notes": "Original hand-drawn poses preserve minor face, outline and fabric variation; checked exact encoded pose selection and a dedicated pointer lane."
+    },
+    "encoded_samples": 48,
+    "actions": 8
+  },
+  "no_qr_ending_samples": 73,
+  "browser": {
+    "startedAtVideoTime": 0,
+    "seekEvents": 0,
+    "pauseEvents": 0,
+    "waitingEvents": 0,
+    "observations": 910,
+    "elapsedWallSeconds": 240.797,
+    "duration": 240.7,
+    "currentTime": 240.7,
+    "readyState": 4,
+    "ended": true,
+    "muted": false,
+    "volume": 1,
+    "playbackRate": 1,
+    "mediaError": null,
+    "pageErrors": []
+  },
+  "interactions": {
+    "small_chapters_passed": 19,
+    "main_chapters_passed": 3,
+    "slider_drag_passed": true,
+    "keyboard": [
+      {
+        "key": "Home",
+        "target": 0,
+        "currentTime": 0,
+        "passed": true
+      },
+      {
+        "key": "Right",
+        "target": 5,
+        "currentTime": 5,
+        "passed": true
+      },
+      {
+        "key": "Left",
+        "target": 0,
+        "currentTime": 0,
+        "passed": true
+      },
+      {
+        "key": "End",
+        "target": 240.65,
+        "currentTime": 240.649999,
+        "passed": true
+      }
+    ],
+    "layouts": {
+      "desktop": {
+        "height": 720,
+        "passed": true,
+        "scrollWidth": 1280,
+        "video": {
+          "height": 632.8828125,
+          "width": 356
+        },
+        "width": 1280
+      },
+      "mobile": {
+        "height": 844,
+        "passed": true,
+        "scrollWidth": 390,
+        "video": {
+          "height": 629.328125,
+          "width": 354
+        },
+        "width": 390
+      }
+    },
+    "console_errors": []
+  },
+  "visual_review": {
+    "actual_encoded_scene_stills": 19,
+    "final_eof_frame_reviewed": true,
+    "xor_labels_clear": true,
+    "notes": "Reviewed the actual encoded scenes, EOF and browser layouts; original pencil-writer sprite frames and graphite-tip placement compared to the actual encoded output."
+  },
+  "local_evidence": [
+    "qa/ffprobe-final.json",
+    "qa/decode-final.log",
+    "qa/media-validation.json",
+    "qa/playback-complete.json",
+    "qa/interactions.json",
+    "qa/encoded-contact.jpg",
+    "qa/motion-validation.json",
+    "qa/pronunciation-asr.json",
+    "qa/source-v4-pronunciation-asr.json",
+    "audio-provenance.json",
+    "qa/audio-continuity.json",
+    "qa/audio-alignment.json",
+    "qa/opening-story.json",
+    "qa/last-frame.jpg",
+    "qa/desktop-player.jpg",
+    "qa/mobile-player.jpg"
+  ]
+}

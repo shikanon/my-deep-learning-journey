@@ -14,7 +14,7 @@
     548
   ],
   "generator": "Existing registered artwork, immutable closed-smile head layer, deterministic head/leg joints and existing SVG props",
-  "repair_source": "../shikanon-animation-v2/manifest.json",
+  "repair_source": "source/registered-art/manifest.json",
   "mouth_animation": false,
   "facial_expression": "closed-smile",
   "rig": {

@@ -1,0 +1,264 @@
+{
+  "version": 6,
+  "clock": "deterministic frame / fps",
+  "audio": "byte-identical V4 final narration and real word timestamps",
+  "shared_layers": [
+    "章节进度随时间变化",
+    "标题进入并落定",
+    "知识卡文字分步写出",
+    "知识卡提示线按实际口播关键词推进",
+    "字幕关键词按实际 cue 时间着色"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "kind": "hook",
+      "start": 0,
+      "end": 12.908339327087038,
+      "formula": null,
+      "handwriting_duration": null,
+      "motion": "你知道吗：画板中的问号人物思考；如果每层：同一人物退到讲解位置，网络展开；一百层以上：层数增加至 128；异或四点：坐标、实际分界线与错误数出现。此小节不书写公式。",
+      "actor": "think-question",
+      "formula_animation": null
+    },
+    {
+      "id": "s02",
+      "kind": "xor",
+      "start": 12.908339327087038,
+      "end": 27.754663523241998,
+      "formula": "z = W x + b",
+      "handwriting_duration": 2.0,
+      "motion": "W 两个分量与 b 连续变化；每点坐标、z、错误环与错误计数；z=0 决定直线和预测区域",
+      "actor": "doctor-pointer",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s03",
+      "kind": "collapse",
+      "start": 27.754663523241998,
+      "end": 39.21096514731937,
+      "formula": "3(2x + 1) - 4 = 6x - 1",
+      "handwriting_duration": 2.0,
+      "motion": "同一个 x 驱动两步数值和合并后的 6x−1；箭头数据流",
+      "actor": "point-right",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s04",
+      "kind": "fold",
+      "start": 39.21096514731937,
+      "end": 54.09877613498888,
+      "formula": "h = ReLU(s) - 2ReLU(s - 1)",
+      "handwriting_duration": 2.0,
+      "motion": "两阈值折线建立后，四个输入案例逐个高亮并显示 s 与 h",
+      "actor": "celebrate",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s05",
+      "kind": "gradient",
+      "start": 54.09877613498888,
+      "end": 66.91590323092866,
+      "formula": "0.25^10 ≈ 0.000001",
+      "handwriting_duration": 2.0,
+      "motion": "学习信号向前流动并缩小；逐层显示实际 0.25 的幂，舍入使用近似号",
+      "actor": "talk",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s06",
+      "kind": "sigmoid",
+      "start": 66.91590323092866,
+      "end": 81.1741695840577,
+      "formula": "σ(z) = 1/(1 + exp(-z))",
+      "handwriting_duration": 2.0,
+      "motion": "从阈值到连续曲线；移动输入点与真实输出值",
+      "actor": "talk",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s07",
+      "kind": "saturation",
+      "start": 81.1741695840577,
+      "end": 93.63996816707906,
+      "formula": "tanh(z)",
+      "handwriting_duration": 2.0,
+      "motion": "移动输入、切线斜率与导数值，对比两端饱和",
+      "actor": "think",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s08",
+      "kind": "relu",
+      "start": 93.63996816707906,
+      "end": 107.40937967381508,
+      "formula": "ReLU(z) = max(0,z)",
+      "handwriting_duration": 2.0,
+      "motion": "按解说建立负侧和正侧；输入点、投影线与输出更新",
+      "actor": "doctor-pointer",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s09",
+      "kind": "leaky",
+      "start": 107.40937967381508,
+      "end": 118.93820646791656,
+      "formula": "f(z) = max(z,a z)",
+      "handwriting_duration": 2.0,
+      "motion": "负斜率 a 变化，真实曲线和输入输出同步更新",
+      "actor": "point-right",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s10",
+      "kind": "gelu",
+      "start": 118.93820646791656,
+      "end": 133.97173882730195,
+      "formula": "GELU(z) = z Φ(z)",
+      "handwriting_duration": 2.0,
+      "motion": "曲线逐步生成；移动输入点与小负值提示",
+      "actor": "talk",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s11",
+      "kind": "silu",
+      "start": 133.97173882730195,
+      "end": 148.22981903796057,
+      "formula": "SiLU(z) = z σ(z)",
+      "handwriting_duration": 2.0,
+      "motion": "移动输入点与通过比例；Swish 关系保留",
+      "actor": "talk",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s12",
+      "kind": "glu",
+      "start": 148.22981903796057,
+      "end": 161.78205369363604,
+      "formula": "GLU = a × σ(g)",
+      "handwriting_duration": 2.0,
+      "motion": "同一输入先展开两支路，再汇入逐项乘法与输出，双路数据流持续运动",
+      "actor": "doctor-pointer",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s13",
+      "kind": "swiglu",
+      "start": 161.78205369363604,
+      "end": 177.98729405597217,
+      "formula": "SwiGLU = a × SiLU(g)",
+      "handwriting_duration": 2.0,
+      "motion": "门控支路展开，门从负值变化至大于 1，输出同步变化",
+      "actor": "step",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s14",
+      "kind": "budget",
+      "start": 177.98729405597217,
+      "end": 189.67257640688334,
+      "formula": "2dm = 3d(2m/3)",
+      "handwriting_duration": 2.0,
+      "motion": "中间宽度从 3072 缩至 2048，解释等参数预算",
+      "actor": "think",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s15",
+      "kind": "outliers",
+      "start": 189.67257640688334,
+      "end": 200.29558174429408,
+      "formula": "t × SiLU(t) ≈ t × t",
+      "handwriting_duration": 2.0,
+      "motion": "相同输入位置联动两个增长曲线，差距由竖向提示连接",
+      "actor": "think-question",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s16",
+      "kind": "sparse",
+      "start": 200.29558174429408,
+      "end": 211.59377809891316,
+      "formula": "0.02 ≠ 0",
+      "handwriting_duration": 2.0,
+      "motion": "通道扫描与候选略过标记，区分数值小和真实可跳过",
+      "actor": "point-right",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s17",
+      "kind": "hardware",
+      "start": 211.59377809891316,
+      "end": 221.5415924191156,
+      "formula": "4 → 2",
+      "handwriting_duration": 2.0,
+      "motion": "2:4 保留模式与逐行扫描，说明硬件执行节拍",
+      "actor": "doctor-pointer",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s18",
+      "kind": "dyt",
+      "start": 221.5415924191156,
+      "end": 233.37994158750135,
+      "formula": "y = γ × tanh(αx) + β",
+      "handwriting_duration": 2.0,
+      "motion": "两条计算路径各自传递输入，压缩结果和 alpha 同步变化",
+      "actor": "celebrate",
+      "formula_animation": "Original transparent 16-frame pencil writer, each graphite tip registered to the actual vector stroke, formula settles before diagram reveal."
+    },
+    {
+      "id": "s19",
+      "kind": "follow",
+      "start": 233.37994158750135,
+      "end": 240.7,
+      "formula": null,
+      "handwriting_duration": null,
+      "motion": "作者挥手与逐笔绘出的星标呼应 GitHub 引导",
+      "actor": "wave",
+      "formula_animation": null
+    }
+  ],
+  "audio_revision": 4,
+  "word_clock_source": "timeline.json includes English and Chinese actual word times",
+  "writer_asset": "assets/手绘形象/抱大铅笔写字-v2",
+  "writer_frame_clock": "min(15, floor(max(0, scene_time - .3) * 8))",
+  "writer_display_size": [
+    300,
+    300
+  ],
+  "writer_phases": {
+    "enter": [
+      0.2,
+      0.38
+    ],
+    "write": [
+      0.3,
+      2.3
+    ],
+    "retreat": [
+      2.3,
+      2.65
+    ],
+    "formula_settle": [
+      2.65,
+      3.05
+    ],
+    "diagram_reveal": [
+      3.05,
+      3.35
+    ]
+  },
+  "opening_story": {
+    "network_start_word": "如",
+    "network_start_seconds": 1.0786565793786127,
+    "actor_retreat_seconds": 0.9,
+    "network_reveal_seconds": 0.6,
+    "depth_cue": "一百层以上",
+    "four_points_cue": "四点",
+    "first_handwriting_scene": "s02",
+    "first_handwriting_absolute_seconds": 13.208339327087039,
+    "opening_handwriting_passes": 1
+  }
+}

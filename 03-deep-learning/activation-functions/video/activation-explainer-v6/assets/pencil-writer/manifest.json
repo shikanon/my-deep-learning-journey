@@ -1,0 +1,302 @@
+{
+  "name": "shikanon 儿童手绘 · 抱大铅笔左右写字",
+  "generator": "built-in image_gen",
+  "frameSize": {
+    "width": 512,
+    "height": 512
+  },
+  "frameCount": 16,
+  "fps": 8,
+  "durationSeconds": 2,
+  "alpha": true,
+  "sheet": "sequence.png",
+  "columns": 4,
+  "rows": 4,
+  "ordering": "row-major",
+  "action": "pencil-tip-left → pencil-tip-right → pencil-tip-left",
+  "frames": [
+    "frames/001.png",
+    "frames/002.png",
+    "frames/003.png",
+    "frames/004.png",
+    "frames/005.png",
+    "frames/006.png",
+    "frames/007.png",
+    "frames/008.png",
+    "frames/009.png",
+    "frames/010.png",
+    "frames/011.png",
+    "frames/012.png",
+    "frames/013.png",
+    "frames/014.png",
+    "frames/015.png",
+    "frames/016.png"
+  ],
+  "sourcePoseOrder": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "anchor": {
+    "x": 256,
+    "y": 456
+  },
+  "sourcePoses": [
+    {
+      "source": "source-swing.png",
+      "region": {
+        "left": 0,
+        "top": 0,
+        "width": 398,
+        "height": 511
+      },
+      "b": {
+        "x": 56,
+        "y": 11,
+        "width": 341,
+        "height": 481
+      },
+      "anchor": {
+        "x": 194,
+        "y": 485
+      },
+      "bodyHeight": 474,
+      "angleDegrees": 23.63576021442135,
+      "baseScale": 0.8438818565400844,
+      "placement": {
+        "left": 140,
+        "top": 56,
+        "width": 288,
+        "height": 406
+      },
+      "scale": 0.8438818565400844
+    },
+    {
+      "source": "source-intermediate.png",
+      "region": {
+        "left": 0,
+        "top": 0,
+        "width": 543,
+        "height": 724
+      },
+      "b": {
+        "x": 99,
+        "y": 16,
+        "width": 404,
+        "height": 665
+      },
+      "anchor": {
+        "x": 282.5,
+        "y": 668
+      },
+      "bodyHeight": 652,
+      "angleDegrees": 15.943342998382096,
+      "baseScale": 0.6134969325153374,
+      "placement": {
+        "left": 143,
+        "top": 56,
+        "width": 248,
+        "height": 408
+      },
+      "scale": 0.6134969325153374
+    },
+    {
+      "source": "source-swing.png",
+      "region": {
+        "left": 769,
+        "top": 0,
+        "width": 383,
+        "height": 511
+      },
+      "b": {
+        "x": 44,
+        "y": 9,
+        "width": 298,
+        "height": 488
+      },
+      "anchor": {
+        "x": 185,
+        "y": 483
+      },
+      "bodyHeight": 474,
+      "angleDegrees": 13.550411238357942,
+      "baseScale": 0.8438818565400844,
+      "placement": {
+        "left": 137,
+        "top": 56,
+        "width": 251,
+        "height": 412
+      },
+      "scale": 0.8438818565400844
+    },
+    {
+      "source": "source-swing.png",
+      "region": {
+        "left": 1152,
+        "top": 0,
+        "width": 384,
+        "height": 511
+      },
+      "b": {
+        "x": 45,
+        "y": 8,
+        "width": 279,
+        "height": 490
+      },
+      "anchor": {
+        "x": 184,
+        "y": 482
+      },
+      "bodyHeight": 474,
+      "angleDegrees": -0.03922368743181439,
+      "baseScale": 0.8438818565400844,
+      "placement": {
+        "left": 139,
+        "top": 56,
+        "width": 235,
+        "height": 414
+      },
+      "scale": 0.8438818565400844
+    },
+    {
+      "source": "source-intermediate.png",
+      "region": {
+        "left": 543,
+        "top": 0,
+        "width": 543,
+        "height": 724
+      },
+      "b": {
+        "x": 64,
+        "y": 16,
+        "width": 380,
+        "height": 665
+      },
+      "anchor": {
+        "x": 258.5,
+        "y": 668
+      },
+      "bodyHeight": 652,
+      "angleDegrees": -16.968642677366972,
+      "baseScale": 0.6134969325153374,
+      "placement": {
+        "left": 137,
+        "top": 56,
+        "width": 233,
+        "height": 408
+      },
+      "scale": 0.6134969325153374
+    },
+    {
+      "source": "source-intermediate.png",
+      "region": {
+        "left": 1086,
+        "top": 0,
+        "width": 543,
+        "height": 724
+      },
+      "b": {
+        "x": 57,
+        "y": 16,
+        "width": 415,
+        "height": 665
+      },
+      "anchor": {
+        "x": 278,
+        "y": 668
+      },
+      "bodyHeight": 652,
+      "angleDegrees": -17.71329310105775,
+      "baseScale": 0.6134969325153374,
+      "placement": {
+        "left": 120,
+        "top": 56,
+        "width": 255,
+        "height": 408
+      },
+      "scale": 0.6134969325153374
+    },
+    {
+      "source": "source-intermediate.png",
+      "region": {
+        "left": 1629,
+        "top": 0,
+        "width": 543,
+        "height": 724
+      },
+      "b": {
+        "x": 73,
+        "y": 15,
+        "width": 412,
+        "height": 666
+      },
+      "anchor": {
+        "x": 286,
+        "y": 668
+      },
+      "bodyHeight": 653,
+      "angleDegrees": -18.833246342896885,
+      "baseScale": 0.6134969325153374,
+      "placement": {
+        "left": 125,
+        "top": 55,
+        "width": 253,
+        "height": 409
+      },
+      "scale": 0.6134969325153374
+    },
+    {
+      "source": "source-swing.png",
+      "region": {
+        "left": 768,
+        "top": 511,
+        "width": 384,
+        "height": 513
+      },
+      "b": {
+        "x": 20,
+        "y": 2,
+        "width": 320,
+        "height": 480
+      },
+      "anchor": {
+        "x": 190,
+        "y": 476
+      },
+      "bodyHeight": 474,
+      "angleDegrees": -19.776330004351177,
+      "baseScale": 0.8438818565400844,
+      "placement": {
+        "left": 113,
+        "top": 56,
+        "width": 270,
+        "height": 405
+      },
+      "scale": 0.8438818565400844
+    }
+  ],
+  "animations": {
+    "once": "animation-once.apng",
+    "loop": "animation-loop.apng"
+  },
+  "notes": [
+    "8 AI-drawn key poses followed by reversed return; endpoints hold for two frames across the loop.",
+    "Feet aligned to fixed canvas anchor. Scaling is uniform per source sheet, not independently fitted per frame.",
+    "Hand-drawn face, outline and grip details can vary slightly; no generated tween or rigged render."
+  ],
+  "revision": "v2 torso-wide chunky pencil",
+  "pencilWidthRequest": "Approximately equal to shoulder-to-shoulder torso width"
+}

@@ -1,0 +1,113 @@
+{
+  "scope": "hand-constructed XOR and exact arithmetic; not a trained model or a benchmark",
+  "xor": [
+    {
+      "input": [
+        0,
+        0
+      ],
+      "hidden": [
+        0.0,
+        0.0
+      ],
+      "output": 0.0
+    },
+    {
+      "input": [
+        0,
+        1
+      ],
+      "hidden": [
+        1,
+        0.0
+      ],
+      "output": 1.0
+    },
+    {
+      "input": [
+        1,
+        0
+      ],
+      "hidden": [
+        1,
+        0.0
+      ],
+      "output": 1.0
+    },
+    {
+      "input": [
+        1,
+        1
+      ],
+      "hidden": [
+        2,
+        1
+      ],
+      "output": 0
+    }
+  ],
+  "affine_fold": [
+    {
+      "x": -2,
+      "stacked": -13,
+      "folded": -13
+    },
+    {
+      "x": 0,
+      "stacked": -1,
+      "folded": -1
+    },
+    {
+      "x": 3,
+      "stacked": 17,
+      "folded": 17
+    }
+  ],
+  "activation_values": [
+    {
+      "x": -2,
+      "sigmoid": 0.11920292202211755,
+      "tanh": -0.9640275800758169,
+      "relu": 0.0,
+      "gelu_exact": -0.04550026389635842,
+      "silu": -0.2384058440442351
+    },
+    {
+      "x": -1,
+      "sigmoid": 0.2689414213699951,
+      "tanh": -0.7615941559557649,
+      "relu": 0.0,
+      "gelu_exact": -0.15865525393145707,
+      "silu": -0.2689414213699951
+    },
+    {
+      "x": 0,
+      "sigmoid": 0.5,
+      "tanh": 0.0,
+      "relu": 0.0,
+      "gelu_exact": 0.0,
+      "silu": 0.0
+    },
+    {
+      "x": 1,
+      "sigmoid": 0.7310585786300049,
+      "tanh": 0.7615941559557649,
+      "relu": 1,
+      "gelu_exact": 0.8413447460685429,
+      "silu": 0.7310585786300049
+    },
+    {
+      "x": 2,
+      "sigmoid": 0.8807970779778823,
+      "tanh": 0.9640275800758169,
+      "relu": 2,
+      "gelu_exact": 1.9544997361036416,
+      "silu": 1.7615941559557646
+    }
+  ],
+  "ten_sigmoid_factors": 9.5367431640625e-07,
+  "ffn_matched_width": {
+    "ordinary": 3072,
+    "gated": 2048
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "revision": 6,
+  "source_video_sha256": "3947ca5d7df070da13610cf9c049d4ac829011d4d68e44798ad4b62f79180125",
+  "source_project": "activation-explainer-v5",
+  "source_archive_sha256": "61394aa633970c0d60fcb3b87e079ed9f17ccca1ed6f21547613cabf6f2f3e46",
+  "scope": "Opening follows narration with a question thinker, growing neural-network diagram and XOR points. No opening handwriting; first equation written once in explanation.",
+  "changed_scene_ids": [
+    "s01"
+  ],
+  "audio_revision": 4,
+  "source_audio_sha256": "44c8a3da2c3842000cacbddf92f9a5f461adfdbb676ef2ff244d2949426a94c1",
+  "timeline_sha256": "982c12b944de6fa0e8bc1549808b52940b3c55932bb5ffd8eb76263229cf410d",
+  "superseded_draft_sha256": "b45f4fa1281dc02796653e759c611c2e2f9ca1d62d7e9fd50be5cbcae669af64"
+}

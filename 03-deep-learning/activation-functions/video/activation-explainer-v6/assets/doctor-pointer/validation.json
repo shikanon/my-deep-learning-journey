@@ -1,0 +1,190 @@
+{
+  "dataStatus": "pass",
+  "frames": 16,
+  "alpha": "pass",
+  "decodedAPNGMatchesPNG": true,
+  "reverseReturnByteIdentical": true,
+  "firstLastByteIdentical": true,
+  "pointerAnglesDegreesAboveScreenRight": [
+    -24.96,
+    -17.84,
+    -9.93,
+    10.82,
+    15.92,
+    24.18,
+    36.9,
+    44.59
+  ],
+  "directionOrder": "pass, angles increase from down-right to up-right then reverse",
+  "visualReview": "cap, feet and complete pointer visible; no switched gripping hand or major pose discontinuity in overview",
+  "limitations": "Small AI hand-drawn outline and fabric changes can remain; no optical-flow or rigged-motion certification.",
+  "checks": [
+    {
+      "frame": 1,
+      "bounds": [
+        79,
+        117,
+        465,
+        464
+      ],
+      "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+    },
+    {
+      "frame": 2,
+      "bounds": [
+        80,
+        117,
+        477,
+        456
+      ],
+      "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+    },
+    {
+      "frame": 3,
+      "bounds": [
+        80,
+        117,
+        479,
+        456
+      ],
+      "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+    },
+    {
+      "frame": 4,
+      "bounds": [
+        79,
+        117,
+        477,
+        456
+      ],
+      "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+    },
+    {
+      "frame": 5,
+      "bounds": [
+        79,
+        115,
+        480,
+        456
+      ],
+      "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+    },
+    {
+      "frame": 6,
+      "bounds": [
+        79,
+        115,
+        480,
+        456
+      ],
+      "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+    },
+    {
+      "frame": 7,
+      "bounds": [
+        79,
+        115,
+        479,
+        456
+      ],
+      "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+    },
+    {
+      "frame": 8,
+      "bounds": [
+        79,
+        90,
+        472,
+        456
+      ],
+      "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+    },
+    {
+      "frame": 9,
+      "bounds": [
+        79,
+        90,
+        472,
+        456
+      ],
+      "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+    },
+    {
+      "frame": 10,
+      "bounds": [
+        79,
+        115,
+        479,
+        456
+      ],
+      "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+    },
+    {
+      "frame": 11,
+      "bounds": [
+        79,
+        115,
+        480,
+        456
+      ],
+      "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+    },
+    {
+      "frame": 12,
+      "bounds": [
+        79,
+        115,
+        480,
+        456
+      ],
+      "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+    },
+    {
+      "frame": 13,
+      "bounds": [
+        79,
+        117,
+        477,
+        456
+      ],
+      "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+    },
+    {
+      "frame": 14,
+      "bounds": [
+        80,
+        117,
+        479,
+        456
+      ],
+      "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+    },
+    {
+      "frame": 15,
+      "bounds": [
+        80,
+        117,
+        477,
+        456
+      ],
+      "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+    },
+    {
+      "frame": 16,
+      "bounds": [
+        79,
+        117,
+        465,
+        464
+      ],
+      "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+    }
+  ],
+  "browserReview": {
+    "status": "pass",
+    "singlePlaybackStopsAtFrame": 16,
+    "scrubToPointingFrame": 8,
+    "background": "dark",
+    "previewURL": "http://127.0.0.1:8788/preview.html"
+  }
+}

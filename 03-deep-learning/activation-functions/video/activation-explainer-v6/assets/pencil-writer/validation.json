@@ -1,0 +1,194 @@
+{
+  "frameCount": 16,
+  "fps": 8,
+  "durationSeconds": 2,
+  "transparentRGBA": true,
+  "apngDecodedPixelsMatch": true,
+  "firstLastIdentical": true,
+  "reverseMatches": true,
+  "pencilAnglesDegrees": [
+    23.64,
+    15.94,
+    13.55,
+    -0.04,
+    -16.97,
+    -17.71,
+    -18.83,
+    -19.78
+  ],
+  "angleDeltas": [
+    -7.7,
+    -2.39,
+    -13.59,
+    -16.93,
+    -0.74,
+    -1.12,
+    -0.95
+  ],
+  "monotonicOrientation": true,
+  "maximumAngleStepDegrees": 16.93,
+  "frames": [
+    {
+      "frame": 1,
+      "alphaBounds": [
+        140,
+        56,
+        428,
+        462
+      ],
+      "transparentFraction": 0.7114
+    },
+    {
+      "frame": 2,
+      "alphaBounds": [
+        143,
+        56,
+        391,
+        464
+      ],
+      "transparentFraction": 0.7306
+    },
+    {
+      "frame": 3,
+      "alphaBounds": [
+        137,
+        56,
+        388,
+        468
+      ],
+      "transparentFraction": 0.7026
+    },
+    {
+      "frame": 4,
+      "alphaBounds": [
+        139,
+        56,
+        374,
+        470
+      ],
+      "transparentFraction": 0.7267
+    },
+    {
+      "frame": 5,
+      "alphaBounds": [
+        137,
+        56,
+        370,
+        464
+      ],
+      "transparentFraction": 0.7468
+    },
+    {
+      "frame": 6,
+      "alphaBounds": [
+        120,
+        56,
+        375,
+        464
+      ],
+      "transparentFraction": 0.7293
+    },
+    {
+      "frame": 7,
+      "alphaBounds": [
+        125,
+        55,
+        378,
+        464
+      ],
+      "transparentFraction": 0.7352
+    },
+    {
+      "frame": 8,
+      "alphaBounds": [
+        113,
+        56,
+        383,
+        461
+      ],
+      "transparentFraction": 0.7109
+    },
+    {
+      "frame": 9,
+      "alphaBounds": [
+        113,
+        56,
+        383,
+        461
+      ],
+      "transparentFraction": 0.7109
+    },
+    {
+      "frame": 10,
+      "alphaBounds": [
+        125,
+        55,
+        378,
+        464
+      ],
+      "transparentFraction": 0.7352
+    },
+    {
+      "frame": 11,
+      "alphaBounds": [
+        120,
+        56,
+        375,
+        464
+      ],
+      "transparentFraction": 0.7293
+    },
+    {
+      "frame": 12,
+      "alphaBounds": [
+        137,
+        56,
+        370,
+        464
+      ],
+      "transparentFraction": 0.7468
+    },
+    {
+      "frame": 13,
+      "alphaBounds": [
+        139,
+        56,
+        374,
+        470
+      ],
+      "transparentFraction": 0.7267
+    },
+    {
+      "frame": 14,
+      "alphaBounds": [
+        137,
+        56,
+        388,
+        468
+      ],
+      "transparentFraction": 0.7026
+    },
+    {
+      "frame": 15,
+      "alphaBounds": [
+        143,
+        56,
+        391,
+        464
+      ],
+      "transparentFraction": 0.7306
+    },
+    {
+      "frame": 16,
+      "alphaBounds": [
+        140,
+        56,
+        428,
+        462
+      ],
+      "transparentFraction": 0.7114
+    }
+  ],
+  "errors": [],
+  "visualReview": "Pencil now approximately torso-wide; both hands hug opposite sides. Local drawing proportions/grip details still vary slightly."
+}

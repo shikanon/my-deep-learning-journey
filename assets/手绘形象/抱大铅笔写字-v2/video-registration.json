@@ -1,0 +1,139 @@
+{
+  "schema": "pencil-writer-video-registration/v1",
+  "source_archive_sha256": "61394aa633970c0d60fcb3b87e079ed9f17ccca1ed6f21547613cabf6f2f3e46",
+  "source_frames_unchanged": true,
+  "frame_size": [
+    512,
+    512
+  ],
+  "display_size": [
+    300,
+    300
+  ],
+  "fps": 8,
+  "frame_count": 16,
+  "tip_anchor_method": "Graphite tip located from original transparent PNG pixels; per-pose anchors inspected in source contact grid",
+  "source_pose_tip_anchors": [
+    [
+      160,
+      456
+    ],
+    [
+      210,
+      460
+    ],
+    [
+      224,
+      465
+    ],
+    [
+      258,
+      467
+    ],
+    [
+      315,
+      462
+    ],
+    [
+      318,
+      461
+    ],
+    [
+      330,
+      462
+    ],
+    [
+      330,
+      456
+    ]
+  ],
+  "tip_anchors": [
+    [
+      160,
+      456
+    ],
+    [
+      210,
+      460
+    ],
+    [
+      224,
+      465
+    ],
+    [
+      258,
+      467
+    ],
+    [
+      315,
+      462
+    ],
+    [
+      318,
+      461
+    ],
+    [
+      330,
+      462
+    ],
+    [
+      330,
+      456
+    ],
+    [
+      330,
+      456
+    ],
+    [
+      330,
+      462
+    ],
+    [
+      318,
+      461
+    ],
+    [
+      315,
+      462
+    ],
+    [
+      258,
+      467
+    ],
+    [
+      224,
+      465
+    ],
+    [
+      210,
+      460
+    ],
+    [
+      160,
+      456
+    ]
+  ],
+  "source_frame_sha256": [
+    "b87aae2bac67c3c5ca2b0f7437ebdb6401a3e2e6c1fa4bad942b66fc5f885f78",
+    "8a231aa5c4473433072f4e8448b7e6ffc25c917365ebc31e44748944dd198e2c",
+    "8feda50ebb3ac0a4a81ccdec623863dd7d55af1dbee459617362fb04f9ad480f",
+    "52b3c8141e58e1f5bd0e3104a69c22194b4fb6a958ca7f6a2c4659e312424d01",
+    "fd27f0aa5a642b4409e45fd70817654a39ff593aa43d1e4df534ef5610cf5ab0",
+    "27bac4bc2668f8666308a8fcd6af60086c1dab7897bfcce93b2f0b8e1be1f240",
+    "652ac5607ea5f4b095b32c66fabbcbf6ade057f3844514c88a2fd591ee857fd0",
+    "0e9c0baf767703c16c97d4b4f5b0d4c545c6fd0d339400e3a2aae6b786ca9c03",
+    "0e9c0baf767703c16c97d4b4f5b0d4c545c6fd0d339400e3a2aae6b786ca9c03",
+    "652ac5607ea5f4b095b32c66fabbcbf6ade057f3844514c88a2fd591ee857fd0",
+    "27bac4bc2668f8666308a8fcd6af60086c1dab7897bfcce93b2f0b8e1be1f240",
+    "fd27f0aa5a642b4409e45fd70817654a39ff593aa43d1e4df534ef5610cf5ab0",
+    "52b3c8141e58e1f5bd0e3104a69c22194b4fb6a958ca7f6a2c4659e312424d01",
+    "8feda50ebb3ac0a4a81ccdec623863dd7d55af1dbee459617362fb04f9ad480f",
+    "8a231aa5c4473433072f4e8448b7e6ffc25c917365ebc31e44748944dd198e2c",
+    "b87aae2bac67c3c5ca2b0f7437ebdb6401a3e2e6c1fa4bad942b66fc5f885f78"
+  ],
+  "notes": [
+    "Use one uniform scale for all frames. No per-frame image resizing or AI regeneration.",
+    "Translation compensates the source pencil sweep so the graphite tip follows the actual vector stroke endpoint.",
+    "Preserve the original 8fps 16-frame sequence; original hand-drawn pose details can vary slightly."
+  ]
+}

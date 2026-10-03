@@ -1,0 +1,388 @@
+{
+  "title": "一百层以上的网络，为什么还分不开四个点？",
+  "project_name": "我的深度学习之路",
+  "project_url": "https://github.com/shikanon/my-deep-learning-journey",
+  "target_cpm": 320,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "research_checked": "2026-10-02",
+  "display_terms": {
+    "Gaussian Error Linear Unit": "GELU",
+    "Rectified Linear Unit": "ReLU",
+    "Sigmoid Linear Unit": "SiLU",
+    "Llama": "LLaMA",
+    "S W I S H": "Swish",
+    "S W I S H Gated Linear Unit": "SwiGLU",
+    "贝塔": "β"
+  },
+  "chapters": [
+    {
+      "id": "motivation",
+      "title": "为什么需要激活",
+      "target_share": 0.3
+    },
+    {
+      "id": "evolution",
+      "title": "思想怎样演化",
+      "target_share": 0.5
+    },
+    {
+      "id": "frontier",
+      "title": "今天的新问题",
+      "target_share": 0.2
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "chapter": "motivation",
+      "title": "一百层以上，\n还是分不开四点？",
+      "kind": "hook",
+      "actor": "think-question",
+      "insight": "层数 ≠ 非线性能力",
+      "detail": "每层只做加权求和\n还缺一次非线性变换",
+      "source": "纯仿射层的表达限制；Perceptrons，1969",
+      "text": "你知道吗？如果每层只做加权求和，哪怕把神经网络堆到一百层以上，它也无法把平面上最简单的异或四点正确分类！让我们来看看这个曾让早期神经网络研究备受质疑的异或问题。",
+      "cues": [
+        "加权求和",
+        "一百层以上",
+        "四点",
+        "异或问题"
+      ]
+    },
+    {
+      "id": "s02",
+      "chapter": "motivation",
+      "title": "两盏灯，\n一条线画不过来",
+      "kind": "xor",
+      "actor": "doctor-pointer",
+      "insight": "异或 XOR",
+      "detail": "恰好一盏灯亮\n报警器才响",
+      "source": "四个二值输入的线性不可分性",
+      "text": "看两盏灯。只有一盏亮，报警；全亮或者全灭，不报警。把四种情况画出来，同类点在对角。一条直线，无论怎么转，都不能把两类完全分开。这不是训练不够久，而是这类模型没有合适的分界方式。",
+      "cues": [
+        "两盏灯",
+        "全亮或者全灭",
+        "同类点在对角",
+        "一条直线"
+      ]
+    },
+    {
+      "id": "s03",
+      "chapter": "motivation",
+      "title": "多乘几次，\n还是同一类计算",
+      "kind": "collapse",
+      "actor": "point-right",
+      "insight": "线性层可以折叠",
+      "detail": "层数增加\n函数形式仍未突破",
+      "source": "W₂(W₁x+b₁)+b₂ 的代数展开",
+      "text": "增加层数呢？先乘二再加一，接着乘三再减四，合起来还是乘六减一。带偏置的线性层，叠再多也能合并。所以这四个点的难题，缺的是表达能力。",
+      "cues": [
+        "先乘二再加一",
+        "乘三再减四",
+        "乘六减一",
+        "表达能力"
+      ]
+    },
+    {
+      "id": "s04",
+      "chapter": "motivation",
+      "title": "先造两个特征，\n再组合答案",
+      "kind": "fold",
+      "actor": "celebrate",
+      "insight": "非线性创造特征",
+      "detail": "至少一盏亮\n减去“两盏都亮”",
+      "source": "h = ReLU(s) − 2 ReLU(s−1)",
+      "text": "激活函数加了一个非线性的拐弯。比如先把两盏灯的状态相加，再用两道不同阈值折线组合，就能得到零、一、一、零。模型先造出中间特征，才有办法区分。每个阈值对应一个特征：至少一盏亮，和两盏都亮。",
+      "cues": [
+        "非线性",
+        "状态相加",
+        "两道不同阈值",
+        "零、一、一、零"
+      ]
+    },
+    {
+      "id": "s05",
+      "chapter": "motivation",
+      "title": "能表达，\n还要能学会",
+      "kind": "gradient",
+      "actor": "talk",
+      "insight": "反向看局部斜率",
+      "detail": "训练信号逐层传回\n每次都要经过导数",
+      "source": "局部链式法则；真实梯度也含权重与残差",
+      "text": "但会拐弯还不够。训练时，修改参数的信号要逐层传回，每过一层就乘上局部斜率。斜率连续太小，前面的层就难学。这就是激活设计的第二个问题：让学习信号传得动。",
+      "cues": [
+        "训练时",
+        "局部斜率",
+        "连续太小",
+        "传得动"
+      ]
+    },
+    {
+      "id": "s06",
+      "chapter": "evolution",
+      "title": "从硬开关，\n到连续的音量旋钮",
+      "kind": "sigmoid",
+      "actor": "talk",
+      "insight": "Sigmoid：连续开关",
+      "detail": "输出在 0 与 1 之间\n能用导数调整",
+      "source": "阈值神经元；Rumelhart 等，1986",
+      "text": "有了非线性，还得学会调整权重。硬开关的导数几乎处处为零，于是人们用Sigmoid，把它变成连续的音量旋钮。一九八六年，辛顿等人的工作推广了反向传播，让隐藏层也能根据错误学习。",
+      "cues": [
+        "硬开关",
+        "连续的音量旋钮",
+        "一九八六年",
+        "隐藏层"
+      ]
+    },
+    {
+      "id": "s07",
+      "chapter": "evolution",
+      "title": "两端变平，\n学习信号变弱",
+      "kind": "saturation",
+      "actor": "think",
+      "insight": "饱和让导数变小",
+      "detail": "Tanh 围绕零输出\n两端仍然会饱和",
+      "source": "Sigmoid′ = σ(1−σ)；Tanh′ = 1−Tanh²",
+      "text": "但连续，不代表好训练。曲线两端太平，导数很小，信号仍会变弱。双曲正切把输出移到零附近，却仍会饱和。于是，下一步不仅要换中心，还要让学习信号别被压扁。",
+      "cues": [
+        "两端太平",
+        "饱和",
+        "移到零附近",
+        "别被压扁"
+      ]
+    },
+    {
+      "id": "s08",
+      "chapter": "evolution",
+      "title": "正数，\n别再被压扁了",
+      "kind": "relu",
+      "actor": "doctor-pointer",
+      "insight": "ReLU = max(0, z)",
+      "detail": "正侧导数为 1\n负侧输出为 0",
+      "source": "Nair & Hinton，2010；Glorot 等，2011",
+      "text": "Rectified Linear Unit换了个取舍：负数归零，正数原样通过，正侧导数就是一。它放弃处处平滑，换来简单计算和正侧不饱和。二零一零年前后的研究，让深层网络多了一条实用路线。",
+      "cues": [
+        "负数归零",
+        "正数原样通过",
+        "导数就是一",
+        "正侧不饱和"
+      ]
+    },
+    {
+      "id": "s09",
+      "chapter": "evolution",
+      "title": "给负半轴，\n留一点学习信号",
+      "kind": "leaky",
+      "actor": "point-right",
+      "insight": "Leaky → PReLU",
+      "detail": "固定负斜率\n变成可学习的斜率",
+      "source": "Maas 等，2013；He 等，2015",
+      "text": "代价是负侧梯度被切断，单元可能一直不工作。泄漏版本给负数留一点斜率；何恺明等人的参数化版本，再把斜率学出来。激活和初始化，也得一起设计。",
+      "cues": [
+        "负侧梯度被切断",
+        "一点斜率",
+        "斜率学出来",
+        "初始化"
+      ]
+    },
+    {
+      "id": "s10",
+      "chapter": "evolution",
+      "title": "不再一刀切，\n按输入平滑加权",
+      "kind": "gelu",
+      "actor": "talk",
+      "insight": "GELU(z) = z Φ(z)",
+      "detail": "大正数几乎全过\n小负数柔和保留",
+      "source": "Hendrycks & Gimpel，2016",
+      "text": "这些折线还是按正负硬切。能不能按输入大小，柔和地调节通过比例？二零一六年的Gaussian Error Linear Unit，用输入乘标准正态累积概率，小负数也能保留一点。概率定义权重，输出仍是确定的。",
+      "cues": [
+        "正负硬切",
+        "标准正态累积概率",
+        "小负数",
+        "确定的"
+      ]
+    },
+    {
+      "id": "s11",
+      "chapter": "evolution",
+      "title": "Sigmoid 做权重，\n数值仍能向上长",
+      "kind": "silu",
+      "actor": "talk",
+      "insight": "SiLU(z) = z σ(z)",
+      "detail": "Swish 的 β = 1 时\n与 SiLU 相同",
+      "source": "GELU，2016；Elfwing / Ramachandran 等，2017",
+      "text": "沿着平滑加权的思路，Sigmoid Linear Unit把权重换成Sigmoid。公式是原输入乘通过比例，所以大正数不会被压在一以内。S W I S H在参数贝塔等于一时，就是同一个函数。",
+      "cues": [
+        "平滑加权",
+        "Sigmoid",
+        "原输入",
+        "同一个函数"
+      ]
+    },
+    {
+      "id": "s12",
+      "chapter": "evolution",
+      "title": "一条支路给内容，\n另一条决定怎么过",
+      "kind": "glu",
+      "actor": "doctor-pointer",
+      "insight": "GLU：独立双支路",
+      "detail": "内容 × 输入相关的门\n逐通道相乘",
+      "source": "Dauphin 等，2016 / ICML 2017",
+      "text": "前面都只处理同一个分数。能不能让另一组特征，来决定信息怎样通过？门控把同一输入分成两条独立支路，一条算内容，另一条算门，再逐项相乘。内容四，门四分之一，输出就是一。",
+      "cues": [
+        "另一组特征",
+        "两条独立支路",
+        "一条算门",
+        "输出就是一"
+      ]
+    },
+    {
+      "id": "s13",
+      "chapter": "evolution",
+      "title": "把门换成 SiLU，\n表达也会更丰富",
+      "kind": "swiglu",
+      "actor": "step",
+      "insight": "SwiGLU = a ⊙ SiLU(g)",
+      "detail": "门可为负或大于 1\n也可能放大信息",
+      "source": "Shazeer，2020；LLaMA，2023",
+      "text": "Sigmoid门只能压低信息。二零二零年的研究，把门换成Sigmoid Linear Unit，得到S W I S H Gated Linear Unit。门可以为负，也可以大于一，既能调节，也能放大。后来，Llama采用了这种结构。",
+      "cues": [
+        "二零二零年",
+        "Sigmoid Linear Unit",
+        "大于一",
+        "放大"
+      ]
+    },
+    {
+      "id": "s14",
+      "chapter": "evolution",
+      "title": "多了一条支路，\n比较要算清预算",
+      "kind": "budget",
+      "actor": "think",
+      "insight": "公平比较要匹配宽度",
+      "detail": "普通 FFN：2dm\n门控 FFN：3dm",
+      "source": "Shazeer，2020；3072 对 2048",
+      "text": "表达更灵活，也多了一组权重。比较时要缩小中间宽度，匹配参数和计算预算。门控从两组矩阵变成三组，不能多花了资源，却把全部收益都归给新公式。",
+      "cues": [
+        "一组权重",
+        "中间宽度",
+        "计算预算",
+        "多花了资源"
+      ]
+    },
+    {
+      "id": "s15",
+      "chapter": "frontier",
+      "title": "乘法会放大，\n大模型要稳得住",
+      "kind": "outliers",
+      "actor": "think-question",
+      "insight": "PowLU · 2026",
+      "detail": "控制大值的增长\n追踪低精度与长训练",
+      "source": "Jiang 等，PowLU v1，2026-05-25",
+      "text": "前沿关心数值：两条大正值相乘，可能接近平方增长。二零二六年的幂线性单元，用更缓的增长减少尖峰，追踪低精度与长训练的稳定性。",
+      "cues": [
+        "大正值相乘",
+        "平方增长",
+        "二零二六年",
+        "稳定性"
+      ]
+    },
+    {
+      "id": "s16",
+      "chapter": "frontier",
+      "title": "小贡献，\n能不能少算一点？",
+      "kind": "sparse",
+      "actor": "point-right",
+      "insight": "激活稀疏性 · 2026 v2",
+      "detail": "数值接近零\n不自动等于可以跳过",
+      "source": "Szatkowski 等，2026-02-18 v2",
+      "text": "另一条线研究激活稀疏性：有些通道贡献很小，能否跳过？新版研究比较多种模型。但数值小，不等于影响小；影响小，也不等于硬件一定算得更快。",
+      "cues": [
+        "贡献很小",
+        "跳过",
+        "多种模型",
+        "硬件一定"
+      ]
+    },
+    {
+      "id": "s17",
+      "chapter": "frontier",
+      "title": "让稀疏模式，\n对上硬件的节拍",
+      "kind": "hardware",
+      "actor": "doctor-pointer",
+      "insight": "2:4 稀疏 · 2025",
+      "detail": "每四个位置保留两个\n算子快 ≠ 全模型同样快",
+      "source": "Haziza 等，2025；FFN 内核最高约 1.3×",
+      "text": "还有研究把平方整流函数和四个保留两个的硬件模式结合。关键是测整段模型的实际时间，不能把一个算子的加速，直接当成所有推理的提升。",
+      "cues": [
+        "平方整流函数",
+        "保留两个",
+        "实际时间",
+        "一个算子的加速"
+      ]
+    },
+    {
+      "id": "s18",
+      "chapter": "frontier",
+      "title": "这次的 Tanh，\n用在归一化的位置",
+      "kind": "dyt",
+      "actor": "celebrate",
+      "insight": "Dynamic Tanh · 2025",
+      "detail": "可学习的压缩与尺度\n重看非线性的角色",
+      "source": "Zhu 等，CVPR 2025 / v2",
+      "text": "动态双曲正切则尝试替换归一化层。它让非线性承担压缩极值和调整尺度的工作。关注这些方向时，同时看表达、稳定和真实成本，才算看懂激活函数。",
+      "cues": [
+        "替换归一化层",
+        "压缩极值",
+        "调整尺度",
+        "真实成本"
+      ]
+    },
+    {
+      "id": "s19",
+      "chapter": "cta",
+      "title": "我的深度学习之路",
+      "kind": "follow",
+      "actor": "wave",
+      "insight": "把每一个公式，\n讲成能看懂的故事",
+      "detail": "GitHub · shikanon\n点亮 Star，一起学习",
+      "source": "github.com/shikanon/my-deep-learning-journey",
+      "exclude_from_content_share": true,
+      "text": "更多图解、论文和可运行实验，在我的深度学习之路。点亮星标，一起学习。",
+      "cues": [
+        "更多图解",
+        "深度学习之路",
+        "星标"
+      ]
+    }
+  ],
+  "revision_date": "2026-10-03",
+  "history_checked": "2026-10-03",
+  "history_sources": [
+    "https://mitpress.mit.edu/9780262630221/perceptrons/",
+    "https://journals.sagepub.com/doi/10.1177/030631296026003005"
+  ],
+  "pronunciation_policy": "English full names for ReLU, GELU and SiLU; spell Swish with individual English letters, then Gated Linear Unit for SwiGLU; clear English Sigmoid; Chinese beta, Tanh and PowLU names. No Chinese homophone function names.",
+  "english_syllables": {
+    "sigmoid": 2,
+    "rectified": 3,
+    "linear": 3,
+    "unit": 2,
+    "gaussian": 2,
+    "error": 2,
+    "swish": 1,
+    "gated": 2,
+    "beta": 2,
+    "llama": 2,
+    "s": 1,
+    "w": 3,
+    "i": 1,
+    "h": 1,
+    "g": 1,
+    "l": 1,
+    "u": 1
+  },
+  "english_speech_weight": 1.5
+}

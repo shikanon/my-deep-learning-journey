@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source": "shikanon-animation-v3/source/registered-art",
+  "rebuilt_binary_files_identical": 218,
+  "manifest_identical": true,
+  "new_generation_calls": 0,
+  "historical_libraries_required": false
+}
