@@ -1,0 +1,24 @@
+{
+  "mode": "visual-only revision; reuse accepted V1 final AAC stream",
+  "model": "seed-audio-1.0",
+  "reference_seconds": 13.246667,
+  "seed_request_ids": [
+    "c71ceebe-286f-4c4e-b0aa-9c40062904a1",
+    "4098b61e-9478-4a20-b97d-6d85e3617a2d",
+    "7a1148d4-713f-4455-9ef5-1d3b8e4406c6",
+    "b9291a02-ff2c-4d1d-a63c-5d52cf95067a"
+  ],
+  "inherited_pronunciation_qa": "qa/accepted-speech/independent-asr.json",
+  "original_final_video_sha256": "54ecf73e298ebc8f054f2efb72c97d80342d481516335d71720a01133176e2be",
+  "reused_aac_file_sha256": "ec07dc6aa7b854cc88a469221946a9cebf373f81c0654899cb6cf2f32126cd3d",
+  "new_tts_requests": 0,
+  "audio_reencoded": false,
+  "reference": {
+    "path": "audio/author-reference.wav",
+    "sha256": "a998097654f7766e0fce35a51aba4814ec20fde6c2118c5fa6d2362414196cc4"
+  },
+  "original_validation": "qa/accepted-speech/original-validation.json",
+  "accepted_audio_packet_sha256": "22469f6cfe306eb807c5a0fa96f0e4dd7682952758a9afa6b68f0bf3c45a7e49",
+  "accepted_audio_pcm_sha256": "cd2c5db5fca9398715ce25050e725a7c82765a67d8094fde618e852499ed7ad9",
+  "self_contained_after_cleanup": true
+}

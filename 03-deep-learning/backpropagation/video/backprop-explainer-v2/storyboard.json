@@ -1,0 +1,1098 @@
+{
+  "fps": 30,
+  "duration": 240.2,
+  "frame_count": 7206,
+  "model": "Deterministic scalar/vector computation; time sampled at frame / fps; data drives positions, values and paths.",
+  "sources": [
+    {
+      "id": "doctor",
+      "path": "assets/手绘形象/博士服教棍-v1",
+      "canvas": [
+        512,
+        512
+      ],
+      "anchor": [
+        180,
+        456
+      ],
+      "fps": 8,
+      "frames": [
+        {
+          "file": "frames/001.png",
+          "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+        },
+        {
+          "file": "frames/002.png",
+          "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+        },
+        {
+          "file": "frames/003.png",
+          "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+        },
+        {
+          "file": "frames/004.png",
+          "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+        },
+        {
+          "file": "frames/005.png",
+          "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+        },
+        {
+          "file": "frames/006.png",
+          "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+        },
+        {
+          "file": "frames/007.png",
+          "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+        },
+        {
+          "file": "frames/008.png",
+          "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+        },
+        {
+          "file": "frames/009.png",
+          "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+        },
+        {
+          "file": "frames/010.png",
+          "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+        },
+        {
+          "file": "frames/011.png",
+          "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+        },
+        {
+          "file": "frames/012.png",
+          "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+        },
+        {
+          "file": "frames/013.png",
+          "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+        },
+        {
+          "file": "frames/014.png",
+          "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+        },
+        {
+          "file": "frames/015.png",
+          "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+        },
+        {
+          "file": "frames/016.png",
+          "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+        }
+      ]
+    },
+    {
+      "id": "wave",
+      "path": "assets/手绘形象/日常服动作序列帧",
+      "canvas": [
+        384,
+        576
+      ],
+      "anchor": [
+        192,
+        548
+      ],
+      "fps": 20,
+      "frames": [
+        {
+          "file": "frames/wave/000.png",
+          "sha256": "feb38c6f8bc8eb53707ec673eb5e9c7fff107884246d22baa7849e73270bf321"
+        },
+        {
+          "file": "frames/wave/001.png",
+          "sha256": "afae1ca73b9a95443551671767586e3eb55e255a77ba3093387834ad6270369c"
+        },
+        {
+          "file": "frames/wave/002.png",
+          "sha256": "7de3997fc89b6576419a3f5d55407c99600e87c79d85f3920af5e0ec311e17d7"
+        },
+        {
+          "file": "frames/wave/003.png",
+          "sha256": "04fa40b8d5af5c908a0dd0fd08ad00c8327aea91afa7ed3130d0a927453756f7"
+        },
+        {
+          "file": "frames/wave/004.png",
+          "sha256": "109895a9a751c4221c6c6b8a98d32a58b784bf9b386c67a094bf28841a2fedd3"
+        },
+        {
+          "file": "frames/wave/005.png",
+          "sha256": "f76dc7869c46feb668de94f8c6134a3615248a9ea842d2b7b217f64ddd105f25"
+        },
+        {
+          "file": "frames/wave/006.png",
+          "sha256": "4cdcf2ad3558e988a3c33f4e987bf8e8c9619b08cee7b27315630c8fca0c3449"
+        },
+        {
+          "file": "frames/wave/007.png",
+          "sha256": "12de47b22bb4b1e7d7fa1775e8ab171b91ea4011c04e73f32bf9831750c74caa"
+        },
+        {
+          "file": "frames/wave/008.png",
+          "sha256": "06a132872238ac8690af871a02748774b90bd6e703ac3677cea4e4b8d118879d"
+        },
+        {
+          "file": "frames/wave/009.png",
+          "sha256": "adcae2fd6756739e9094dc284179ce5cd85f979f12c2a3f43a649b59ee217f13"
+        },
+        {
+          "file": "frames/wave/010.png",
+          "sha256": "10141c982f2a42b9cd2b57cf94a08437138b20372e440b82ad5cf361ea0ac17b"
+        },
+        {
+          "file": "frames/wave/011.png",
+          "sha256": "9e418a4ce61cd7d41deceea76f95f37d24eacc139f454c1ce395321fd5c32af0"
+        },
+        {
+          "file": "frames/wave/012.png",
+          "sha256": "c2ebad8cd745800596a3837c56566b1389a9ffc03ac2a54dec395c6139356292"
+        },
+        {
+          "file": "frames/wave/013.png",
+          "sha256": "20afcd930a08ce8ee9e665c661f31b1cf2209d397c375dd2e16dfee0fd092803"
+        },
+        {
+          "file": "frames/wave/014.png",
+          "sha256": "adcb6bab09e53155481b9b27d428755d9b29ba04107aa6c88d597238784c395c"
+        },
+        {
+          "file": "frames/wave/015.png",
+          "sha256": "339c4874be9523205f5e45e0024975722e1af1bbfe5534a298156efbf885d570"
+        },
+        {
+          "file": "frames/wave/016.png",
+          "sha256": "f128c4af25fc314d8d963aaaa88eb7c037e800bb2d93711c5332f4004964c191"
+        },
+        {
+          "file": "frames/wave/017.png",
+          "sha256": "f10688aab839d0b1f09a6455d000909db39abbc6e9324f34fc3e0f3e72b3b9d0"
+        },
+        {
+          "file": "frames/wave/018.png",
+          "sha256": "30bc40ef12e9e1a441d336b11b221f903482d75a2764f711ebb1e6c5350cb53a"
+        },
+        {
+          "file": "frames/wave/019.png",
+          "sha256": "4933bb53f52a83d1fbe12931cc54d9e3485e0016bcac5cb5c0bc0d3c1b7d6b48"
+        },
+        {
+          "file": "frames/wave/020.png",
+          "sha256": "fe01063cf841f47c93e51f94f5c4e395e10fe94db305bf8d8df774fa82a750ef"
+        },
+        {
+          "file": "frames/wave/021.png",
+          "sha256": "5093b3a0e3b2e2ae6a6c49a3d7e540d6c45d08b91a440925925b7151c18ff681"
+        },
+        {
+          "file": "frames/wave/022.png",
+          "sha256": "a5fbe0ce9bcf5750a989afa7008bc87012e41250b2b00084ddfe5524570c100e"
+        },
+        {
+          "file": "frames/wave/023.png",
+          "sha256": "feb38c6f8bc8eb53707ec673eb5e9c7fff107884246d22baa7849e73270bf321"
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "参数那么多，怎样一起算？",
+      "kind": "hook",
+      "start": 0,
+      "end": 12.701478996884953,
+      "question": "为什么一遍反传能得到多个参数的梯度？",
+      "steps": [
+        {
+          "id": "many",
+          "cue": "上亿个参数",
+          "start": 1.0695982313166277,
+          "meaning": "参数共同进入一次模型计算",
+          "duration": 0.8774,
+          "frame_start": 32,
+          "frame_end": 58
+        },
+        {
+          "id": "trial",
+          "cue": "逐个拧一下",
+          "start": 2.239471296819189,
+          "meaning": "逐个试探需要重复运行模型",
+          "duration": 1.15,
+          "frame_start": 67,
+          "frame_end": 102
+        },
+        {
+          "id": "reuse",
+          "cue": "反着走一遍",
+          "start": 6.183614774799254,
+          "meaning": "沿共同计算的原路径返回多个梯度",
+          "duration": 1.15,
+          "frame_start": 186,
+          "frame_end": 220
+        },
+        {
+          "id": "example",
+          "cue": "一道能手算的小题",
+          "start": 9.659809026578294,
+          "meaning": "缩小为两个参数，接着亲手计算",
+          "duration": 1.15,
+          "frame_start": 290,
+          "frame_end": 324
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "title": "前向：把数值算出来",
+      "kind": "forward",
+      "start": 12.701478996884953,
+      "end": 31.085198597639494,
+      "question": "损失 4.5 是怎样从输入 2 得到的？",
+      "steps": [
+        {
+          "id": "input",
+          "cue": "输入是二",
+          "start": 13.069153388900045,
+          "meaning": "先给出输入与目标",
+          "duration": 1.15,
+          "frame_start": 392,
+          "frame_end": 427
+        },
+        {
+          "id": "structure",
+          "cue": "模型用权重",
+          "start": 14.77382557006092,
+          "meaning": "固定计算图中的变量位置",
+          "duration": 1.15,
+          "frame_start": 443,
+          "frame_end": 478
+        },
+        {
+          "id": "params",
+          "cue": "权重是一",
+          "start": 17.3809712588952,
+          "meaning": "把 w=1、x=2 送入乘法",
+          "duration": 1.15,
+          "frame_start": 521,
+          "frame_end": 556
+        },
+        {
+          "id": "prediction",
+          "cue": "预测就是二",
+          "start": 19.18591827424201,
+          "meaning": "乘法结果与 b=0 相加得到预测 2",
+          "duration": 0.85234,
+          "frame_start": 576,
+          "frame_end": 601
+        },
+        {
+          "id": "residual",
+          "cue": "与目标相差负三",
+          "start": 20.322366395015926,
+          "meaning": "预测 2 减目标 5 得到误差 −3",
+          "duration": 0.97768,
+          "frame_start": 610,
+          "frame_end": 639
+        },
+        {
+          "id": "loss",
+          "cue": "把误差平方",
+          "start": 21.625939239433063,
+          "meaning": "−3 平方得到 9，再除以 2 得到 4.5",
+          "duration": 1.15,
+          "frame_start": 649,
+          "frame_end": 683
+        },
+        {
+          "id": "cache",
+          "cue": "中间结果记下来",
+          "start": 26.3722813909006,
+          "meaning": "在原节点旁保存本次前向的值",
+          "duration": 1.15,
+          "frame_start": 791,
+          "frame_end": 826
+        },
+        {
+          "id": "responsibility",
+          "cue": "责任并不相同",
+          "start": 30.182725089966084,
+          "meaning": "同一损失连接不同的参数路径",
+          "duration": 0.67686,
+          "frame_start": 905,
+          "frame_end": 926
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "title": "梯度：小步改变会怎样？",
+      "kind": "slope",
+      "start": 31.085198597639494,
+      "end": 49.20151864056487,
+      "question": "负梯度为什么提示增加参数？",
+      "steps": [
+        {
+          "id": "base",
+          "cue": "错了多少",
+          "start": 32.22164671841341,
+          "meaning": "用同一模型生成损失曲线和当前点",
+          "duration": 1.15,
+          "frame_start": 967,
+          "frame_end": 1001
+        },
+        {
+          "id": "direction",
+          "cue": "朝哪边动",
+          "start": 37.16853853825281,
+          "meaning": "在 w=1 处画局部切线",
+          "duration": 1.15,
+          "frame_start": 1115,
+          "frame_end": 1150
+        },
+        {
+          "id": "gradient",
+          "cue": "梯度是负六",
+          "start": 39.1071853325142,
+          "meaning": "切线斜率与解析梯度一致",
+          "duration": 1.05289,
+          "frame_start": 1173,
+          "frame_end": 1205
+        },
+        {
+          "id": "small",
+          "cue": "小幅增加权重",
+          "start": 40.51103301111727,
+          "meaning": "沿曲线把 w 从 1 移到 1.2，损失随模型降到 3.38",
+          "duration": 1.15,
+          "frame_start": 1215,
+          "frame_end": 1250
+        },
+        {
+          "id": "local",
+          "cue": "局部路标",
+          "start": 43.251878478866125,
+          "meaning": "展示大步越过最低点，不能保证下降",
+          "duration": 1.15,
+          "frame_start": 1298,
+          "frame_end": 1332
+        },
+        {
+          "id": "sensitivity",
+          "cue": "不同参数",
+          "start": 47.96479568560502,
+          "meaning": "比较该位置的两项梯度大小",
+          "duration": 0.92754,
+          "frame_start": 1439,
+          "frame_end": 1467
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "title": "差分：真的重跑两次",
+      "kind": "finite",
+      "start": 49.20151864056487,
+      "end": 69.01158260532182,
+      "question": "两个邻近损失怎样近似给出梯度？",
+      "steps": [
+        {
+          "id": "perturb",
+          "cue": "加减一点",
+          "start": 50.43824159552472,
+          "meaning": "放大 w=1 附近，运行 w−ε 与 w+ε 两次",
+          "duration": 1.15,
+          "frame_start": 1513,
+          "frame_end": 1548
+        },
+        {
+          "id": "quotient",
+          "cue": "近似算出斜率",
+          "start": 52.410313334514754,
+          "meaning": "先形成损失差，再除以参数间距",
+          "duration": 1.15,
+          "frame_start": 1572,
+          "frame_end": 1607
+        },
+        {
+          "id": "cost",
+          "cue": "每个参数都重跑",
+          "start": 56.02020736520838,
+          "meaning": "三个参数各做两次前向，总数从 2 增到 6",
+          "duration": 1.15,
+          "frame_start": 1681,
+          "frame_end": 1715
+        },
+        {
+          "id": "epsilon",
+          "cue": "步子太大",
+          "start": 59.29585194861554,
+          "meaning": "标出步长控制的两种误差来源",
+          "duration": 1.15,
+          "frame_start": 1779,
+          "frame_end": 1813
+        },
+        {
+          "id": "reuse",
+          "cue": "复用共同的计算",
+          "start": 65.41261683395751,
+          "meaning": "提出复用共同图的下一步",
+          "duration": 1.15,
+          "frame_start": 1962,
+          "frame_end": 1997
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "title": "链式法则：影响沿路相乘",
+      "kind": "chain",
+      "start": 69.01158260532182,
+      "end": 83.55610423403574,
+      "question": "损失的影响怎样先到达误差节点？",
+      "steps": [
+        {
+          "id": "graph",
+          "cue": "拆成计算图",
+          "start": 70.56939129207933,
+          "meaning": "沿用同一张前向图",
+          "duration": 1.15,
+          "frame_start": 2117,
+          "frame_end": 2152
+        },
+        {
+          "id": "rules",
+          "cue": "自己的求导规则",
+          "start": 74.3359303930697,
+          "meaning": "局部规则附在对应运算与边上",
+          "duration": 1.15,
+          "frame_start": 2230,
+          "frame_end": 2265
+        },
+        {
+          "id": "product",
+          "cue": "相邻影响相乘",
+          "start": 77.8670608002482,
+          "meaning": "把上游影响与这一段局部导数相乘",
+          "duration": 1.15,
+          "frame_start": 2336,
+          "frame_end": 2371
+        },
+        {
+          "id": "seed",
+          "cue": "损失对误差",
+          "start": 79.98573904455529,
+          "meaning": "从 ∂L/∂L=1 开始，乘 r=−3",
+          "duration": 1.15,
+          "frame_start": 2400,
+          "frame_end": 2434
+        },
+        {
+          "id": "residual",
+          "cue": "先传回负三",
+          "start": 82.65370424109014,
+          "meaning": "梯度 −3 沿损失到误差的原边返回",
+          "duration": 0.6768,
+          "frame_start": 2480,
+          "frame_end": 2500
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "title": "反向：沿原图返回梯度",
+      "kind": "reverse",
+      "start": 83.55610423403574,
+      "end": 98.11220846807149,
+      "question": "为什么偏置是 −3，权重却是 −6？",
+      "steps": [
+        {
+          "id": "prediction",
+          "cue": "预测加一",
+          "start": 83.71304336324368,
+          "meaning": "误差对预测的局部导数为 1，−3 返回预测",
+          "duration": 1.15,
+          "frame_start": 2511,
+          "frame_end": 2546
+        },
+        {
+          "id": "bias",
+          "cue": "偏置加一",
+          "start": 87.20493898812018,
+          "meaning": "沿偏置支路乘 1，得到偏置梯度 −3",
+          "duration": 1.15,
+          "frame_start": 2616,
+          "frame_end": 2651
+        },
+        {
+          "id": "weight",
+          "cue": "权重加一",
+          "start": 90.10831287846693,
+          "meaning": "沿乘法支路乘输入 2，得到权重梯度 −6",
+          "duration": 1.15,
+          "frame_start": 2703,
+          "frame_end": 2738
+        },
+        {
+          "id": "summary",
+          "cue": "几次小乘法",
+          "start": 97.24904325742787,
+          "meaning": "两个参数都收到来自同一个损失的影响",
+          "duration": 0.64737,
+          "frame_start": 2917,
+          "frame_end": 2937
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "title": "更新：梯度变成参数变化",
+      "kind": "update",
+      "start": 98.11220846807149,
+      "end": 113.29606921893897,
+      "question": "减去负梯度后，参数与损失怎样变？",
+      "steps": [
+        {
+          "id": "gradients",
+          "cue": "只算梯度",
+          "start": 100.38782584158652,
+          "meaning": "保持原参数，显示反传结果",
+          "duration": 1.15,
+          "frame_start": 3012,
+          "frame_end": 3046
+        },
+        {
+          "id": "optimizer",
+          "cue": "减去学习率",
+          "start": 102.5065040858936,
+          "meaning": "单独启动优化器，代入 η=0.1",
+          "duration": 1.15,
+          "frame_start": 3075,
+          "frame_end": 3110
+        },
+        {
+          "id": "parameters",
+          "cue": "权重变成一点六",
+          "start": 105.37064319393838,
+          "meaning": "用减法公式生成 w=1.6、b=0.3",
+          "duration": 1.15,
+          "frame_start": 3161,
+          "frame_end": 3196
+        },
+        {
+          "id": "prediction",
+          "cue": "重新预测",
+          "start": 107.8816692612653,
+          "meaning": "重新代入参数计算预测 3.5 与误差 −1.5",
+          "duration": 1.15,
+          "frame_start": 3236,
+          "frame_end": 3271
+        },
+        {
+          "id": "loss",
+          "cue": "损失降到",
+          "start": 109.64723446485453,
+          "meaning": "以相同刻度把损失条从 4.5 缩到 1.125",
+          "duration": 1.15,
+          "frame_start": 3289,
+          "frame_end": 3324
+        },
+        {
+          "id": "sign",
+          "cue": "减去负数",
+          "start": 111.56973879765172,
+          "meaning": "突出减去负梯度对应的正方向位移",
+          "duration": 1.15,
+          "frame_start": 3347,
+          "frame_end": 3382
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "title": "分支：两条贡献回到同一变量",
+      "kind": "branch",
+      "start": 113.29606921893897,
+      "end": 125.00668285889967,
+      "question": "x²+x 的两条影响为什么要相加？",
+      "steps": [
+        {
+          "id": "graph",
+          "cue": "走了两条路",
+          "start": 114.19846921188459,
+          "meaning": "一个 x 分流到平方与直接相加",
+          "duration": 1.15,
+          "frame_start": 3426,
+          "frame_end": 3460
+        },
+        {
+          "id": "forward",
+          "cue": "输入是二",
+          "start": 117.53342570755315,
+          "meaning": "前向分别得到 4 与 2，合为输出 6",
+          "duration": 0.41197,
+          "frame_start": 3526,
+          "frame_end": 3538
+        },
+        {
+          "id": "square",
+          "cue": "平方这条路",
+          "start": 118.08271265978092,
+          "meaning": "输出影响沿平方原路径返回 2x=4",
+          "duration": 0.97106,
+          "frame_start": 3542,
+          "frame_end": 3572
+        },
+        {
+          "id": "identity",
+          "cue": "直接相加",
+          "start": 119.37746047574636,
+          "meaning": "沿另一条原路径返回 1",
+          "duration": 1.15,
+          "frame_start": 3581,
+          "frame_end": 3616
+        },
+        {
+          "id": "sum",
+          "cue": "汇总就是五",
+          "start": 120.94685176782568,
+          "meaning": "两份贡献进入同一个 x，4+1=5",
+          "duration": 1.15,
+          "frame_start": 3628,
+          "frame_end": 3663
+        },
+        {
+          "id": "complete",
+          "cue": "必须相加",
+          "start": 123.22246914134071,
+          "meaning": "保持输出 6 与导数 5 的区别",
+          "duration": 1.15,
+          "frame_start": 3697,
+          "frame_end": 3731
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "title": "误差如何指导隐藏层？",
+      "kind": "history",
+      "start": 125.00668285889967,
+      "end": 140.56722319370377,
+      "question": "隐藏层怎样收到来自输出的误差信号？",
+      "steps": [
+        {
+          "id": "program",
+          "cue": "早期自动微分",
+          "start": 127.74421014280666,
+          "meaning": "先说明局部规则来自程序运算",
+          "duration": 1.15,
+          "frame_start": 3832,
+          "frame_end": 3867
+        },
+        {
+          "id": "paper",
+          "cue": "一九八六年",
+          "start": 130.79010314451298,
+          "meaning": "给出 1986 年经典应用的出处",
+          "duration": 1.15,
+          "frame_start": 3924,
+          "frame_end": 3958
+        },
+        {
+          "id": "hidden",
+          "cue": "隐藏单元",
+          "start": 134.16707147249176,
+          "meaning": "展示输入、隐藏单元和输出的固定结构",
+          "duration": 1.15,
+          "frame_start": 4025,
+          "frame_end": 4060
+        },
+        {
+          "id": "learning",
+          "cue": "误差指导",
+          "start": 139.26563149708713,
+          "meaning": "误差信号沿连接返回可训练权重，指导内部表示",
+          "duration": 0.97619,
+          "frame_start": 4178,
+          "frame_end": 4207
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "模式：变化往哪边传播？",
+      "kind": "modes",
+      "start": 140.56722319370377,
+      "end": 157.9051723662248,
+      "question": "很多输入、一个损失时，哪种传播更省重复？",
+      "steps": [
+        {
+          "id": "forward",
+          "cue": "前向模式",
+          "start": 141.74869644413036,
+          "meaning": "从输入方向 (1,0,0) 向前传播变化",
+          "duration": 1.15,
+          "frame_start": 4252,
+          "frame_end": 4287
+        },
+        {
+          "id": "reverse",
+          "cue": "反向模式",
+          "start": 145.92024555516292,
+          "meaning": "从一个输出种子 1 反向得到全部三个偏导",
+          "duration": 1.15,
+          "frame_start": 4378,
+          "frame_end": 4412
+        },
+        {
+          "id": "dimensions",
+          "cue": "很多参数",
+          "start": 150.19111726407723,
+          "meaning": "并排比较本例 3 个输入方向与 1 个输出",
+          "duration": 1.15,
+          "frame_start": 4506,
+          "frame_end": 4540
+        },
+        {
+          "id": "rules",
+          "cue": "按规则计算导数",
+          "start": 154.4288814403643,
+          "meaning": "说明两种模式都执行求导规则",
+          "duration": 1.15,
+          "frame_start": 4633,
+          "frame_end": 4667
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "框架：把梯度放进缓冲区",
+      "kind": "autograd",
+      "start": 157.9051723662248,
+      "end": 173.93961608196446,
+      "question": "第二次 backward 后为什么会变成 −12？",
+      "steps": [
+        {
+          "id": "code",
+          "cue": "标记参数",
+          "start": 160.25580718275904,
+          "meaning": "逐行对应 requires_grad、前向和 backward",
+          "duration": 1.15,
+          "frame_start": 4808,
+          "frame_end": 4842
+        },
+        {
+          "id": "read",
+          "cue": "读出梯度",
+          "start": 164.5597864243006,
+          "meaning": "同一例子读出 w.grad=−6、b.grad=−3",
+          "duration": 0.94356,
+          "frame_start": 4937,
+          "frame_end": 4965
+        },
+        {
+          "id": "batch",
+          "cue": "新批次",
+          "start": 165.81787266413582,
+          "meaning": "每个批次重新前向，产生自己的计算图",
+          "duration": 1.11738,
+          "frame_start": 4975,
+          "frame_end": 5008
+        },
+        {
+          "id": "accumulate",
+          "cue": "累计到梯度缓冲区",
+          "start": 167.30771163236176,
+          "meaning": "两次 −6 依次进入同一个缓冲区，0→−6→−12",
+          "duration": 1.15,
+          "frame_start": 5019,
+          "frame_end": 5054
+        },
+        {
+          "id": "clear",
+          "cue": "先清空",
+          "start": 169.95631424254117,
+          "meaning": "独立更新前清零，下一批重新得到 −6",
+          "duration": 0.81941,
+          "frame_start": 5099,
+          "frame_end": 5123
+        },
+        {
+          "id": "mean",
+          "cue": "分批累计",
+          "start": 171.04886281924018,
+          "meaning": "两批等大小、参数不变，loss/2 后各贡献 −3",
+          "duration": 1.15,
+          "frame_start": 5131,
+          "frame_end": 5166
+        },
+        {
+          "id": "scale",
+          "cue": "正确缩放损失",
+          "start": 172.80356204848405,
+          "meaning": "平均目标的梯度为 −3+(−3)=−6",
+          "duration": 0.85204,
+          "frame_start": 5184,
+          "frame_end": 5210
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "闭环：每一步各做什么？",
+      "kind": "recap",
+      "start": 173.93961608196446,
+      "end": 183.21395270215595,
+      "question": "数值、梯度与更新分别发生在哪一步？",
+      "steps": [
+        {
+          "id": "forward",
+          "cue": "前向算数值",
+          "start": 175.41905712603622,
+          "meaning": "从固定参数得到损失 4.5",
+          "duration": 0.79458,
+          "frame_start": 5263,
+          "frame_end": 5286
+        },
+        {
+          "id": "reverse",
+          "cue": "反向算梯度",
+          "start": 176.478498170108,
+          "meaning": "同图反向得到 −6 与 −3",
+          "duration": 0.72009,
+          "frame_start": 5294,
+          "frame_end": 5316
+        },
+        {
+          "id": "update",
+          "cue": "优化器更新参数",
+          "start": 177.43861661629802,
+          "meaning": "优化器把参数变为 1.6 与 0.3",
+          "duration": 1.15,
+          "frame_start": 5323,
+          "frame_end": 5358
+        },
+        {
+          "id": "check",
+          "cue": "梯度检查",
+          "start": 181.24598286843093,
+          "meaning": "将差分结果与自动微分结果对照",
+          "duration": 1.15,
+          "frame_start": 5437,
+          "frame_end": 5472
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "检查点：缺少的值怎样找回？",
+      "kind": "memory",
+      "start": 183.21395270215595,
+      "end": 197.52108949627095,
+      "question": "少保存的激活，在反传需要时从哪里来？",
+      "steps": [
+        {
+          "id": "need",
+          "cue": "中间值",
+          "start": 186.80612330356604,
+          "meaning": "示例链路产生 a₁=4、a₂=5、a₃=25、输出 5",
+          "duration": 1.15,
+          "frame_start": 5604,
+          "frame_end": 5639
+        },
+        {
+          "id": "all",
+          "cue": "保存的激活",
+          "start": 189.26617397404735,
+          "meaning": "逐步装入四个保存槽，显示占用增加",
+          "duration": 1.15,
+          "frame_start": 5678,
+          "frame_end": 5712
+        },
+        {
+          "id": "checkpoint",
+          "cue": "只保留部分信息",
+          "start": 192.21176096107104,
+          "meaning": "保留输入 a₀=2，清除其他保存槽",
+          "duration": 1.15,
+          "frame_start": 5766,
+          "frame_end": 5801
+        },
+        {
+          "id": "recompute",
+          "cue": "重新计算",
+          "start": 194.02442987616251,
+          "meaning": "反传需要 a₂ 时，从 a₀ 重算两步，恢复 a₂=5",
+          "duration": 1.15,
+          "frame_start": 5821,
+          "frame_end": 5855
+        },
+        {
+          "id": "trade",
+          "cue": "额外计算",
+          "start": 195.80472970348453,
+          "meaning": "对照本例的保存槽与新增运算次数",
+          "duration": 1.15,
+          "frame_start": 5874,
+          "frame_end": 5909
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "选择性保存：重算便宜操作",
+      "kind": "selective",
+      "start": 197.52108949627095,
+      "end": 212.54034622131473,
+      "question": "保存矩阵乘法后，怎样重建后续激活？",
+      "steps": [
+        {
+          "id": "policy",
+          "cue": "哪些保存",
+          "start": 199.8832347624404,
+          "meaning": "先显示同一条含昂贵和便宜操作的链",
+          "duration": 1.15,
+          "frame_start": 5996,
+          "frame_end": 6031
+        },
+        {
+          "id": "expensive",
+          "cue": "昂贵运算",
+          "start": 203.7351562070098,
+          "meaning": "计算矩阵乘法 [4,−5] 并保存结果",
+          "duration": 1.15,
+          "frame_start": 6112,
+          "frame_end": 6147
+        },
+        {
+          "id": "cheap",
+          "cue": "便宜的逐元素操作",
+          "start": 205.38597968325385,
+          "meaning": "前向 ReLU 得到 [4,0]，该激活允许丢弃",
+          "duration": 1.15,
+          "frame_start": 6162,
+          "frame_end": 6196
+        },
+        {
+          "id": "compiler",
+          "cue": "联合分析",
+          "start": 207.52233947604026,
+          "meaning": "反向需要 ReLU 输出，从缓存重算 [4,0]，再求 2a",
+          "duration": 1.15,
+          "frame_start": 6226,
+          "frame_end": 6260
+        },
+        {
+          "id": "measure",
+          "cue": "依赖模型和硬件",
+          "start": 209.91765197098258,
+          "meaning": "用同一模型与硬件测显存、吞吐、质量",
+          "duration": 1.15,
+          "frame_start": 6298,
+          "frame_end": 6332
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "保留、重算、压缩：怎样取舍？",
+      "kind": "adacc",
+      "start": 212.54034622131473,
+      "end": 229.76070091468392,
+      "question": "压缩减少存储时，为什么还要检查误差？",
+      "steps": [
+        {
+          "id": "research",
+          "cue": "二零二五年",
+          "start": 212.96034622131472,
+          "meaning": "给出 Adacc 研究与三种选择",
+          "duration": 1.15,
+          "frame_start": 6389,
+          "frame_end": 6423
+        },
+        {
+          "id": "choices",
+          "cue": "同一套选择",
+          "start": 216.52094587595872,
+          "meaning": "追踪同一张量在保留、重算与压缩后的不同状态",
+          "duration": 1.15,
+          "frame_start": 6496,
+          "frame_end": 6530
+        },
+        {
+          "id": "error",
+          "cue": "可能引入误差",
+          "start": 218.23650752774174,
+          "meaning": "用舍入示意原值与恢复值的可见差异",
+          "duration": 1.15,
+          "frame_start": 6547,
+          "frame_end": 6582
+        },
+        {
+          "id": "quality",
+          "cue": "训练质量",
+          "start": 220.5347127593756,
+          "meaning": "把误差、速度与存储放在同一比较条件下",
+          "duration": 1.15,
+          "frame_start": 6616,
+          "frame_end": 6651
+        },
+        {
+          "id": "objective",
+          "cue": "一起衡量",
+          "start": 225.39007592479925,
+          "meaning": "强调同一目标与设置的比较",
+          "duration": 1.15,
+          "frame_start": 6762,
+          "frame_end": 6796
+        },
+        {
+          "id": "mechanism",
+          "cue": "链式法则",
+          "start": 227.52643571758566,
+          "meaning": "返回原图，梯度规则不变，改变存储与执行",
+          "duration": 1.15,
+          "frame_start": 6826,
+          "frame_end": 6860
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "title": "继续一起学懂下一步",
+      "kind": "follow",
+      "start": 229.76070091468392,
+      "end": 240.2,
+      "question": "观众在哪里继续学习？",
+      "steps": [
+        {
+          "id": "project",
+          "cue": "开源项目",
+          "start": 231.47546442546354,
+          "meaning": "显示可读的项目地址",
+          "duration": 1.15,
+          "frame_start": 6944,
+          "frame_end": 6979
+        },
+        {
+          "id": "content",
+          "cue": "文章",
+          "start": 233.7089314815584,
+          "meaning": "显示文章、原始论文和实验代码",
+          "duration": 1.15,
+          "frame_start": 7011,
+          "frame_end": 7046
+        },
+        {
+          "id": "star",
+          "cue": "点亮星标",
+          "start": 236.36319667865666,
+          "meaning": "作者挥手，项目文字卡静止收尾",
+          "duration": 1.15,
+          "frame_start": 7091,
+          "frame_end": 7125
+        }
+      ]
+    }
+  ]
+}

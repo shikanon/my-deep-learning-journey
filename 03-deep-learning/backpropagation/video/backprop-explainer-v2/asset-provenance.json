@@ -1,0 +1,196 @@
+{
+  "storage": "transparent-png-sequence",
+  "direct_root_reads": true,
+  "packs": [
+    {
+      "id": "doctor",
+      "path": "assets/手绘形象/博士服教棍-v1",
+      "canvas": [
+        512,
+        512
+      ],
+      "anchor": [
+        180,
+        456
+      ],
+      "fps": 8,
+      "frames": [
+        {
+          "file": "frames/001.png",
+          "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+        },
+        {
+          "file": "frames/002.png",
+          "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+        },
+        {
+          "file": "frames/003.png",
+          "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+        },
+        {
+          "file": "frames/004.png",
+          "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+        },
+        {
+          "file": "frames/005.png",
+          "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+        },
+        {
+          "file": "frames/006.png",
+          "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+        },
+        {
+          "file": "frames/007.png",
+          "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+        },
+        {
+          "file": "frames/008.png",
+          "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+        },
+        {
+          "file": "frames/009.png",
+          "sha256": "5f93cf6ba08478b21d902109d3dc79e26d67efe95f34e5d8181046dd39fa68c7"
+        },
+        {
+          "file": "frames/010.png",
+          "sha256": "ba287648c0ede26089c79324d8b04a0f7d4276f3511b232d51b3ec91ce620413"
+        },
+        {
+          "file": "frames/011.png",
+          "sha256": "7e3c854140e56ab0ef56bad566d5ad23ae041657caa68569cc3fe5e42772c2f2"
+        },
+        {
+          "file": "frames/012.png",
+          "sha256": "d6ce5507f4466ea8032256eb08a144da9ea3bc0dc13ea5e8e955f7b8c2922e78"
+        },
+        {
+          "file": "frames/013.png",
+          "sha256": "b3d01b3320e3e8c34dd86a25743f62bce4e5aabef9e68c6b56f9347a8ed6fa41"
+        },
+        {
+          "file": "frames/014.png",
+          "sha256": "168f0bc54e613f4a01c38e6442732071c040b0de3b365bf2246c9ccd1773edfe"
+        },
+        {
+          "file": "frames/015.png",
+          "sha256": "a9909681223ab2d387a641da84ab054611e939a12b097317fcadae2d1acd6afa"
+        },
+        {
+          "file": "frames/016.png",
+          "sha256": "9def39273cc86f0645cf5809d2e3623ae512cd9988bdfb2105acc9494d906d11"
+        }
+      ]
+    },
+    {
+      "id": "wave",
+      "path": "assets/手绘形象/日常服动作序列帧",
+      "canvas": [
+        384,
+        576
+      ],
+      "anchor": [
+        192,
+        548
+      ],
+      "fps": 20,
+      "frames": [
+        {
+          "file": "frames/wave/000.png",
+          "sha256": "feb38c6f8bc8eb53707ec673eb5e9c7fff107884246d22baa7849e73270bf321"
+        },
+        {
+          "file": "frames/wave/001.png",
+          "sha256": "afae1ca73b9a95443551671767586e3eb55e255a77ba3093387834ad6270369c"
+        },
+        {
+          "file": "frames/wave/002.png",
+          "sha256": "7de3997fc89b6576419a3f5d55407c99600e87c79d85f3920af5e0ec311e17d7"
+        },
+        {
+          "file": "frames/wave/003.png",
+          "sha256": "04fa40b8d5af5c908a0dd0fd08ad00c8327aea91afa7ed3130d0a927453756f7"
+        },
+        {
+          "file": "frames/wave/004.png",
+          "sha256": "109895a9a751c4221c6c6b8a98d32a58b784bf9b386c67a094bf28841a2fedd3"
+        },
+        {
+          "file": "frames/wave/005.png",
+          "sha256": "f76dc7869c46feb668de94f8c6134a3615248a9ea842d2b7b217f64ddd105f25"
+        },
+        {
+          "file": "frames/wave/006.png",
+          "sha256": "4cdcf2ad3558e988a3c33f4e987bf8e8c9619b08cee7b27315630c8fca0c3449"
+        },
+        {
+          "file": "frames/wave/007.png",
+          "sha256": "12de47b22bb4b1e7d7fa1775e8ab171b91ea4011c04e73f32bf9831750c74caa"
+        },
+        {
+          "file": "frames/wave/008.png",
+          "sha256": "06a132872238ac8690af871a02748774b90bd6e703ac3677cea4e4b8d118879d"
+        },
+        {
+          "file": "frames/wave/009.png",
+          "sha256": "adcae2fd6756739e9094dc284179ce5cd85f979f12c2a3f43a649b59ee217f13"
+        },
+        {
+          "file": "frames/wave/010.png",
+          "sha256": "10141c982f2a42b9cd2b57cf94a08437138b20372e440b82ad5cf361ea0ac17b"
+        },
+        {
+          "file": "frames/wave/011.png",
+          "sha256": "9e418a4ce61cd7d41deceea76f95f37d24eacc139f454c1ce395321fd5c32af0"
+        },
+        {
+          "file": "frames/wave/012.png",
+          "sha256": "c2ebad8cd745800596a3837c56566b1389a9ffc03ac2a54dec395c6139356292"
+        },
+        {
+          "file": "frames/wave/013.png",
+          "sha256": "20afcd930a08ce8ee9e665c661f31b1cf2209d397c375dd2e16dfee0fd092803"
+        },
+        {
+          "file": "frames/wave/014.png",
+          "sha256": "adcb6bab09e53155481b9b27d428755d9b29ba04107aa6c88d597238784c395c"
+        },
+        {
+          "file": "frames/wave/015.png",
+          "sha256": "339c4874be9523205f5e45e0024975722e1af1bbfe5534a298156efbf885d570"
+        },
+        {
+          "file": "frames/wave/016.png",
+          "sha256": "f128c4af25fc314d8d963aaaa88eb7c037e800bb2d93711c5332f4004964c191"
+        },
+        {
+          "file": "frames/wave/017.png",
+          "sha256": "f10688aab839d0b1f09a6455d000909db39abbc6e9324f34fc3e0f3e72b3b9d0"
+        },
+        {
+          "file": "frames/wave/018.png",
+          "sha256": "30bc40ef12e9e1a441d336b11b221f903482d75a2764f711ebb1e6c5350cb53a"
+        },
+        {
+          "file": "frames/wave/019.png",
+          "sha256": "4933bb53f52a83d1fbe12931cc54d9e3485e0016bcac5cb5c0bc0d3c1b7d6b48"
+        },
+        {
+          "file": "frames/wave/020.png",
+          "sha256": "fe01063cf841f47c93e51f94f5c4e395e10fe94db305bf8d8df774fa82a750ef"
+        },
+        {
+          "file": "frames/wave/021.png",
+          "sha256": "5093b3a0e3b2e2ae6a6c49a3d7e540d6c45d08b91a440925925b7151c18ff681"
+        },
+        {
+          "file": "frames/wave/022.png",
+          "sha256": "a5fbe0ce9bcf5750a989afa7008bc87012e41250b2b00084ddfe5524570c100e"
+        },
+        {
+          "file": "frames/wave/023.png",
+          "sha256": "feb38c6f8bc8eb53707ec673eb5e9c7fff107884246d22baa7849e73270bf321"
+        }
+      ]
+    }
+  ]
+}

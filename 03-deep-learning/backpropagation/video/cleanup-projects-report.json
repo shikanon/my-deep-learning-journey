@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "applied": true,
+  "verifiedDate": "2026-10-04",
+  "retainedProject": "backprop-explainer-v2",
+  "retainedFinal": "backprop-explainer-v2/renders/backpropagation-v2.mp4",
+  "retainedFinalSha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+  "removedProjects": [
+    {
+      "path": "backprop-explainer-v1",
+      "files": 3787,
+      "bytes": 1071139703
+    }
+  ],
+  "fileCount": 3787,
+  "bytesReclaimed": 1071139703,
+  "remainingProjects": [
+    "backprop-explainer-v2"
+  ],
+  "localizedInputs": [
+    "audio/narration.m4a",
+    "audio/author-reference.wav",
+    "audio/generation-requests.json",
+    "qa/accepted-speech/independent-asr.json",
+    "qa/accepted-speech/audio-edges.json",
+    "qa/accepted-speech/alignment-review.json",
+    "qa/accepted-speech/speech-rate.json",
+    "qa/accepted-speech/original-validation.json",
+    "assets/gsap.min.js"
+  ],
+  "verification": {
+    "history_directory_absent_during_build": true,
+    "source_build_hashes_unchanged": {
+      "index.html": true,
+      "timeline.json": true,
+      "timeline-data.js": true,
+      "narration.json": true,
+      "captions.srt": true,
+      "assets/gsap.min.js": true,
+      "audio/narration.m4a": true
+    },
+    "repacked_final_sha256_matches": true,
+    "rebuild_scope": "source HTML, timeline and assets rebuilt; final MP4 repacked from the retained encoded visual track and local AAC. No full visual rerender in this cleanup step.",
+    "post_cleanup_encoded_delivery_passed": true,
+    "public_download_hash_matches": true
+  },
+  "publicAssetsPreserved": true
+}

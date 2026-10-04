@@ -1,0 +1,392 @@
+{
+  "schema_version": 2,
+  "topic": "backpropagation",
+  "project": "backprop-explainer-v2",
+  "verified_date": "2026-10-04",
+  "environment": "local delivery",
+  "status": "passed",
+  "media": {
+    "status": "passed",
+    "file": "renders/backpropagation-v2.mp4",
+    "sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+    "bytes": 12323945,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frame_count": 7206,
+    "duration": 240.213,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "chapters": 16,
+    "full_decode_errors": 0,
+    "audio_identical_to_v1": true,
+    "integrated_lufs": -16.0,
+    "encoded_scene_samples": 16,
+    "encoded_mechanism_samples": 63,
+    "actor_frames_compared": 16,
+    "actor_max_mean_rgb_error": 3.161205648510739,
+    "http_head": 200,
+    "http_range": 206,
+    "download_hash_matches": true
+  },
+  "preview": {
+    "file": "renders/backpropagation-optimized-preview.mp4",
+    "sha256": "75d775e133bc83a202b00bf1ac84ce4752427f75915e56035af811a713719fb5",
+    "bytes": 2148450,
+    "duration": 44.3,
+    "source_file": "renders/backpropagation-v2.mp4",
+    "source_sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+    "source_start_seconds": 69.01158260532,
+    "source_end_seconds": 113.29606921894,
+    "full_decode_errors": 0
+  },
+  "source": {
+    "sampledStates": 246,
+    "dense": {
+      "sampled": 2829,
+      "issues": []
+    },
+    "checks": [],
+    "determinism": [
+      {
+        "time": 13.9,
+        "identical": true
+      },
+      {
+        "time": 43,
+        "identical": true
+      },
+      {
+        "time": 77.5,
+        "identical": true
+      },
+      {
+        "time": 92,
+        "identical": true
+      },
+      {
+        "time": 122,
+        "identical": true
+      },
+      {
+        "time": 169.9,
+        "identical": true
+      },
+      {
+        "time": 191.8,
+        "identical": true
+      },
+      {
+        "time": 206,
+        "identical": true
+      },
+      {
+        "time": 222,
+        "identical": true
+      },
+      {
+        "time": 239,
+        "identical": true
+      }
+    ],
+    "errors": []
+  },
+  "content": {
+    "status": "passed",
+    "independent_method": "central finite differences and entrywise arithmetic",
+    "gradients": [
+      -6.000000000039306,
+      -3.000000000019653
+    ],
+    "branch_gradient": 4.999999999988347,
+    "mode_gradients": [
+      2.0000000000131024,
+      2.0000000000131024,
+      0.9999999999843466
+    ],
+    "final_loss": 1.125,
+    "selective_matrix": [
+      4,
+      -5
+    ],
+    "selective_recomputed": [
+      4,
+      0
+    ],
+    "inspected_actual_state_count": 246,
+    "mechanism_checks": 14,
+    "schematic_boundaries": [
+      "activation slots are illustrative, not measured bytes",
+      "compression rounding is illustrative, not the Adacc configuration",
+      "network connections illustrate the error path, not a training benchmark"
+    ]
+  },
+  "engine": {
+    "hyperframes_version": "0.8.78",
+    "strict_check_passed": true,
+    "layout_samples": 32,
+    "layout_issues": 0,
+    "lint_errors": 0,
+    "runtime_errors": 0,
+    "motion_errors": 0,
+    "contrast_passed": 113,
+    "contrast_total": 113
+  },
+  "audio_identity": {
+    "old_packet_hash": "22469f6cfe306eb807c5a0fa96f0e4dd7682952758a9afa6b68f0bf3c45a7e49",
+    "new_packet_hash": "22469f6cfe306eb807c5a0fa96f0e4dd7682952758a9afa6b68f0bf3c45a7e49",
+    "old_pcm_hash": "cd2c5db5fca9398715ce25050e725a7c82765a67d8094fde618e852499ed7ad9",
+    "new_pcm_hash": "cd2c5db5fca9398715ce25050e725a7c82765a67d8094fde618e852499ed7ad9",
+    "local_reference_packet_hash": "22469f6cfe306eb807c5a0fa96f0e4dd7682952758a9afa6b68f0bf3c45a7e49",
+    "local_reference_pcm_hash": "cd2c5db5fca9398715ce25050e725a7c82765a67d8094fde618e852499ed7ad9"
+  },
+  "continuous_playback": {
+    "duration": 240.213,
+    "ended": true,
+    "error": null,
+    "evidence": {
+      "errors": [],
+      "events": [
+        {
+          "mediaTime": 0,
+          "muted": false,
+          "rate": 1,
+          "type": "play",
+          "wallTime": 6847.5
+        },
+        {
+          "mediaTime": 0,
+          "muted": false,
+          "rate": 1,
+          "type": "playing",
+          "wallTime": 6847.600000023842
+        },
+        {
+          "mediaTime": 240.213,
+          "muted": false,
+          "rate": 1,
+          "type": "pause",
+          "wallTime": 247151.5
+        },
+        {
+          "mediaTime": 240.213,
+          "muted": false,
+          "rate": 1,
+          "type": "ended",
+          "wallTime": 247151.69999992847
+        }
+      ]
+    },
+    "muted": false,
+    "paused": true,
+    "rate": 1,
+    "ready": 4,
+    "source": "http://127.0.0.1:8773/03-deep-learning/backpropagation/video/backprop-explainer-v2/renders/backpropagation-v2.mp4?v=6b8d998cb3835256",
+    "time": 240.213,
+    "seek_events": 0,
+    "waiting_events": 0,
+    "wall_duration_seconds": 240.3042
+  },
+  "player_controls": {
+    "schema_version": 1,
+    "status": "passed",
+    "environment": "localhost, Codex in-app browser",
+    "verified_date": "2026-10-04",
+    "video_sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+    "section_buttons": 16,
+    "section_jump_times": [
+      0.02,
+      12.721478,
+      31.105198,
+      49.221518,
+      69.031582,
+      83.576104,
+      98.132208,
+      113.316069,
+      125.026682,
+      140.587223,
+      157.925172,
+      173.959616,
+      183.233952,
+      197.541089,
+      212.560346,
+      229.7807
+    ],
+    "section_tolerance_seconds": 0.1,
+    "all_sections_passed": true,
+    "all_section_jumps_preserved_pause": true,
+    "primary_chapter_times": [
+      0.02,
+      69.031582,
+      183.233952
+    ],
+    "primary_chapters_ready_state": 4,
+    "keyboard": {
+      "home": 0,
+      "right": 5,
+      "left": 0,
+      "end": 240.162999
+    },
+    "actual_slider_drag": {
+      "time": 117.82,
+      "value": "117.82",
+      "ready_state": 4,
+      "paused": true
+    },
+    "space_play": {
+      "time": 0.228639,
+      "paused": false
+    },
+    "space_pause": {
+      "time": 0.231851,
+      "paused": true
+    },
+    "restart": {
+      "time": 0.317715,
+      "paused": false
+    },
+    "desktop": {
+      "width": 1440,
+      "height": 1050,
+      "scroll_width": 1440
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "scroll_width": 390,
+      "video_width": 352,
+      "chapter_jump_time": 83.576104,
+      "ready_state": 4
+    },
+    "enlarged_view": {
+      "mode": "viewport overlay",
+      "viewport": {
+        "width": 590,
+        "height": 724
+      },
+      "player": {
+        "x": 0,
+        "y": 0,
+        "width": 590,
+        "height": 724
+      },
+      "button": "退出放大",
+      "expanded": true,
+      "button_exit_passed": true,
+      "escape_exit_passed": true
+    },
+    "native_fullscreen_observation": "IAB did not enter native fullscreen; the delivered enlarge button uses a viewport overlay.",
+    "temporary_viewport_reset": true,
+    "console_errors": [],
+    "console_warnings": []
+  },
+  "ending_has_qr": false,
+  "evidence_files": [
+    "qa/source-check.json",
+    "qa/content-check.json",
+    "qa/delivery-check.json",
+    "qa/hyperframes-check.log",
+    "qa/playback-native.json",
+    "qa/player-controls.json",
+    "qa/audio-identity.json",
+    "qa/actor-fidelity.json",
+    "qa/preview-provenance.json",
+    "qa/cloud-playback.json",
+    "qa/cloud-player-controls.json"
+  ],
+  "source_file_sha256": {
+    "animation.js": "fa0eab40e7ba904c606e8bb99cfae36f2cefb61db2d92a549cf20da8bbbc8416",
+    "style.css": "c1a17912742e123917528f3f44ce78abfdd0d823ea6b0fa927ae4243ac68ea0e",
+    "storyboard.json": "fa46068931ef007112f3592a54f70ec6dd49fdd458dbdca6534d0dba09d2bc50",
+    "timeline.json": "27ac1d43c658aaaa4aba00d36945a323e674a74b35a56b4066e73ed27d77a6f3",
+    "build.py": "39a584dddd1c7bd2961648a191537ec16d4af3c8d93cb4dc45b23c83b9ea7a54",
+    "make_player.py": "442598fad9dc458431bcef97b3064a9126af32dda02fdd27e470a0fd3f2bc758",
+    "watch.html": "9be996a745db5d64c155559766bce5157d556d5fc660cf2b308a1d2ebd03abf4",
+    "index.html": "4245c62ae909c630fadb7c811c1fd4efaf72bff44d4a09fb98334dd536956c9d",
+    "render.py": "6e54accee2fe1b6eccb074d977bd7465e9cfc218e1cf68b9e063dd28f726d116",
+    "verify_delivery.py": "3c28083309b1e9b72e2c542de99001ce3d30155df88a1d9f455012224ecf5320"
+  },
+  "published_playback": {
+    "environment": "localhost chapter player reading public OSS MP4",
+    "browser": "Codex in-app browser",
+    "verified_date": "2026-10-04",
+    "source": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4",
+    "video_sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+    "duration": 240.213,
+    "time": 240.213,
+    "ended": true,
+    "paused": true,
+    "ready": 4,
+    "rate": 1,
+    "muted": false,
+    "error": null,
+    "console_errors": [],
+    "console_warnings": [],
+    "evidence": {
+      "errors": [],
+      "events": [
+        {
+          "mediaTime": 0,
+          "muted": false,
+          "rate": 1,
+          "type": "play",
+          "wallTime": 14758.799999999814
+        },
+        {
+          "mediaTime": 0,
+          "muted": false,
+          "rate": 1,
+          "type": "playing",
+          "wallTime": 14758.899999999909
+        },
+        {
+          "mediaTime": 240.213,
+          "muted": false,
+          "rate": 1,
+          "type": "pause",
+          "wallTime": 255454.69999999972
+        },
+        {
+          "mediaTime": 240.213,
+          "muted": false,
+          "rate": 1,
+          "type": "ended",
+          "wallTime": 255454.7999999998
+        }
+      ]
+    },
+    "seek_events": 0,
+    "waiting_events": 0,
+    "wall_duration_seconds": 240.696
+  },
+  "published_player_controls": {
+    "status": "passed",
+    "verified_date": "2026-10-04",
+    "video_sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+    "section_buttons": 16,
+    "section_jump_times": [
+      0.02,
+      12.721478,
+      31.105198,
+      49.221518,
+      69.031582,
+      83.576104,
+      98.132208,
+      113.316069,
+      125.026682,
+      140.587223,
+      157.925172,
+      173.959616,
+      183.233952,
+      197.541089,
+      212.560346,
+      229.7807
+    ],
+    "all_ready_state": 4,
+    "all_paused_after_seek": true,
+    "media_errors": [],
+    "continuous_playback_recorded_before_control_tests": true
+  },
+  "publication_record": "../publication.json",
+  "cleanup_record": "../cleanup-projects-report.json"
+}

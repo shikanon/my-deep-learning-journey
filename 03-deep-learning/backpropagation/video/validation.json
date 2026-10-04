@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "topic": "backpropagation",
+  "project": "backprop-explainer-v2",
+  "verified_date": "2026-10-04",
+  "environment": "local delivery",
+  "status": "passed",
+  "media_sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+  "report": "backprop-explainer-v2/validation.json",
+  "video": "backprop-explainer-v2/renders/backpropagation-v2.mp4",
+  "player": "backprop-explainer-v2/watch.html",
+  "preview": "backprop-explainer-v2/renders/backpropagation-optimized-preview.mp4",
+  "accepted_audio_provenance": "backprop-explainer-v2/audio-provenance.json",
+  "publication": "publication.json",
+  "cleanup": "cleanup-projects-report.json",
+  "public_video_url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4",
+  "cloud_playback_ended": true
+}

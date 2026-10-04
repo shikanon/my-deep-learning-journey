@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "title": "反向传播与自动微分 · 过程优化版",
+  "topic": "backpropagation",
+  "publishedAt": "2026-10-04T04:37:51.074Z",
+  "durationSeconds": 240.213,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "frameCount": 7206,
+  "chapters": [
+    {
+      "title": "01 · 参数那么多，怎样一起算？",
+      "start": 0,
+      "end": 12.701
+    },
+    {
+      "title": "02 · 前向：把数值算出来",
+      "start": 12.701,
+      "end": 31.085
+    },
+    {
+      "title": "03 · 梯度：小步改变会怎样？",
+      "start": 31.085,
+      "end": 49.202
+    },
+    {
+      "title": "04 · 差分：真的重跑两次",
+      "start": 49.202,
+      "end": 69.012
+    },
+    {
+      "title": "05 · 链式法则：影响沿路相乘",
+      "start": 69.012,
+      "end": 83.556
+    },
+    {
+      "title": "06 · 反向：沿原图返回梯度",
+      "start": 83.556,
+      "end": 98.112
+    },
+    {
+      "title": "07 · 更新：梯度变成参数变化",
+      "start": 98.112,
+      "end": 113.296
+    },
+    {
+      "title": "08 · 分支：两条贡献回到同一变量",
+      "start": 113.296,
+      "end": 125.007
+    },
+    {
+      "title": "09 · 误差如何指导隐藏层？",
+      "start": 125.007,
+      "end": 140.567
+    },
+    {
+      "title": "10 · 模式：变化往哪边传播？",
+      "start": 140.567,
+      "end": 157.905
+    },
+    {
+      "title": "11 · 框架：把梯度放进缓冲区",
+      "start": 157.905,
+      "end": 173.94
+    },
+    {
+      "title": "12 · 闭环：每一步各做什么？",
+      "start": 173.94,
+      "end": 183.214
+    },
+    {
+      "title": "13 · 检查点：缺少的值怎样找回？",
+      "start": 183.214,
+      "end": 197.521
+    },
+    {
+      "title": "14 · 选择性保存：重算便宜操作",
+      "start": 197.521,
+      "end": 212.54
+    },
+    {
+      "title": "15 · 保留、重算、压缩：怎样取舍？",
+      "start": 212.54,
+      "end": 229.761
+    },
+    {
+      "title": "16 · 继续一起学懂下一步",
+      "start": 229.761,
+      "end": 240.2
+    }
+  ],
+  "assets": {
+    "video": {
+      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4",
+      "key": "my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4",
+      "bytes": 12323945,
+      "sha256": "6b8d998cb383525656b87432f9a430783aa76c2f25b48051e6c9e5550208b18d",
+      "contentType": "video/mp4",
+      "verification": {
+        "headStatus": 200,
+        "contentLength": 12323945,
+        "contentType": "video/mp4",
+        "rangeStatus": 206,
+        "rangeBytes": 1024,
+        "contentRange": "bytes 0-1023/12323945",
+        "fullDownloadSha256Matches": true,
+        "verifiedAt": "2026-10-04T04:37:49.857Z"
+      }
+    },
+    "poster": {
+      "url": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/9bf4a5c338ed39e1/poster.jpg",
+      "key": "my-deep-learning-journey/knowledge-videos/backpropagation/9bf4a5c338ed39e1/poster.jpg",
+      "bytes": 245039,
+      "sha256": "9bf4a5c338ed39e1f7fa739d7793c65b35d232bf3f1798408e97dc2e0f038317",
+      "contentType": "image/jpeg",
+      "verification": {
+        "headStatus": 200,
+        "contentLength": 245039,
+        "contentType": "image/jpeg",
+        "fullDownloadSha256Matches": true,
+        "verifiedAt": "2026-10-04T04:37:51.074Z"
+      }
+    }
+  },
+  "browserPlaybackVerification": {
+    "date": "2026-10-04",
+    "browser": "Codex in-app browser",
+    "source": "https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4",
+    "duration": 240.213,
+    "ended": true,
+    "playbackRate": 1,
+    "muted": false,
+    "mediaError": null,
+    "waitingEvents": 0,
+    "seekEvents": 0,
+    "wallDurationSeconds": 240.696,
+    "sectionButtonsVerified": 16,
+    "report": "backprop-explainer-v2/validation.json"
+  }
+}

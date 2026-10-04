@@ -1,0 +1,1 @@
+{"name":"backprop-explainer-v2","private":true,"type":"module","scripts":{"build":"python3 build.py","check":"npx --yes hyperframes@0.8.78 check --samples 32 --strict","render":"python3 render.py"}}

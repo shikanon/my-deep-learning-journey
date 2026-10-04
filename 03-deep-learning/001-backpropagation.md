@@ -2,7 +2,7 @@
 title: "反向传播与自动微分"
 topic: "03-deep-learning"
 created: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-04"
 status: draft
 tags: [backpropagation, autograd, gradient]
 ---
@@ -12,6 +12,8 @@ tags: [backpropagation, autograd, gradient]
 > 初始示范：原理与手算示例已整理；个人实验和复习待完成。
 
 [返回主题索引](README.md) · [返回首页](../README.md)
+
+[完整解说视频（约 4 分钟）](https://qingjian-shikanon-media-sg-2026.oss-ap-southeast-1.aliyuncs.com/my-deep-learning-journey/knowledge-videos/backpropagation/6b8d998cb3835256/backpropagation-v2.mp4) · [分镜与制作工程](backpropagation/video/README.md)
 
 
 ## 核心问题与结论
