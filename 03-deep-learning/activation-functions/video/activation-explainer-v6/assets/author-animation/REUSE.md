@@ -1,22 +1,30 @@
-# 固定微笑人物动画的复用
+# 日常服动作序列帧
 
-V3 保持作者的彩铅手绘身份，整张脸共用一张闭嘴微笑头部图。嘴型与眼睛不做逐帧变形；头部围绕领口轻点、歪头，手势、脚步及持有的教棍承担主要动作。
+儿童彩铅手绘作者的日常服动作，使用同一闭嘴微笑。公共素材以透明 PNG 序列帧保存，播放与渲染直接读取 PNG，不依赖图集或 WebP。
 
-八组动作：`talk` 讲解手势、`point-right` 徒手指向、`think` 托腮思考、`celebrate` 领悟握拳、`wave` 挥手、`think-question` 思考问号、`teach-pointer` 持教棍、`step` 轻步。`talk` 保留旧标识以兼容使用方，表示讲解手势，不含口型动画。
+- [八组动作预览](preview.html)
+- [帧顺序、锚点与 SHA-256](manifest.json)
+- [迁移来源与像素保留记录](migration-provenance.json)
 
-每组 24 帧、20 fps、1.2 秒循环；单帧 384 × 576 RGBA 真透明，图集 6 列 × 4 行，2304 × 2304。`frames/` 为全部 192 张 PNG，`atlases/` 为八张图集，`previews/` 为八个 WebP。`rig/` 保留固定头部、嘴部参考、左右腿、人物底稿与问号图层。`props/` 保留教棍和问号 SVG。
+| 动作 ID | 用途 |
+| --- | --- |
+| talk | 开掌讲解与点头；不含口型动画 |
+| point-right | 徒手指向重点 |
+| think | 托腮思考 |
+| celebrate | 领悟握拳 |
+| wave | 挥手欢迎或片尾 |
+| think-question | 带问号的思考 |
+| teach-pointer | 保留已有视频的日常服教棍动作；新视频教棍优先使用博士服素材 |
+| step | 轻步与重心移动 |
 
-人物放置锚点统一为 `[192, 548]`。身体和人物比例固定，头部旋转幅度不超过 2.5°；脚部围绕腿的关节做小幅重心和抬脚动作。这些是配置明确、可重现的动作，不按各帧的外包围框重新居中。每组首尾一致，基础动作共用同一中立姿势；思考问号额外保留顶部道具。
+每组 24 张 PNG，共 192 张；384×576 RGBA、20 fps、1.2 秒循环。脚底锚点统一为 `[192, 548]`。`frames/<动作>/000.png` 至 `023.png` 是原件，各组首尾一致。`rig/` 中的 PNG 参考图用于核对已有帧的头部和身体稳定性，不是图集。
 
 ```javascript
-const action = manifest.actions['teach-pointer'];
+const action = manifest.actions['wave'];
 const index = Math.floor(timeSeconds * action.fps) % action.frame_count;
 const frame = action.frames[index];
-ctx.drawImage(atlas, ...frame.atlas_rect, x - 192, y - 548, 384, 576);
+// image 为 frame.file 指向的透明 PNG，x/y 是脚底位置。
+ctx.drawImage(image, x - 192, y - 548, 384, 576);
 ```
 
-先绘制透明帧，再按实际场景安排位置。不同动作可以用同一个画布坐标和锚点切换。若需要连续场景切换，优先在首尾中立帧切换；不要给每张帧图另算包围框中心。嘴部随整颗头移动，但表情和形状始终来自同一张参考图。
-
-来源为已配准的手绘素材，使用确定性关节变换和透明合成，无新增图片生成调用。重建所需的 84 张原始姿势、人物底稿和道具已保存在 `source/registered-art/`，文件哈希见 [source/provenance.json](source/provenance.json)。重建脚本为仓库 `03-deep-learning/loss-functions/video/loss-explainer-v6/rig_author.py`，无需历史动作库。后续视频直接复制此文件夹，不必重新生成；`sync_author_library.py --destination <新视频素材目录>` 会同时核对 SHA-256。
-
-全帧验收包括：实际嘴部像素与同一参考头部变换后的像素一致、身体纹理固定、关节角度连续、循环首尾一致、无边缘裁切，以及公共库和视频副本逐文件一致。结果位于视频工程 `qa/rig-validation.json`。
+本次迁移没有重新生成图片，没有修改序列帧像素；逐帧 SHA-256 与原件一致。旧公共版本目录已经删除。历史损失函数工程的必要配准输入保存在该工程本地，重建不会重新创建旧公共目录。

@@ -4,7 +4,7 @@
 
 ## 素材与复用
 
-作者沿用根目录 `assets/手绘形象/shikanon-animation-v3/` 与工程 `assets/author-animation/` 的同一素材库。八组动作、192 张透明 PNG，每组 24 帧、20 fps、1.2 秒；统一画布与骨架锚点，固定闭嘴微笑，手、脚、头部与教棍保持运动。公共库和工程副本继续复用，不重新生成。
+作者沿用根目录 `assets/手绘形象/日常服动作序列帧/` 与工程 `assets/author-animation/` 的同一 PNG 序列。八组动作、192 张透明 PNG，每组 24 帧、20 fps、1.2 秒；统一画布与骨架锚点，固定闭嘴微笑，手、脚、头部与教棍保持运动。序列帧像素原样保留，渲染直接读取 PNG。必要配准输入保存在本工程 `assets/author-animation/source/registered-art/`，不再依赖或重建旧公共目录。
 
 用户提供的画风参考视频保存在本工程的 `assets/style-reference.mp4`，仅留本地。配音的原始批次、服务字幕和请求副本均在本工程 `audio/`；[配音来源与哈希](audio-provenance.json)保留删除旧工程前已核对的原始 V3 哈希，验收不依赖历史目录。
 
@@ -28,7 +28,7 @@
 
 ## 重建与归档
 
-`index.html` 为带内嵌图集的构建产物，由 `build_composition.py` 生成，不重复提交 Git。配音、导出和详细 QA 留本地；文章、图解、字幕、可编辑源码与人物动作保留在仓库。使用具有 OpenCV、NumPy、Pillow 的 Python，以及 Node、sharp、FFmpeg。可用 `VIDEO_NODE`、`VIDEO_SHARP_MODULE`、`VIDEO_FFMPEG`、`VIDEO_FFPROBE` 指定当地依赖。
+`index.html` 为带内嵌独立 PNG 的构建产物，由 `build_composition.py` 生成，不重复提交 Git。配音、导出和详细 QA 留本地；文章、图解、字幕、可编辑源码与人物动作保留在仓库。使用具有 OpenCV、NumPy、Pillow 的 Python，以及 Node、sharp、FFmpeg。可用 `VIDEO_NODE`、`VIDEO_SHARP_MODULE`、`VIDEO_FFMPEG`、`VIDEO_FFPROBE` 指定当地依赖。
 
 ```bash
 python3 build_composition.py

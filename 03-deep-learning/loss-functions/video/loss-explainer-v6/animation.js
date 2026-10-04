@@ -78,17 +78,19 @@ D.scenes.forEach((s,i)=>{
 // No requestAnimationFrame clock, random phase, CSS loop or image warping.
 D.author_motion.forEach(actor=>{
   const viewport=document.getElementById(actor.id+'-viewport');
-  const atlas=document.getElementById(actor.id+'-atlas');
-  tl.set(viewport,{attr:{viewBox:'0 0 384 576','data-sprite-frame':0}},0);
-  tl.set(atlas,{attr:{href:'#sprite-atlas-'+actor.clips[0].action}},0);
+  const frameUse=document.getElementById(actor.id+'-frame');
+  const [initialWidth,initialHeight]=actor.clips[0].frame_size;
+  tl.set(viewport,{attr:{viewBox:'0 0 '+initialWidth+' '+initialHeight,'data-sprite-frame':0}},0);
+  tl.set(frameUse,{attr:{href:'#sprite-frame-'+actor.clips[0].action+'-0',x:0,y:0}},0);
   actor.clips.forEach(clip=>{
-    tl.set(atlas,{attr:{href:'#sprite-atlas-'+clip.action}},clip.start);
     const count=Math.ceil((clip.end-clip.start)*clip.fps-1e-7);
     for(let k=0;k<count;k++){
       const step=k+clip.phase,frame=clip.frames[step%clip.frames.length];
-      const [w,h]=clip.frame_size,cols=clip.columns;
-      const box=[frame%cols*w,Math.floor(frame/cols)*h,w,h].join(' ');
-      tl.set(viewport,{attr:{viewBox:box,'data-sprite-frame':frame}},clip.start+k/clip.fps);
+      const [w,h]=clip.frame_size;
+      const left=frame%clip.layout_columns*w,top=Math.floor(frame/clip.layout_columns)*h;
+      const at=clip.start+k/clip.fps;
+      tl.set(frameUse,{attr:{href:'#sprite-frame-'+clip.action+'-'+frame,x:left,y:top}},at);
+      tl.set(viewport,{attr:{viewBox:[left,top,w,h].join(' '),'data-sprite-frame':frame}},at);
     }
   });
 });

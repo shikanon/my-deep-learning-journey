@@ -1,0 +1,10 @@
+{
+  "source_commit": "f70bdffa3662b6e64c51f747b96f16d21f58c2f7",
+  "source": "retired public author action library",
+  "storage": "transparent-png-sequence",
+  "frames": 192,
+  "frame_sha256_verified": true,
+  "png_pixels_modified": false,
+  "image_generation_calls": 0,
+  "rig_reference_layers": "Retained only to verify existing closed-smile source frames; no atlas or animated-preview dependency."
+}

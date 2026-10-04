@@ -2,7 +2,7 @@
 
 No face or lip animation is sampled from the old frames. Hands retain the
 existing painted poses; head and lower legs use deterministic rigid transforms.
-Required registered source art is preserved inside the current V3 library.
+Required registered source art is preserved inside this video project.
 """
 from pathlib import Path
 import hashlib,json,math,shutil
@@ -10,9 +10,9 @@ import cv2,numpy as np
 from PIL import Image,ImageDraw,ImageFont
 
 B=Path(__file__).resolve().parent;ROOT=B.parents[3]
-LIB=ROOT/'assets/手绘形象/shikanon-animation-v3'
+LIB=B/'assets/author-animation'
 SOURCE=LIB/'source/registered-art'
-W,H=384,576;COUNT=24;FPS=20;COLS=6;ROWS=4
+W,H=384,576;COUNT=24;FPS=20
 Y,X=np.mgrid[:H,:W]
 ACTIONS=['talk','point-right','think','celebrate','wave','think-question','teach-pointer','step']
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -27,7 +27,7 @@ def transform(a,angle,pivot,dx=0,dy=0):
  matrix=cv2.getRotationMatrix2D(pivot,angle,1);matrix[:,2]+=[dx,dy]
  return cv2.warpAffine(a,matrix,(W,H),flags=cv2.INTER_CUBIC),matrix.tolist()
 def save_rgba(a,path):Image.fromarray(unpremul(a)).save(path)
-for d in ['frames','atlases','previews','props','rig']:(LIB/d).mkdir(parents=True,exist_ok=True)
+for d in ['frames','props','rig']:(LIB/d).mkdir(parents=True,exist_ok=True)
 base=np.array(Image.open(SOURCE/'registration/reference-neutral.png'))
 fixed=premul(base)
 shutil.copy2(SOURCE/'reference.png',LIB/'reference.png')
@@ -48,7 +48,7 @@ save_rgba(left,LIB/'rig/leg-left.png');save_rgba(right,LIB/'rig/leg-right.png')
 save_rgba(part(fixed,1-head_mask),LIB/'rig/body-neutral.png')
 mouth_box=[151,273,202,301]
 Image.fromarray(base[273:301,151:202]).save(LIB/'rig/mouth-reference.png')
-manifest={'schema':'shikanon-sprite-library/v3','version':3,'character':'shikanon','style':'children-colored-pencil','source_image':'reference.png','source_sha256':sha(LIB/'reference.png'),'frame_size':[W,H],'anchor':[192,548],'generator':'Existing registered artwork, immutable closed-smile head layer, deterministic head/leg joints and existing SVG props','repair_source':'source/registered-art/manifest.json','mouth_animation':False,'facial_expression':'closed-smile','rig':{'head_layer':'rig/head-closed-smile.png','head_sha256':sha(LIB/'rig/head-closed-smile.png'),'mouth_reference':'rig/mouth-reference.png','mouth_sha256':sha(LIB/'rig/mouth-reference.png'),'mouth_box_head_local':mouth_box,'head_pivot':[174,333],'left_leg_pivot':[143,463],'right_leg_pivot':[209,463],'body_scale':1,'head_scale':1,'notes':'Motion is intentional rigid rotation around named joints, never per-frame recentering or generated face deformation.'},'actions':{}}
+manifest={'schema':'author-png-sequence/v1','version':1,'storage':'transparent-png-sequence','character':'shikanon','style':'children-colored-pencil','source_image':'reference.png','source_sha256':sha(LIB/'reference.png'),'frame_size':[W,H],'anchor':[192,548],'generator':'Existing registered artwork, immutable closed-smile head layer, deterministic head/leg joints and existing SVG props','repair_source':'source/registered-art/manifest.json','mouth_animation':False,'facial_expression':'closed-smile','rig':{'head_layer':'rig/head-closed-smile.png','head_sha256':sha(LIB/'rig/head-closed-smile.png'),'mouth_reference':'rig/mouth-reference.png','mouth_sha256':sha(LIB/'rig/mouth-reference.png'),'mouth_box_head_local':mouth_box,'head_pivot':[174,333],'left_leg_pivot':[143,463],'right_leg_pivot':[209,463],'body_scale':1,'head_scale':1,'notes':'Motion is intentional rigid rotation around named joints, never per-frame recentering or generated face deformation.'},'actions':{}}
 cache={a:[premul(np.array(Image.open(SOURCE/f'frames/{a}/{i:03}.png'))) for i in range(12)] for a in ACTIONS if a!='step'}
 # Question belongs to the head gesture. The pointer stays with its painted hand.
 question=cache['think-question'][0]-cache['think'][0]
@@ -118,13 +118,8 @@ for action in ACTIONS:
   if action=='think-question':keep|=(Y<86)&(labels>0)
   support=cv2.dilate(np.uint8(keep),np.ones((3,3),np.uint8));rgba[:,:,3]*=support
   p=folder/f'{i:03}.png';Image.fromarray(rgba).save(p);frames.append(rgba)
-  meta.append({'index':i,'file':str(p.relative_to(LIB)),'sha256':sha(p),'atlas_rect':[i%COLS*W,i//COLS*H,W,H],'anchor':[192,548],'source_action':source_action,'source_frame':source_index,'mouth_animation':False,'head_layer_sha256':manifest['rig']['head_sha256'],'head_angle_deg':round(angle,6),'head_offset_px':[0,round(nod,6)],'head_transform':hm,'left_leg_angle_deg':round(la,6),'right_leg_angle_deg':round(ra,6),'left_leg_offset_px':[0,round(ld,6)],'right_leg_offset_px':[0,round(rd,6)],'left_leg_transform':lm,'right_leg_transform':rm,'neutral_reference':i in [0,COUNT-1]})
- atlas=Image.new('RGBA',(W*COLS,H*ROWS))
- for i,a in enumerate(frames):atlas.paste(Image.fromarray(a),(i%COLS*W,i//COLS*H))
- ap=LIB/'atlases'/f'{action}.png';atlas.save(ap)
- preview=LIB/'previews'/f'{action}.webp';pil=[Image.fromarray(a) for a in frames]
- pil[0].save(preview,save_all=True,append_images=pil[1:],duration=round(1000/FPS),loop=0,lossless=True,method=4)
- manifest['actions'][action]={'name':action,'fps':FPS,'loop':True,'frame_count':COUNT,'columns':COLS,'rows':ROWS,'atlas':str(ap.relative_to(LIB)),'atlas_size':[W*COLS,H*ROWS],'atlas_sha256':sha(ap),'preview':str(preview.relative_to(LIB)),'frames':meta,'alpha_background':True,'mouth_animation':False,'assembly_note':'One closed-smile head texture, original hand gestures, smooth intentional head/foot joints; no lip or eye animation.'}
+  meta.append({'index':i,'file':str(p.relative_to(LIB)),'sha256':sha(p),'anchor':[192,548],'source_action':source_action,'source_frame':source_index,'mouth_animation':False,'head_layer_sha256':manifest['rig']['head_sha256'],'head_angle_deg':round(angle,6),'head_offset_px':[0,round(nod,6)],'head_transform':hm,'left_leg_angle_deg':round(la,6),'right_leg_angle_deg':round(ra,6),'left_leg_offset_px':[0,round(ld,6)],'right_leg_offset_px':[0,round(rd,6)],'left_leg_transform':lm,'right_leg_transform':rm,'neutral_reference':i in [0,COUNT-1]})
+ manifest['actions'][action]={'name':action,'fps':FPS,'loop':True,'frame_count':COUNT,'frames':meta,'alpha_background':True,'mouth_animation':False,'assembly_note':'One closed-smile head texture, original hand gestures, smooth intentional head/foot joints; no lip or eye animation.'}
  all_frames[action]=frames
  print(action,COUNT,'frames, closed smile, explicit head/feet joints',flush=True)
 (LIB/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
@@ -134,5 +129,4 @@ for row,action in enumerate(ACTIONS):
   p=Image.fromarray(all_frames[action][i]).resize((192,288));contact.paste(p,(col*192,row*312+24),p)
  draw.text((8,row*312+5),action,fill='#46392f')
 contact.save(B/'qa/fixed-smile-contact.png')
-shutil.copytree(LIB,B/'assets/author-animation',dirs_exist_ok=True)
-print(json.dumps({'cache':str(LIB),'video_copy':str(B/'assets/author-animation'),'actions':len(ACTIONS),'frames':len(ACTIONS)*COUNT,'mouth_animation':False},ensure_ascii=False))
+print(json.dumps({'sequence_library':str(LIB),'source_inputs':str(SOURCE),'actions':len(ACTIONS),'frames':len(ACTIONS)*COUNT,'storage':'transparent-png-sequence','mouth_animation':False},ensure_ascii=False))

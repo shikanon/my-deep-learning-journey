@@ -297,12 +297,9 @@
       }
     }
   ],
-  "animations": {
-    "once": "animation-once.apng",
-    "loop": "animation-loop.apng"
-  },
   "notes": [
     "Lowering reverses the identical raising poses; first and last PNGs are byte-identical.",
     "AI-drawn key poses may retain small outline/face/fabric variations; this is not a rigged model render."
-  ]
+  ],
+  "storage": "transparent-png-sequence"
 }

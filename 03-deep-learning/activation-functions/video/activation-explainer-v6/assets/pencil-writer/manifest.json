@@ -288,15 +288,12 @@
       "scale": 0.8438818565400844
     }
   ],
-  "animations": {
-    "once": "animation-once.apng",
-    "loop": "animation-loop.apng"
-  },
   "notes": [
     "8 AI-drawn key poses followed by reversed return; endpoints hold for two frames across the loop.",
     "Feet aligned to fixed canvas anchor. Scaling is uniform per source sheet, not independently fitted per frame.",
     "Hand-drawn face, outline and grip details can vary slightly; no generated tween or rigged render."
   ],
   "revision": "v2 torso-wide chunky pencil",
-  "pencilWidthRequest": "Approximately equal to shoulder-to-shoulder torso width"
+  "pencilWidthRequest": "Approximately equal to shoulder-to-shoulder torso width",
+  "storage": "transparent-png-sequence"
 }

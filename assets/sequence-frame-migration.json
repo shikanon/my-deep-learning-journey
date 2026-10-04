@@ -1,0 +1,180 @@
+{
+  "remote_base": "f70bdffa3662b6e64c51f747b96f16d21f58c2f7",
+  "status": "passed",
+  "pre_migration_pixel_equivalence": [
+    {
+      "project": "loss-functions/video/loss-explainer-v6",
+      "frames_checked": 192,
+      "png_equals_original_atlas_cell": true
+    },
+    {
+      "project": "activation-functions/video/activation-explainer-v6",
+      "frames_checked": 192,
+      "png_equals_original_atlas_cell": true
+    },
+    {
+      "project": "backpropagation/video/backprop-explainer-v1",
+      "frames_checked": 192,
+      "png_equals_original_atlas_cell": true
+    }
+  ],
+  "removed_project_derivatives": [
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v6/assets/author-animation/atlases",
+      "files": 8,
+      "bytes": 30452278
+    },
+    {
+      "directory": "03-deep-learning/loss-functions/video/loss-explainer-v6/assets/author-animation/previews",
+      "files": 8,
+      "bytes": 25293034
+    },
+    {
+      "directory": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/author-animation/atlases",
+      "files": 8,
+      "bytes": 30452278
+    },
+    {
+      "directory": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/author-animation/previews",
+      "files": 8,
+      "bytes": 25293034
+    },
+    {
+      "directory": "03-deep-learning/backpropagation/video/backprop-explainer-v1/assets/author-animation/atlases",
+      "files": 8,
+      "bytes": 30452278
+    },
+    {
+      "directory": "03-deep-learning/backpropagation/video/backprop-explainer-v1/assets/author-animation/previews",
+      "files": 8,
+      "bytes": 25293034
+    }
+  ],
+  "removed_public_directories": [
+    {
+      "directory": "assets/手绘形象/shikanon-animation-v1",
+      "operation": "removed_by_remote_sync",
+      "files": 87,
+      "bytes": 48968886
+    },
+    {
+      "directory": "assets/手绘形象/shikanon-animation-v2",
+      "operation": "removed_by_remote_sync",
+      "files": 106,
+      "bytes": 35401750
+    },
+    {
+      "directory": "assets/手绘形象/shikanon-animation-v3",
+      "operation": "removed_after_png_migration",
+      "files": 313,
+      "bytes": 121083333
+    }
+  ],
+  "retained_public_sequences": [
+    {
+      "directory": "assets/手绘形象/博士服教棍-v1",
+      "frames": 16
+    },
+    {
+      "directory": "assets/手绘形象/抱大铅笔写字-v2",
+      "frames": 16
+    },
+    {
+      "directory": "assets/手绘形象/日常服动作序列帧",
+      "frames": 192
+    }
+  ],
+  "private_rebuild_inputs": "03-deep-learning/loss-functions/video/loss-explainer-v6/assets/author-animation/source/registered-art",
+  "reused_local_final_media": [
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/renders/activation-functions-v6.mp4",
+      "sha256": "d6f399950d76b571b7502f25fac4f9f329d367669359e490ebaa573bf0519555",
+      "bytes": 24548128,
+      "source": "existing local final project"
+    },
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/renders/opening-preview.mp4",
+      "sha256": "6975cab7c20c04a184b3f920ee162c819470d007c39697e3085913abf9dfae9f",
+      "bytes": 1023100,
+      "source": "existing local final project"
+    }
+  ],
+  "removed_animated_preview_derivatives": [
+    {
+      "file": "assets/手绘形象/博士服教棍-v1/animation-loop.apng",
+      "bytes": 2257883
+    },
+    {
+      "file": "assets/手绘形象/博士服教棍-v1/animation-once.apng",
+      "bytes": 2257883
+    },
+    {
+      "file": "assets/手绘形象/抱大铅笔写字-v2/animation-loop.apng",
+      "bytes": 2996229
+    },
+    {
+      "file": "assets/手绘形象/抱大铅笔写字-v2/animation-once.apng",
+      "bytes": 2996229
+    },
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/doctor-pointer/animation-loop.apng",
+      "bytes": 2257883
+    },
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/doctor-pointer/animation-once.apng",
+      "bytes": 2257883
+    },
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/pencil-writer/animation-loop.apng",
+      "bytes": 2996229
+    },
+    {
+      "file": "03-deep-learning/activation-functions/video/activation-explainer-v6/assets/pencil-writer/animation-once.apng",
+      "bytes": 2996229
+    }
+  ],
+  "original_pencil_input_zip_retained": true,
+  "public_sequence_validation": [
+    {
+      "directory": "assets/手绘形象/博士服教棍-v1",
+      "frames": 16,
+      "png_sha256_verified": true
+    },
+    {
+      "directory": "assets/手绘形象/抱大铅笔写字-v2",
+      "frames": 16,
+      "png_sha256_verified": true
+    },
+    {
+      "directory": "assets/手绘形象/日常服动作序列帧",
+      "frames": 192,
+      "png_sha256_verified": true
+    }
+  ],
+  "runtime_storage": "direct-transparent-png-sequence",
+  "unchanged_backpropagation_mp4_sha256": "54ecf73e298ebc8f054f2efb72c97d80342d481516335d71720a01133176e2be",
+  "render_regression": {
+    "html_compositions": 2,
+    "samples": 46,
+    "pixel_identical_samples": 40,
+    "all_samples_visually_equivalent": true,
+    "allowed_difference": "Only a single pixel-wide clipping edge, at most 600 RGB channels, max 15 of 255 per channel, full-frame mean less than 0.0002. No position, shape or content change.",
+    "details": "sequence-render-after.json",
+    "activation_sprite_png_samples": 192,
+    "activation_sections_rendered": 19
+  },
+  "preview_browser_validation": {
+    "url": "http://127.0.0.1:8773/assets/手绘形象/日常服动作序列帧/preview.html",
+    "actions_loaded": 8,
+    "png_frames_loaded": 192,
+    "scrub_to_last_frame": 23
+  },
+  "markdown_validation": {
+    "documents": 197,
+    "notes": 6,
+    "local_links": "passed"
+  },
+  "skill_validation": "passed",
+  "git_publication": "not requested; changes remain local",
+  "remote_main_verified_at_completion": "f70bdffa3662b6e64c51f747b96f16d21f58c2f7"
+}

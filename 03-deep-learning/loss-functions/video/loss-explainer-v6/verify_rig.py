@@ -2,7 +2,8 @@
 from pathlib import Path
 import cv2,numpy as np,json,hashlib
 from PIL import Image
-B=Path(__file__).resolve().parent;L=B.parents[3]/'assets/手绘形象/shikanon-animation-v3'
+B=Path(__file__).resolve().parent;L=B/'assets/author-animation'
+CACHE=B.parents[3]/'assets/手绘形象/日常服动作序列帧'
 M=json.loads((L/'manifest.json').read_text());W,H=M['frame_size']
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def premul(a):
@@ -18,7 +19,7 @@ assert sha(L/M['rig']['head_layer'])==M['rig']['head_sha256']
 assert sha(L/M['rig']['mouth_reference'])==M['rig']['mouth_sha256']
 rows=[];actions={};neutral=set()
 for name,m in M['actions'].items():
- assert not m['mouth_animation'];assert sha(L/m['atlas'])==m['atlas_sha256']
+ assert not m['mouth_animation']
  previous=None;head_deltas=[];leg_deltas=[];frames=[]
  for f in m['frames']:
   p=L/f['file'];assert sha(p)==f['sha256'];a=np.array(Image.open(p));frames.append(a)
@@ -47,8 +48,8 @@ for name,m in M['actions'].items():
  if name in ['talk','point-right','celebrate','wave','teach-pointer','step']:assert arm_change>2,(name,'hand not moving',arm_change)
  actions[name]={'frames':m['frame_count'],'fps':m['fps'],'max_head_angle_step_deg':max(head_deltas),'max_leg_angle_step_deg':max(leg_deltas),'head_changed_pixels_mean_max':head_change,'foot_changed_pixels_mean_max':round(foot_change,4),'arm_changed_pixels_mean_max':round(arm_change,4),'first_last_frames_identical':True}
 assert len(neutral)==1,'action entry poses differ'
-files=[p for p in L.rglob('*') if p.is_file() and not p.name.startswith('.')]
-assert all(p.read_bytes()==(B/'assets/author-animation'/p.relative_to(L)).read_bytes() for p in files)
-report={'version':3,'mouth_animation':False,'expression':'closed-smile','actions':actions,'frames_verified':len(rows),'max_mouth_texture_error':max(r['mouth_texture_max_error'] for r in rows),'max_torso_drift':0,'canvas_edge_clipping':0,'shared_neutral_pose':True,'cache_copy_files':len(files),'copies_byte_identical':True,'new_image_generation_calls':0,'measurements':rows}
+files=[L/f['file'] for action in M['actions'].values() for f in action['frames']]
+assert all(p.read_bytes()==(CACHE/p.relative_to(L)).read_bytes() for p in files)
+report={'storage':'transparent-png-sequence','mouth_animation':False,'expression':'closed-smile','actions':actions,'frames_verified':len(rows),'max_mouth_texture_error':max(r['mouth_texture_max_error'] for r in rows),'max_torso_drift':0,'canvas_edge_clipping':0,'shared_neutral_pose':True,'cache_copy_files':len(files),'copies_byte_identical':True,'new_image_generation_calls':0,'measurements':rows}
 (B/'qa/rig-validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps({k:v for k,v in report.items() if k!='measurements'},ensure_ascii=False,indent=2))

@@ -24,10 +24,15 @@ def actor_clips(scene,beats,actor_index,start):
         if t<=start:active=a
     changes=[(start,active)]+[(t,a) for t,a in changes if start<t<end-.1]
     changes=sorted(changes)
-    return [{'start':round(t,5),'end':round(changes[i+1][0] if i+1<len(changes) else end,5),'action':('think-question' if a=='think' else 'teach-pointer' if a=='point-right' and kind in ['curves','huber','siglip'] and (kind!='siglip' or actor_index==0) else a),'fps':20,'columns':6,'frame_size':[384,576],'mouth_animation':False,'frames':PLAYBACK[a],'phase':actor_index*2 if kind=='focal' else 0} for i,(t,a) in enumerate(changes)]
+    clips=[]
+    for i,(t,a) in enumerate(changes):
+        action=('think-question' if a=='think' else 'teach-pointer' if a=='point-right' and kind in ['curves','huber','siglip'] and (kind!='siglip' or actor_index==0) else a)
+        entry=LIB['actions'][action]
+        clips.append({'start':round(t,5),'end':round(changes[i+1][0] if i+1<len(changes) else end,5),'action':action,'fps':entry['fps'],'frame_size':LIB['frame_size'],'layout_columns':6,'layout_rows':4,'mouth_animation':False,'frames':PLAYBACK[action],'phase':actor_index*2 if kind=='focal' else 0})
+    return clips
 
 def sample_actor(actor,t):
     clip=next((c for c in reversed(actor['clips']) if c['start']<=t+1e-8),actor['clips'][0])
     steps=max(0,math.floor((t-clip['start'])*clip['fps']+1e-7))+clip['phase']
     sequence=clip['frames'];cycle=steps//len(sequence);frame=sequence[steps%len(sequence)]
-    return {'id':actor['id'],'action':clip['action'],'sprite_frame':frame,'atlas_rect':[frame%clip['columns']*384,frame//clip['columns']*576,384,576],'mouth_animation':False}
+    return {'id':actor['id'],'action':clip['action'],'sprite_frame':frame,'frame_file':LIB['actions'][clip['action']]['frames'][frame]['file'],'mouth_animation':False}

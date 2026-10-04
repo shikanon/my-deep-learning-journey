@@ -37,9 +37,13 @@ for si,s in enumerate(D['scenes']):
             ai=len(actors);aid=f'{s["id"]}-author-{ai:02}'
             actor.set('id',aid)
             viewport=actor.find('svg');viewport.set('id',aid+'-viewport')
-            atlas=viewport.find('use');atlas.set('id',aid+'-atlas')
+            frame_use=viewport.find('use');frame_use.set('id',aid+'-frame')
             clips=actor_clips(s,beats,ai,beat_plan['start']+.10)
-            atlas.set('href','#sprite-atlas-'+clips[0]['action'])
+            # Preserve existing SVG transform origins while painting one PNG.
+            # These invisible bounds contain no bitmap or atlas resource.
+            width,height=clips[0]['frame_size']
+            viewport.insert(0,ET.Element('rect',{'x':'0','y':'0','width':str(width*clips[0]['layout_columns']),'height':str(height*clips[0]['layout_rows']),'fill':'none','stroke':'none','aria-hidden':'true','data-layout-ignore':''}))
+            frame_use.set('href','#sprite-frame-'+clips[0]['action']+'-0')
             actors.append({'id':aid,'beat_id':beat_plan['id'],'start':clips[0]['start'],'end':s['end'],'clips':clips,'origin':[float(actor.attrib['data-origin-x']),float(actor.attrib['data-origin-y'])]})
     content=''.join(ET.tostring(x,encoding='unicode') for x in svg)
     takeaway,detail=INSIGHTS[s['kind']];chapter=next(c for c in D['chapters'] if c['id']==s['chapter']);chapter_label="开源学习项目" if s["kind"]=="follow" else chapter["title"]
@@ -55,13 +59,15 @@ D['author_motion']=[a for p in plans for a in p['actors']];D['author_library']='
 progress='<div class="top-progress"><div class="chapter-rail">'+''.join(f'<div class="chapter-segment" style="flex:{c["share"]}"><div id="chapter-fill-{i}" class="chapter-fill"></div><span class="chapter-label">{escape(["为什么 30%","演化 50%","前沿 20%"][i])}</span></div>' for i,c in enumerate(D['chapters']))+'</div><div class="section-rail">'+''.join(f'<div class="section-segment" style="flex:{s["end"]-s["start"]}"><div id="section-fill-{i}" class="section-fill"></div></div>' for i,s in enumerate(D['scenes']))+'</div>'+''.join(f'<div id="current-{i}" class="current-section">当前小节 <b>{i+1:02} · {escape(s["title"])}</b></div>' for i,s in enumerate(D['scenes']))+'</div>'
 captions='<div class="captions">'+''.join(f'<div id="cap-{i}" class="caption"><span>{escape(c["text"])}</span></div>' for i,c in enumerate(D['captions']))+'</div>'
 manifest=json.loads((BASE/'assets/author-animation/manifest.json').read_text())
-assert set(manifest['actions'])=={'talk','point-right','think','celebrate','wave','teach-pointer','think-question','step'}
+required_actions={clip['action'] for actor in D['author_motion'] for clip in actor['clips']}
+assert required_actions <= set(manifest['actions'])
 images=[]
 for action,entry in manifest['actions'].items():
-    data=base64.b64encode((BASE/'assets/author-animation'/entry['atlas']).read_bytes()).decode('ascii')
-    aw,ah=entry['atlas_size']
-    images.append(f'<image id="sprite-atlas-{action}" href="data:image/png;base64,{data}" x="0" y="0" width="{aw}" height="{ah}"/>')
-# Shared transparent atlases are decoded once and reused by all 27 actors.
+    width,height=manifest['frame_size']
+    for frame in entry['frames']:
+        data=base64.b64encode((BASE/'assets/author-animation'/frame['file']).read_bytes()).decode('ascii')
+        images.append(f'<image id="sprite-frame-{action}-{frame["index"]}" href="data:image/png;base64,{data}" x="0" y="0" width="{width}" height="{height}"/>')
+# Each referenced image is an unchanged source PNG, shared by all actors.
 character_definition='<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" data-layout-ignore style="position:absolute"><defs>'+''.join(images)+'</defs></svg>'
 body=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>损失函数 · 我的深度学习之路</title><link rel="stylesheet" href="style.css"></head><body><div id="main" data-composition-id="main" data-start="0" data-duration="{D['duration']}" data-width="1080" data-height="1920">{character_definition}<div class="paper-edge" data-layout-ignore></div>{''.join(scenes)}{progress}{captions}<footer><span>我的深度学习之路</span><span>你怎么扣分，模型就怎么学</span></footer><audio id="narration-audio" src="audio/narration.m4a" data-start="0" data-duration="{D['duration']}" data-track-index="1" data-volume="1"></audio><audio id="effects-audio" src="audio/effects.m4a" data-start="0" data-duration="{D['duration']}" data-track-index="2" data-volume="0.40"></audio></div><script src="assets/gsap.min.js"></script><script src="timeline-data.js"></script><script>
 {(BASE/'animation.js').read_text()}

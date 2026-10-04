@@ -6,7 +6,7 @@
 - [公开媒体信息与上传验收](publication.json) · [制作与播放验收摘要](validation.json) · [历史中间视频清理记录](cleanup-report.json) · [无二维码修订清理记录](cleanup-no-qr-report.json) · [历史工程清理记录](cleanup-projects-report.json)
 - [无二维码片尾实际最后一帧](loss-explainer-v6/assets/ending-no-qr.jpg)
 - [八组人物动作预览](loss-explainer-v6/assets/author-animation/preview.html)
-- [公共动作素材库 V3](../../../assets/手绘形象/shikanon-animation-v3/README.md) · [复用方法](../../../assets/手绘形象/shikanon-animation-v3/REUSE.md)
+- [公共日常服 PNG 序列帧](../../../assets/手绘形象/日常服动作序列帧/README.md) · [工程重建输入与来源哈希](loss-explainer-v6/assets/author-animation/source/provenance.json)
 - [解说原文](loss-explainer-v6/narration.json) · [字幕](loss-explainer-v6/captions.srt)
 - [分镜与逐帧规划](loss-explainer-v6/storyboard.md) · [人物动作编排](loss-explainer-v6/author_motion.py)
 - [制作与验收记录](loss-explainer-v6/production-notes.md) · [设计说明](loss-explainer-v6/DESIGN.md)

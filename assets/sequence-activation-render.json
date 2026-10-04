@@ -1,0 +1,102 @@
+{
+  "project": "activation-functions/video/activation-explainer-v6",
+  "direct_png_sprite_frames_checked": 192,
+  "frame_image_cases": [
+    {
+      "scene": "s01",
+      "frame": 378,
+      "rendered": true
+    },
+    {
+      "scene": "s02",
+      "frame": 824,
+      "rendered": true
+    },
+    {
+      "scene": "s03",
+      "frame": 1167,
+      "rendered": true
+    },
+    {
+      "scene": "s04",
+      "frame": 1614,
+      "rendered": true
+    },
+    {
+      "scene": "s05",
+      "frame": 1998,
+      "rendered": true
+    },
+    {
+      "scene": "s06",
+      "frame": 2426,
+      "rendered": true
+    },
+    {
+      "scene": "s07",
+      "frame": 2800,
+      "rendered": true
+    },
+    {
+      "scene": "s08",
+      "frame": 3213,
+      "rendered": true
+    },
+    {
+      "scene": "s09",
+      "frame": 3559,
+      "rendered": true
+    },
+    {
+      "scene": "s10",
+      "frame": 4010,
+      "rendered": true
+    },
+    {
+      "scene": "s11",
+      "frame": 4438,
+      "rendered": true
+    },
+    {
+      "scene": "s12",
+      "frame": 4844,
+      "rendered": true
+    },
+    {
+      "scene": "s13",
+      "frame": 5331,
+      "rendered": true
+    },
+    {
+      "scene": "s14",
+      "frame": 5681,
+      "rendered": true
+    },
+    {
+      "scene": "s15",
+      "frame": 6000,
+      "rendered": true
+    },
+    {
+      "scene": "s16",
+      "frame": 6339,
+      "rendered": true
+    },
+    {
+      "scene": "s17",
+      "frame": 6637,
+      "rendered": true
+    },
+    {
+      "scene": "s18",
+      "frame": 6992,
+      "rendered": true
+    },
+    {
+      "scene": "s19",
+      "frame": 7212,
+      "rendered": true
+    }
+  ],
+  "atlas_dependencies": 0
+}

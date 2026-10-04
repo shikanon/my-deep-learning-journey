@@ -16,7 +16,7 @@ def arrow(x1,y1,x2,y2,color=INK):
 def author(x,y,scale=1,color=RED,mood='smile',id=''):
     # The viewport selects an actual generated pose from a transparent atlas.
     # Its placement matches the previous author illustration footprint.
-    return f'<g {"id="+chr(34)+id+chr(34) if id else ""} data-origin-x="{x}" data-origin-y="{y}" transform="translate({x} {y}) scale({scale})" class="mascot author-character"><svg class="author-viewport" x="0" y="-48.4" width="125" height="187.5" viewBox="0 0 384 576" overflow="hidden"><use class="author-atlas" href="#sprite-atlas-talk"/></svg></g>'
+    return f'<g {"id="+chr(34)+id+chr(34) if id else ""} data-origin-x="{x}" data-origin-y="{y}" transform="translate({x} {y}) scale({scale})" class="mascot author-character"><svg class="author-viewport" x="0" y="-48.4" width="125" height="187.5" viewBox="0 0 384 576" overflow="hidden"><use class="author-atlas" href="#sprite-frame-talk-0"/></svg></g>'
 def cat(x,y,scale=1,color=YELLOW):
     return f'<g class="mascot-cat" data-origin-x="{x}" data-origin-y="{y}" transform="translate({x} {y}) scale({scale})">'+path('M13,31 L9,0 L35,16 Q56,5 75,16 L98,1 L95,33 Q109,75 84,92 Q51,112 20,90 Q1,76 13,31 Z',INK,3,color)+f'<circle cx="36" cy="49" r="4" fill="{INK}"/><circle cx="73" cy="49" r="4" fill="{INK}"/>'+path('M52,63 L57,67 L62,61 M57,67 Q47,77 42,70 M57,67 Q66,76 73,69 M22,61 L-1,57 M24,72 L0,77 M84,60 L110,54 M84,72 L111,78',INK,2.5,cls='pencil')+'</g>'
 def card(x,y,w,h,title,sub='',color=PAPER):

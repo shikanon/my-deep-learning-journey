@@ -406,13 +406,8 @@ def illustration(im,s,t):
 def sprite(action,index):
     if action=='doctor-pointer':
         return Image.open(BASE/'assets/doctor-pointer'/B['frames'][index]).convert('RGBA')
-    entry=M['actions'][action];rect=entry['frames'][index]['atlas_rect']
-    atlas=atlas_image(action);x,y,w,h=rect
-    return atlas.crop((x,y,x+w,y+h)).resize((290,435),Image.Resampling.LANCZOS)
-
-@lru_cache(maxsize=8)
-def atlas_image(action):
-    return Image.open(BASE/'assets/author-animation'/M['actions'][action]['atlas']).convert('RGBA')
+    frame=M['actions'][action]['frames'][index]
+    return Image.open(BASE/'assets/author-animation'/frame['file']).convert('RGBA').resize((290,435),Image.Resampling.LANCZOS)
 
 def state(frame):
     t=frame/FPS

@@ -6,7 +6,7 @@
 <div class="stage" id="stage"><canvas id="canvas" width="512" height="512" aria-label="博士服教棍动画"></canvas></div>
 <div class="toolbar"><button id="play">暂停</button><button id="replay">重播</button><label>播放方式 <select id="mode"><option value="loop">循环</option><option value="once">单次</option></select></label><label>背景 <select id="background"><option value="checker">透明棋盘格</option><option value="white">白色</option><option value="dark">深色</option></select></label><span id="position">加载中</span></div>
 <input id="scrub" type="range" min="0" max="15" value="0" step="1" aria-label="选择帧">
-<div class="toolbar"><a href="sequence.png" download>透明序列图</a><a href="animation-once.apng" download>单次 APNG</a><a href="animation-loop.apng" download>循环 APNG</a><a href="manifest.json" download>帧序清单</a><a id="current" href="frames/001.png" download>当前帧 PNG</a></div>
+<div class="toolbar"><a href="sequence.png" download>透明序列图</a><a href="manifest.json" download>帧序清单</a><a id="current" href="frames/001.png" download>当前帧 PNG</a></div>
 <p>返回动作复用抬手姿势的倒序，避免回程造型漂移。关键姿势仍可能有少量手绘轮廓变化；适合视频生成参考。下图为带浅色背景的查看总览，实际素材请使用透明 PNG。</p>
 <img class="sheet" src="overview.png" alt="博士服教棍16帧动作总览">
 <script>

@@ -112,11 +112,12 @@
               "end": 2.44467,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -151,11 +152,12 @@
               "end": 4.67425,
               "action": "point-right",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -190,11 +192,12 @@
               "end": 6.34644,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -229,11 +232,12 @@
               "end": 10.10493,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -342,11 +346,12 @@
               "end": 20.2364,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -586,11 +591,12 @@
               "end": 42.34759,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -625,11 +631,12 @@
               "end": 44.24929,
               "action": "point-right",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -664,11 +671,12 @@
               "end": 48.54451,
               "action": "step",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -703,11 +711,12 @@
               "end": 50.07159,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -816,11 +825,12 @@
               "end": 59.11245,
               "action": "teach-pointer",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -929,11 +939,12 @@
               "end": 67.73331,
               "action": "point-right",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1051,11 +1062,12 @@
               "end": 76.74228,
               "action": "teach-pointer",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1090,11 +1102,12 @@
               "end": 78.38261,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1264,11 +1277,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1315,11 +1329,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1366,11 +1381,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1417,11 +1433,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1468,11 +1485,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1519,11 +1537,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1570,11 +1589,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1621,11 +1641,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1672,11 +1693,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1723,11 +1745,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1774,11 +1797,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1825,11 +1849,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1876,11 +1901,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1927,11 +1953,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -1978,11 +2005,12 @@
               "end": 102.38968,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2143,11 +2171,12 @@
               "end": 124.33134,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2247,11 +2276,12 @@
               "end": 126.89491,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2286,11 +2316,12 @@
               "end": 131.9177,
               "action": "point-right",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2325,11 +2356,12 @@
               "end": 135.39048,
               "action": "think-question",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2438,11 +2470,12 @@
               "end": 148.04348,
               "action": "teach-pointer",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2489,11 +2522,12 @@
               "end": 148.04348,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2645,11 +2679,12 @@
               "end": 170.17373,
               "action": "celebrate",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2758,11 +2793,12 @@
               "end": 171.20222,
               "action": "wave",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2797,11 +2833,12 @@
               "end": 171.994,
               "action": "point-right",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2836,11 +2873,12 @@
               "end": 175.99249,
               "action": "talk",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
@@ -2875,11 +2913,12 @@
               "end": 179.0,
               "action": "wave",
               "fps": 20,
-              "columns": 6,
               "frame_size": [
                 384,
                 576
               ],
+              "layout_columns": 6,
+              "layout_rows": 4,
               "mouth_animation": false,
               "frames": [
                 0,
